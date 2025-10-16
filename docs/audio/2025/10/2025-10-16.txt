@@ -32,7 +32,7 @@ The other side: History suggests that AI's growth in power and usage will eventu
 
 The open question is how far the AI curve can go — how many doublings we can put the technology through — before it reaches a limit.
 
-The limit could be environmental, as AI data center demand for power and water exceeds what nations can support and climate disasters trigger revulsion at the technology's wastefulness. The limit could be financial, if external factors such as war, pandemic, or political instability, or internal problems like revenue disappointments or technical logjams cause markets to flip from manic to depressive. Or the limit could just be a broader disillusionment with AI itself if its hyperbolic promises, such as personalized Ph.D. tutors, aging reversed, universal abundance, and Mars too, fail to pan out.
+The limit could be environmental, as AI data center demand for power and water exceeds what nations can support and climate disasters trigger revulsion at the technology's wastefulness. The limit could be financial, if external factors such as war, pandemic, or political instability, or internal problems like revenue disappointments or technical logjams cause markets to flip from manic to depressive. Or the limit could just be a broader disillusionment with AI itself if its hyperbolic promises — personalized Ph.D. tutors, aging reversed, universal abundance, and Mars too — fail to pan out.
 
 Keep reading.
 
@@ -40,7 +40,7 @@ Exclusive: Google partners with fusion startup
 
 Google DeepMind is partnering with a Boston-area energy startup to use AI to speed the development of fusion as a clean energy source.
 
-What they're saying: Everyone talks about how much energy AI is going to use, but AI can actually help the energy equation on the supply side too, Commonwealth Fusion Systems CEO Bob Mumgaard told me.
+What they're saying: "Everyone talks about how much energy AI is going to use, but AI can actually help the energy equation on the supply side too," Commonwealth Fusion Systems CEO Bob Mumgaard told me.
 
 Driving the news: As part of the deal, CFS will use Google's open-source software to simulate the physics of plasma, the particles that reach 100 million degrees Celsius to form fusion's fuel, as researchers attempt to figure out the most efficient systems.
 
@@ -50,7 +50,7 @@ The move comes after Energy Secretary Chris Wright announced a roadmap for the a
 
 Yes, but: Even those developing the technology say commercial availability of fusion-derived energy is still years off.
 
-CFS has been aiming toward commercial availability in the early part of next decade and Mumgaard sees AI helping make that a reality. Mumgaard says fusion energy has long been seen as something only in the distant future, but notes that AI was once seen the same way. We are close to breaking that meme, he said.
+CFS has been aiming toward commercial availability in the early part of next decade and Mumgaard sees AI helping make that a reality. Mumgaard says fusion energy has long been seen as something only in the distant future, but notes that AI was once seen the same way. "We are close to breaking that meme," he said.
 
 Meta poaches key Apple AI engineer
 
