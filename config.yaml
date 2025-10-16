@@ -1,0 +1,63 @@
+# Basic site/podcast metadata
+site:
+  title: "Axios Daily (Unofficial)"
+  link: "https://haoran.github.io/Newsletter-to-Podcast/"  # Set to your GitHub Pages URL
+  description: "Auto-converted Axios newsletter into a podcast feed"
+  language: "en-us"
+  image_url: ""  # Optional podcast cover image URL
+  author: "Axios"
+  owner:
+    name: "Podcast Bot"
+    email: "noreply@example.com"
+
+# Fetch source feed
+feed:
+  name: "Axios"
+  url: "https://www.axios.com/newsletters/axios-ai-plus"
+  fetch_original: true  # Fetch and extract full article from page
+
+# Output
+output:
+  root_dir: "docs"
+  audio_dir: "audio"
+  feed_filename: "feed.xml"
+  index_filename: "index.html"
+
+# Operation mode: "compilation" (one episode per day) or "separate" (one per item)
+mode: "forced_compilation"
+
+# TTS options (Google Cloud Text-to-Speech)
+tts:
+  enabled: true
+  language_code: "en-US"
+  voice_name: "en-US-Wavenet-D"
+  speaking_rate: 1.0
+  pitch: 0.0
+  volume_gain_db: 0.0
+  audio_encoding: "MP3"  # Do not change
+  max_chars_per_chunk: 4500
+  max_retries: 3
+  initial_retry_delay: 2.0  # seconds
+
+# Filtering & cleaning
+clean:
+  remove_emoji: true
+  strip_html: true
+  remove_ads: true
+  ad_keywords:
+    - "sponsor"
+    - "advertisement"
+    - "presented by"
+    - "sponsored"
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+
+# Optional LLM pre-clean before TTS
+llm:
+  enabled: true
+  provider: "openai"
+  model: "gpt-4o-mini"
+  # API key is read from env var below
+  api_key_env: "OPENAI_API_KEY"

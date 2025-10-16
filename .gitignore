@@ -1,0 +1,9 @@
+# Local env
+.venv/
+__pycache__/
+.DS_Store
+.env
+
+# Local secrets (do not commit keys)
+.secrets/
+outset-gcp.json

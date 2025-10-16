@@ -1,0 +1,13 @@
+google-cloud-texttospeech>=2.16.4
+feedparser>=6.0.10
+beautifulsoup4>=4.12.3
+mutagen>=1.47.0
+python-dateutil>=2.9.0.post0
+PyYAML>=6.0.2
+requests>=2.32.3
+readability-lxml>=0.8.1
+lxml>=4.9.4
+trafilatura>=1.7.0
+newspaper3k>=0.2.8
+nltk>=3.8.1
+openai>=1.44.0
