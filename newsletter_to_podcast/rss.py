@@ -24,24 +24,24 @@ def render_rss(
     feed_url: str,
 ) -> str:
     # Namespaces: itunes + podcast (Podcast 2.0)
-    rss_head = f"""
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:podcast="https://podcastindex.org/namespace/1.0">
-  <channel>
-    <title>{html.escape(site['title'])}</title>
-    <link>{html.escape(site['link'])}</link>
-    <description>{html.escape(site['description'])}</description>
-    <language>{html.escape(site['language'])}</language>
-    <atom:link href="{html.escape(feed_url)}" rel="self" type="application/rss+xml" />
-    <itunes:author>{html.escape(site.get('author',''))}</itunes:author>
-    <itunes:owner>
-      <itunes:name>{html.escape(site.get('owner_name',''))}</itunes:name>
-      <itunes:email>{html.escape(site.get('owner_email',''))}</itunes:email>
-    </itunes:owner>
-"""
+    rss_head = (
+        f"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+        "<rss version=\"2.0\"\n"
+        "     xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\"\n"
+        "     xmlns:atom=\"http://www.w3.org/2005/Atom\"\n"
+        "     xmlns:podcast=\"https://podcastindex.org/namespace/1.0\">\n"
+        "  <channel>\n"
+        f"    <title>{html.escape(site['title'])}</title>\n"
+        f"    <link>{html.escape(site['link'])}</link>\n"
+        f"    <description>{html.escape(site['description'])}</description>\n"
+        f"    <language>{html.escape(site['language'])}</language>\n"
+        f"    <atom:link href=\"{html.escape(feed_url)}\" rel=\"self\" type=\"application/rss+xml\" />\n"
+        f"    <itunes:author>{html.escape(site.get('author',''))}</itunes:author>\n"
+        "    <itunes:owner>\n"
+        f"      <itunes:name>{html.escape(site.get('owner_name',''))}</itunes:name>\n"
+        f"      <itunes:email>{html.escape(site.get('owner_email',''))}</itunes:email>\n"
+        "    </itunes:owner>\n"
+    )
     if site.get("image_url"):
         rss_head += f"    <itunes:image href=\"{html.escape(site['image_url'])}\" />\n"
 

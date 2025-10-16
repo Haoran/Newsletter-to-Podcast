@@ -153,6 +153,8 @@ def run(config: AppConfig) -> int:
     # By mode, assemble episodes
     created_episodes: List[Dict[str, Any]] = []
     today = dt.datetime.now(dt.timezone.utc).date()
+    # Allow rewriting feed/index even when no new episode is created
+    force_rewrite_feed = False
 
     if config.mode == "separate":
         for it in new_items:
@@ -290,8 +292,11 @@ def run(config: AppConfig) -> int:
                 except Exception:
                     continue
             if has_episode_with_audio:
-                logger.info("Issue already published with audio; exiting")
-                return 0
+                logger.info("Issue already published with audio; will refresh feed/index")
+                force_rewrite_feed = True
+                skip_generation = True
+            else:
+                skip_generation = False
 
             audio_rel = None
             audio_bytes_len = 0
@@ -312,7 +317,7 @@ def run(config: AppConfig) -> int:
                 tf.write(text)
             transcript_rel = os.path.join(date_folder, transcript_fname)
 
-            if config.tts.enabled:
+            if (not skip_generation) and config.tts.enabled:
                 try:
                     mp3 = synthesize_mp3(
                         text=text,
@@ -336,31 +341,32 @@ def run(config: AppConfig) -> int:
                     tts_error = str(e)
                     gha_notice("ERROR", f"TTS failed for forced compilation issue: {tts_error}")
 
-            desc_html = issue_item["desc_html"]
-            if tts_error:
-                desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
+            if not skip_generation:
+                desc_html = issue_item["desc_html"]
+                if tts_error:
+                    desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
 
-            episode = {
-                "id": f"issue::{effective_date.isoformat()}::{sha256(text)}",
-                "title": title,
-                "link": link,
-                "pub_date": pub_dt,
-                "description_html": desc_html,
-                "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
-                "audio_bytes": audio_bytes_len,
-                "components": [
-                    {"title": issue_item.get("title"), "link": link, "source": issue_item.get("content_source")}
-                ],
-                "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
-            }
-            # Drop any existing episode for the same date to avoid duplicates
-            episodes = [ep for ep in episodes if not (
-                isinstance(ep.get("pub_date"), dt.datetime) and ep.get("pub_date").date() == pub_dt.date()
-            )]
-            created_episodes.append(episode)
+                episode = {
+                    "id": f"issue::{effective_date.isoformat()}::{sha256(text)}",
+                    "title": title,
+                    "link": link,
+                    "pub_date": pub_dt,
+                    "description_html": desc_html,
+                    "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
+                    "audio_bytes": audio_bytes_len,
+                    "components": [
+                        {"title": issue_item.get("title"), "link": link, "source": issue_item.get("content_source")}
+                    ],
+                    "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
+                }
+                # Drop any existing episode for the same date to avoid duplicates
+                episodes = [ep for ep in episodes if not (
+                    isinstance(ep.get("pub_date"), dt.datetime) and ep.get("pub_date").date() == pub_dt.date()
+                )]
+                created_episodes.append(episode)
 
-            # Update last_issue record
-            state["last_issue"] = {"published": issue_item.get("published", ""), "guid": issue_item.get("guid", "")}
+                # Update last_issue record
+                state["last_issue"] = {"published": issue_item.get("published", ""), "guid": issue_item.get("guid", "")}
 
         else:
             # Fallback: compile all new items regardless of date
@@ -550,7 +556,7 @@ def run(config: AppConfig) -> int:
             }
             created_episodes.append(episode)
 
-    if not created_episodes:
+    if not created_episodes and not force_rewrite_feed:
         logger.info("Nothing to publish after filtering; exiting")
         return 0
 
@@ -559,8 +565,9 @@ def run(config: AppConfig) -> int:
         processed[it["key"]] = dt.datetime.now(dt.timezone.utc).isoformat()
 
     # Append episodes and sort by date desc; keep last 200
-    episodes.extend(created_episodes)
-    episodes = sorted(episodes, key=lambda x: x.get("pub_date", dt.datetime.now(dt.timezone.utc)), reverse=True)[:200]
+    if created_episodes:
+        episodes.extend(created_episodes)
+        episodes = sorted(episodes, key=lambda x: x.get("pub_date", dt.datetime.now(dt.timezone.utc)), reverse=True)[:200]
 
     state["processed"] = processed
     state["episodes"] = episodes
