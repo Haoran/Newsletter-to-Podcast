@@ -43,7 +43,16 @@ def render_rss(
         "    </itunes:owner>\n"
     )
     if site.get("image_url"):
-        rss_head += f"    <itunes:image href=\"{html.escape(site['image_url'])}\" />\n"
+        img = html.escape(site['image_url'])
+        rss_head += f"    <itunes:image href=\"{img}\" />\n"
+        # Standard RSS image block for broader compatibility
+        rss_head += (
+            "    <image>\n"
+            f"      <url>{img}</url>\n"
+            f"      <title>{html.escape(site['title'])}</title>\n"
+            f"      <link>{html.escape(site['link'])}</link>\n"
+            "    </image>\n"
+        )
 
     rss_items = []
     for it in items:

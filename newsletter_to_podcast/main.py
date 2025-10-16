@@ -295,6 +295,18 @@ def run(config: AppConfig) -> int:
                 logger.info("Issue already published with audio; will refresh feed/index")
                 force_rewrite_feed = True
                 skip_generation = True
+                # Also refresh the existing episode's description to apply latest cleaning rules
+                try:
+                    for ep in episodes:
+                        ep_dt = ep.get("pub_date")
+                        if isinstance(ep_dt, dt.datetime) and ep_dt.date() == effective_date:
+                            # Prefer the freshly cleaned HTML description from the current item
+                            new_desc = issue_item.get("desc_html") or ep.get("description_html")
+                            if new_desc:
+                                ep["description_html"] = new_desc
+                            break
+                except Exception:
+                    pass
             else:
                 skip_generation = False
 

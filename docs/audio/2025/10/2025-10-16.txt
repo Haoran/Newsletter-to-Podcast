@@ -1,1 +1,91 @@
-Axios AI Plus — Latest. Warning: Target URL returned error 403: Forbidden. This page may be requiring CAPTCHA, please make sure you are authorized to access this page. Verify you are human by completing the action below. www.axios.com needs to review the security of your connection before proceeding.
+Axios AI Plus — Latest. By Axios. Situational awareness: Apple announced a new 14-inch MacBook Pro — shipping at the end of October — that it says will deliver "3.5x the AI performance," including running large language models on device.
+
+1 big thing: OpenAI says yes to "erotica"
+
+ChatGPT will allow a wider range of content — eventually including "erotica" — now that OpenAI has completed work to enable the chatbot to better handle mental health issues, CEO Sam Altman said yesterday.
+
+Why it matters: The move could boost OpenAI as it seeks to sign up consumers for paid subscriptions, but it's also likely to increase pressure on lawmakers to enact meaningful regulations.
+
+The step could also redefine the boundaries of acceptable AI content.
+
+Driving the news: Altman said in an X post that OpenAI plans to allow ChatGPT to have more personality and fulfill previously blocked requests.
+
+"Now that we have been able to mitigate the serious mental health issues and have new tools, we are going to be able to safely relax the restrictions in most cases," Altman said. * "As part of our 'treat adult users like adults' principle, we will allow even more, like erotica for verified adults," he added, though that would come around December.
+
+The intrigue: The move comes as lawmakers are eyeing tighter restrictions on chatbot companions.
+
+As first reported by Axios, Sen. Josh Hawley (R-Mo.) is circulating a draft bill that would ban AI companions for minors.
+
+What they're saying: "We made ChatGPT pretty restrictive to make sure we were being careful with mental health issues," Altman said in the post. "We realize this made it less useful/enjoyable to many users who had no mental health problems, but given the seriousness of the issue we wanted to get this right."
+
+OpenAI was not immediately available for comment.
+
+The big picture: Historically, pornography has helped drive the frontier of technology, from VCRs to digital video and interactive gaming.
+
+Although adult entertainment hasn't been the driving force behind the leading AI efforts, there is already a significant cottage industry of AI-generated porn. * Elon Musk's Grok has been the most permissive of the large players, notably offering AI companions designed for sexual role-play. * Meta has also come under fire after it was revealed that its chatbots — including some that mimic specific celebrities — were engaging in sexual banter with minors.
+
+What to watch: Altman said that in the coming weeks, people will be able to better dictate the tone and personality of ChatGPT.
+
+"If you want your ChatGPT to respond in a very human-like way, or use a ton of emoji, or act like a friend, ChatGPT should do it (but only if you want it, not because we are usage-maxxing)," Altman said.
+
+2. MANGO is the new FAANG
+
+Erica Pandey
+
+Over the years, acronyms have come and gone to describe America’s tech darlings — the companies college grads dream of joining and Wall Street investors love to watch.
+
+First, it was FAANG: Facebook, Amazon, Apple, Netflix and Google. * Then came the Magnificent Seven. * Now, in the age of generative AI, a new term is taking hold: MANGO — Microsoft, Anthropic, Nvidia, Google DeepMind and OpenAI.
+
+Why it matters: It’s a reflection of the moment. The companies commanding attention today are the ones leading the AI revolution.
+
+“The power has shiftedin Big Tech from the FAANGs and the Mag 7s over to the AI leaders,” venture capitalist Kristina Shen recently said on CNBC. “It’s very clear in terms of the products they’re shipping, the consumer love they’re demanding and the types of acquisitions they’re making that they are controlling consumer sentiment.”
+
+Zoom in: Different iterations of MANGO are coming up in blog posts and on social media. Some people think of Meta and Apple instead of Microsoft and Anthropic.
+
+But each company has earned its place in the new acronym for AI prowess — whether that’s Microsoft’s ability to reach millions of Americans at work with Copilot or Nvidia’s chip dominance.
+
+"Once you hear it you’re like, ‘Oh, of course,'" says Robert Rosenberg, partner at Moses Singer and managing director of MS Strategic Solutions, who recently wrote on MANGO’s rise.
+
+"These are the companies that are in the headlines every day. These are the companies everyone wants to hear from."
+
+Between the lines: MANGO is also the new goal for computer science graduates across the country and around the world.
+
+But landing these coveted jobs is harder than it was in the FAANG era. The 15 largest tech companies' hiring of new grads has plummeted more than 50% since 2019, the San Francisco Standard reports, citing VC firm SignalFire.
+
+Instead, the companies dominating AI are locked in a super-expensive talent war for a small group of top AI researchers.
+
+The bottom line: FAANG represented an era when each tech giant ruled its own domain, like social media, streaming or search. In the MANGO age, there's just one that matters — AI.
+
+3. Americans lead the world in AI anxiety
+
+Megan Morrone
+
+More people are concerned than excited about the rise of AI in daily life, with Americans topping the global worry list, per a new global report from Pew Research Center out today.
+
+Why it matters: Public concern over AI could shape how quickly the tools are adopted and could upend workplaces if employees aren't comfortable with the changes.
+
+The big picture: Half of U.S.-only respondents said they were more concerned with AI than excited about it in a study released in September.
+
+Today's report showed that only Italy matched the U.S. percentage of concern about AI. * At the low end, 16% of people in South Korea and 19% of people in India say they're more concerned than excited about AI.
+
+Between the lines: Men and highly educated people across the globe are more likely to be aware of AI and more likely to be excited about it.
+
+Women, older adults and those with less education express more concern. * Heavy internet users are more likely to be enthusiastic.
+
+By the numbers: Even as the contestants in the global race for AI have effectively narrowed to the U.S. and China, many people around the world trust neither country to regulate the technology.
+
+48% of people say they have "not too much" or "no trust" in the U.S. to regulate AI. * 60% of people say they have "not too much" or "no trust" in China on regulation. * 55% say they have "a lot of" or "some" trust in their own country regulating AI, and 53% say they have "a lot of" or "some" trust in the EU.
+
+What they did: For the non-U.S. data, Pew surveyed 28,333 adults in 25 countries across six regions.
+
+Interviews were conducted by phone from Jan. 8 to April 26. * For the U.S. data, Pew spoke to 3,605 adults from March 24 to 30, and 5,023 adults from June 9 to 15.
+
+The bottom line: Americans may be nervous about the AI future, but Washington and Silicon Valley are doubling down anyway.
+
+4. Training data
+
+Venture capitalists are under pressure to toughen term sheets in response to high-profile exits by AI founders. (Axios) * The latest version of Sora is flooding social media feeds with realistic fake videos, making it increasingly difficult to tell AI-generated clips from real footage. (Axios) * Doctors are using AI to analyze thousands of mammograms and patient outcomes to better identify who's at highest risk and when they should be screened for breast cancer. (Axios) * BlackRock's Global Infrastructure Partners — which includes Nvidia and Microsoft — will buy Texas-based Aligned Data Centers from Macquarie Asset Management for around $40 billion. (WSJ)
+
+5. + This
+
+For anyone who has ever wondered why we call capital letters "upper case" and the others "lower case," Merriam-Webster has the answer.

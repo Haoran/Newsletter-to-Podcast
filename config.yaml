@@ -4,11 +4,11 @@ site:
   link: "https://haoran.github.io/Newsletter-to-Podcast/"  # Set to your GitHub Pages URL
   description: "Auto-converted Axios newsletter into a podcast feed"
   language: "en-us"
-  image_url: ""  # Optional podcast cover image URL
+  image_url: "https://haoran.github.io/Newsletter-to-Podcast/logo.png"  # Public URL to cover art in docs/
   author: "Axios"
   owner:
-    name: "Podcast Bot"
-    email: "noreply@example.com"
+    name: "Rainbyte Labs"
+    email: "rainbytelabs@gmail.com"
 
 # Fetch source feed
 feed:

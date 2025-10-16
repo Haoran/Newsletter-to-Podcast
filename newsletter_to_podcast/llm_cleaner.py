@@ -29,6 +29,7 @@ SYSTEM_PROMPT = (
     "Rules:\n"
     "- Remove all Markdown syntax: **, __, `code`, _italics_, [text](url), images.\n"
     "- Drop boilerplate/meta lines: 'Title:', 'Published Time:'/'Publish Time:', 'URL Source', 'Markdown Content', 'Illustration:', 'Image N: ...'.\n"
+    "- Remove image captions and photo credits: lines/clauses like 'Photo: ...', 'Photograph:', 'Credit:', 'Courtesy:', '(Photo: ...)', 'via Getty Images', 'AP Photo', 'Reuters', 'Bloomberg', 'AFP'.\n"
     "- Drop editorial footers like 'Share this story.' and lines starting with 'Thanks to'.\n"
     "- Remove standalone bylines and credit-only bullets (e.g., lines that are just an author name).\n"
     "- Normalize bullets into normal sentences; remove leading bullet symbols (*, -, •).\n"

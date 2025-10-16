@@ -34,6 +34,29 @@ def clean_html_text(content_html: str, remove_emoji: bool, remove_ads: bool, ad_
     for tag in soup.find_all(["img", "figure", "figcaption", "script", "style", "noscript"]):
         tag.decompose()
 
+    # Remove common photo credits/captions that may not be inside <figcaption>
+    def _is_credit_text(txt: str) -> bool:
+        t = txt.strip()
+        if not t:
+            return False
+        # Direct credit line starters
+        if re.match(r"^(photo|photograph|photography|credit|courtesy)\s*:\s*", t, flags=re.IGNORECASE):
+            return True
+        # Agency mentions frequently used in credits
+        if re.search(r"\b(Getty Images|AP(?:\s+Photo)?|Reuters|Bloomberg|AFP|WireImage|USA TODAY)\b", t, flags=re.IGNORECASE):
+            # Only treat as credit if it also mentions photo/credit/courtesy or 'via'
+            if re.search(r"\b(photo|photograph|photography|credit|courtesy|via)\b", t, flags=re.IGNORECASE):
+                return True
+        return False
+
+    for el in soup.find_all(["p", "div", "span"]):
+        try:
+            txt = el.get_text(" ", strip=True)
+        except Exception:
+            continue
+        if txt and _is_credit_text(txt):
+            el.decompose()
+
     # Drop ad/sponsor paragraphs by keyword
     if remove_ads and ad_keywords:
         for p in soup.find_all(["p", "div", "section"]):
@@ -87,6 +110,7 @@ def clean_html_text(content_html: str, remove_emoji: bool, remove_ads: bool, ad_
             r"^\s*Title\s*:\s*.*$",
             r"^\s*Share this story\.?\s*$",
             r"^\s*Thanks to\b.*$",
+            r"^\s*(?:Photo|Photograph|Photography|Credit|Courtesy)\s*:\s*.*$",
         ]
         for pat in patterns_line:
             if re.match(pat, t, flags=re.IGNORECASE):
@@ -94,6 +118,12 @@ def clean_html_text(content_html: str, remove_emoji: bool, remove_ads: bool, ad_
 
         # Inline removals for specific labels
         t = re.sub(r"\b(?:URL\s*Source|Markdown\s*Content)\b\s*:?\s*\S+", "", t, flags=re.IGNORECASE)
+        # Remove parenthetical photo credits: (Photo: ...), (credit: ...), (via Getty Images)
+        t = re.sub(r"\((?:\s*(?:photo|photograph|photography|credit|courtesy)\b[^)]*|[^)]*\bvia\s+(?:Getty Images|AP(?:\s+Photo)?|Reuters|Bloomberg|AFP)\b[^)]*)\)", "", t, flags=re.IGNORECASE)
+        # Remove trailing inline credits starting with Photo:/Credit:/Courtesy:
+        t = re.sub(r"(?:^|[\.;])\s*(?:Photo|Photograph|Photography|Credit|Courtesy)\s*:\s*[^\n\.]*", "", t, flags=re.IGNORECASE)
+        # Remove agency credits introduced by 'via ...'
+        t = re.sub(r"\bvia\s+(Getty Images|AP(?:\s+Photo)?|Reuters|Bloomberg|AFP|WireImage|USA TODAY)\b[^\n\.]*", "", t, flags=re.IGNORECASE)
         return t.strip()
 
     # Unescape and clean spaces within each paragraph, keep paragraph boundaries
