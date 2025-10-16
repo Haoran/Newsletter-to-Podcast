@@ -1,91 +1,69 @@
-Axios AI Plus — Latest. By Axios. Situational awareness: Apple announced a new 14-inch MacBook Pro — shipping at the end of October — that it says will deliver "3.5x the AI performance," including running large language models on device.
+Axios AI Plus — Latest. Situational awareness: OpenAI hired award-winning black hole physicist Alex Lupsasca for its new science initiative, the company first told Axios.
 
-1 big thing: OpenAI says yes to "erotica"
+1 big thing: AI industry bets on its own growth
 
-ChatGPT will allow a wider range of content — eventually including "erotica" — now that OpenAI has completed work to enable the chatbot to better handle mental health issues, CEO Sam Altman said yesterday.
+The AI boom is built on a series of bets that the logic of exponential growth will drive the future.
 
-Why it matters: The move could boost OpenAI as it seeks to sign up consumers for paid subscriptions, but it's also likely to increase pressure on lawmakers to enact meaningful regulations.
+How it works: Exponential doesn't just mean "number keeps going up." It means "number keeps going up faster."
 
-The step could also redefine the boundaries of acceptable AI content.
+The industry's belief is that perpetually steepening curves will continue to improve AI technology itself, accelerate human demand for its fruits, and supercharge society's ability to quench AI's thirst for chips, power and data.
 
-Driving the news: Altman said in an X post that OpenAI plans to allow ChatGPT to have more personality and fulfill previously blocked requests.
+Why it matters: The tech industry's gamble is one that the rest of the world has now bought into by shoveling trillions of dollars onto the table.
 
-"Now that we have been able to mitigate the serious mental health issues and have new tools, we are going to be able to safely relax the restrictions in most cases," Altman said. * "As part of our 'treat adult users like adults' principle, we will allow even more, like erotica for verified adults," he added, though that would come around December.
+Friction point: AI makers expect AI itself to reinforce its own progress in a virtuous cycle. Skeptics fear AI will hit a wall and trigger a global financial meltdown.
 
-The intrigue: The move comes as lawmakers are eyeing tighter restrictions on chatbot companions.
+Exponential curves, with their steadily repeated doublings, can proceed forever in the abstract — but in the real world, every growth plot eventually hits some kind of limit.
 
-As first reported by Axios, Sen. Josh Hawley (R-Mo.) is circulating a draft bill that would ban AI companions for minors.
+Moore's Law, the exponential principle of semiconductor improvement that governed the rise of personal computing, eventually hit the physical limitations of energy dissipation at the atomic level. Metcalfe's Law, another exponential concept of network value that drove the rise of the internet and social media, hit the limits of human population and imperfect human institutions.
 
-What they're saying: "We made ChatGPT pretty restrictive to make sure we were being careful with mental health issues," Altman said in the post. "We realize this made it less useful/enjoyable to many users who had no mental health problems, but given the seriousness of the issue we wanted to get this right."
+AI can't escape reaching its own limits unless it somehow proves to be different from every other revolutionary human invention that preceded it.
 
-OpenAI was not immediately available for comment.
+AI optimists believe the key to that difference lies in the scenario where AI starts to build itself. They envision a "takeoff" moment when already-rapid advances in AI capacity and reliability start being driven by AI models rewriting themselves in a feedback loop. The power of this kind of recursive self-improvement drives every scenario of AI utopia or doomsday.
 
-The big picture: Historically, pornography has helped drive the frontier of technology, from VCRs to digital video and interactive gaming.
+Yes, but: Exponential equations are elegant closed systems that produce reliably reproducible results. Our world is messily interdependent and our creations fail in sudden, unpredictable ways.
 
-Although adult entertainment hasn't been the driving force behind the leading AI efforts, there is already a significant cottage industry of AI-generated porn. * Elon Musk's Grok has been the most permissive of the large players, notably offering AI companions designed for sexual role-play. * Meta has also come under fire after it was revealed that its chatbots — including some that mimic specific celebrities — were engaging in sexual banter with minors.
+"Everything is deeply intertwingled," tech visionary Ted Nelson famously noted a half-century ago. "People keep pretending they can make things hierarchical, categorizable and sequential when they can't."
 
-What to watch: Altman said that in the coming weeks, people will be able to better dictate the tone and personality of ChatGPT.
+AI's machine-learning models are themselves neural networks that represent information in an "intertwingled" way.
 
-"If you want your ChatGPT to respond in a very human-like way, or use a ton of emoji, or act like a friend, ChatGPT should do it (but only if you want it, not because we are usage-maxxing)," Altman said.
+But their most successful makers — at OpenAI, Google and Anthropic — have all converged on a brute-force, growth-driven route to the future guided by "scaling laws" that map model size to improved performance. The leaders of these companies believe that if we keep building the same kind of models bigger and bigger, they will keep getting better — until one day they cross the mysterious "takeoff" line into self-improvement.
 
-2. MANGO is the new FAANG
+The other side: History suggests that AI's growth in power and usage will eventually level off because, in the real world, every exponential curve eventually flattens.
 
-Erica Pandey
+The open question is how far the AI curve can go — how many doublings we can put the technology through — before it reaches a limit.
 
-Over the years, acronyms have come and gone to describe America’s tech darlings — the companies college grads dream of joining and Wall Street investors love to watch.
+The limit could be environmental, as AI data center demand for power and water exceeds what nations can support and climate disasters trigger revulsion at the technology's wastefulness. The limit could be financial, if external factors such as war, pandemic, or political instability, or internal problems like revenue disappointments or technical logjams cause markets to flip from manic to depressive. Or the limit could just be a broader disillusionment with AI itself if its hyperbolic promises, such as personalized Ph.D. tutors, aging reversed, universal abundance, and Mars too, fail to pan out.
 
-First, it was FAANG: Facebook, Amazon, Apple, Netflix and Google. * Then came the Magnificent Seven. * Now, in the age of generative AI, a new term is taking hold: MANGO — Microsoft, Anthropic, Nvidia, Google DeepMind and OpenAI.
+Keep reading.
 
-Why it matters: It’s a reflection of the moment. The companies commanding attention today are the ones leading the AI revolution.
+Exclusive: Google partners with fusion startup
 
-“The power has shiftedin Big Tech from the FAANGs and the Mag 7s over to the AI leaders,” venture capitalist Kristina Shen recently said on CNBC. “It’s very clear in terms of the products they’re shipping, the consumer love they’re demanding and the types of acquisitions they’re making that they are controlling consumer sentiment.”
+Google DeepMind is partnering with a Boston-area energy startup to use AI to speed the development of fusion as a clean energy source.
 
-Zoom in: Different iterations of MANGO are coming up in blog posts and on social media. Some people think of Meta and Apple instead of Microsoft and Anthropic.
+What they're saying: Everyone talks about how much energy AI is going to use, but AI can actually help the energy equation on the supply side too, Commonwealth Fusion Systems CEO Bob Mumgaard told me.
 
-But each company has earned its place in the new acronym for AI prowess — whether that’s Microsoft’s ability to reach millions of Americans at work with Copilot or Nvidia’s chip dominance.
+Driving the news: As part of the deal, CFS will use Google's open-source software to simulate the physics of plasma, the particles that reach 100 million degrees Celsius to form fusion's fuel, as researchers attempt to figure out the most efficient systems.
 
-"Once you hear it you’re like, ‘Oh, of course,'" says Robert Rosenberg, partner at Moses Singer and managing director of MS Strategic Solutions, who recently wrote on MANGO’s rise.
+CFS plans to use the software, known as TORAX, to help optimize its SPARC fusion reactor before it's fully turned on in late 2026 or early 2027. The companies will also test how Google DeepMind's software could help with the operation of SPARC and future fusion energy systems. That effort builds on preliminary work Google conducted at a facility in Switzerland. The partnership formalizes joint work that began four years ago and is the latest in a series of deals between the two companies. Google said earlier this year it will buy 200 megawatts of energy from CFS, and parent company Alphabet is already an investor.
 
-"These are the companies that are in the headlines every day. These are the companies everyone wants to hear from."
+The move comes after Energy Secretary Chris Wright announced a roadmap for the agency's fusion efforts.
 
-Between the lines: MANGO is also the new goal for computer science graduates across the country and around the world.
+Yes, but: Even those developing the technology say commercial availability of fusion-derived energy is still years off.
 
-But landing these coveted jobs is harder than it was in the FAANG era. The 15 largest tech companies' hiring of new grads has plummeted more than 50% since 2019, the San Francisco Standard reports, citing VC firm SignalFire.
+CFS has been aiming toward commercial availability in the early part of next decade and Mumgaard sees AI helping make that a reality. Mumgaard says fusion energy has long been seen as something only in the distant future, but notes that AI was once seen the same way. We are close to breaking that meme, he said.
 
-Instead, the companies dominating AI are locked in a super-expensive talent war for a small group of top AI researchers.
+Meta poaches key Apple AI engineer
 
-The bottom line: FAANG represented an era when each tech giant ruled its own domain, like social media, streaming or search. In the MANGO age, there's just one that matters — AI.
+Meta has hired Ke Yang, an engineering exec recently tapped by Apple to lead the iPhone maker's effort to build a ChatGPT-style search experience, I have confirmed.
 
-3. Americans lead the world in AI anxiety
+Why it matters: It's the latest sign that Meta is not done with its recruiting spree, as I noted earlier this week following the hiring of Thinking Machine Labs co-founder Andrew Tulloch.
 
-Megan Morrone
+Yang will be part of a unit that focuses on turning AI research into consumer products inside Meta's Superintelligence Labs, a source told me. A Meta representative declined to comment and an Apple representative did not immediately respond to a request for comment. Yang's hiring was first reported by Bloomberg.
 
-More people are concerned than excited about the rise of AI in daily life, with Americans topping the global worry list, per a new global report from Pew Research Center out today.
+Between the lines: Yang is leaving Apple just weeks after being tapped to lead its Answers, Knowledge and Information team, which is working to develop a more powerful Siri assistant, per Bloomberg.
 
-Why it matters: Public concern over AI could shape how quickly the tools are adopted and could upend workplaces if employees aren't comfortable with the changes.
+Training data
 
-The big picture: Half of U.S.-only respondents said they were more concerned with AI than excited about it in a study released in September.
+Anthropic released Claude Haiku 4.5, an updated version of its smallest, most cost-effective large language model. New AI voice and agentic tools are coming to Microsoft's AI PC. The largest U.S. labor federation unveiled an AI initiative, warning of mass job losses and calling for safeguards for workers. Billionaire Mark Cuban criticizes OpenAI's plans to spice up ChatGPT for adult users.
 
-Today's report showed that only Italy matched the U.S. percentage of concern about AI. * At the low end, 16% of people in South Korea and 19% of people in India say they're more concerned than excited about AI.
-
-Between the lines: Men and highly educated people across the globe are more likely to be aware of AI and more likely to be excited about it.
-
-Women, older adults and those with less education express more concern. * Heavy internet users are more likely to be enthusiastic.
-
-By the numbers: Even as the contestants in the global race for AI have effectively narrowed to the U.S. and China, many people around the world trust neither country to regulate the technology.
-
-48% of people say they have "not too much" or "no trust" in the U.S. to regulate AI. * 60% of people say they have "not too much" or "no trust" in China on regulation. * 55% say they have "a lot of" or "some" trust in their own country regulating AI, and 53% say they have "a lot of" or "some" trust in the EU.
-
-What they did: For the non-U.S. data, Pew surveyed 28,333 adults in 25 countries across six regions.
-
-Interviews were conducted by phone from Jan. 8 to April 26. * For the U.S. data, Pew spoke to 3,605 adults from March 24 to 30, and 5,023 adults from June 9 to 15.
-
-The bottom line: Americans may be nervous about the AI future, but Washington and Silicon Valley are doubling down anyway.
-
-4. Training data
-
-Venture capitalists are under pressure to toughen term sheets in response to high-profile exits by AI founders. (Axios) * The latest version of Sora is flooding social media feeds with realistic fake videos, making it increasingly difficult to tell AI-generated clips from real footage. (Axios) * Doctors are using AI to analyze thousands of mammograms and patient outcomes to better identify who's at highest risk and when they should be screened for breast cancer. (Axios) * BlackRock's Global Infrastructure Partners — which includes Nvidia and Microsoft — will buy Texas-based Aligned Data Centers from Macquarie Asset Management for around $40 billion. (WSJ)
-
-5. + This
-
-For anyone who has ever wondered why we call capital letters "upper case" and the others "lower case," Merriam-Webster has the answer.
+A foster cat decided to add a dead mouse to her human family's dinner, as captured by a security camera in the house. We all, except the mouse, hope that this cat isn't a deepfake.
