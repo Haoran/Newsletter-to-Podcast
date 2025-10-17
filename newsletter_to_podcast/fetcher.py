@@ -95,7 +95,8 @@ def fetch_from_listing(list_url: str, max_items: int = 20) -> List[Dict[str, Any
             title, author, published, html_body = issue
             return [
                 {
-                    "guid": list_url + "#" + (published or ""),
+                    # Only append a fragment when a published date was found
+                    "guid": list_url + (("#" + published) if published else ""),
                     "link": list_url,
                     "title": title or "Axios AI Plus",
                     "author": author or "Axios",

@@ -280,6 +280,45 @@ def run(config: AppConfig) -> int:
             text = f"{title}." + (f" By {author}." if author else "") + f" {issue_item.get('clean_text', issue_item.get('content_html',''))}"
             text = maybe_clean_text_with_llm(text, config)
 
+            # Compute content hash to detect duplicates across days when the site hasn't updated
+            current_hash = sha256(text)
+
+            def episode_content_hash(ep: Dict[str, Any]) -> str | None:
+                try:
+                    if ep.get("content_hash"):
+                        return str(ep["content_hash"])  # type: ignore[return-value]
+                    ep_id = ep.get("id")
+                    if isinstance(ep_id, str) and "::" in ep_id:
+                        return ep_id.split("::")[-1]
+                except Exception:
+                    pass
+                return None
+
+            duplicate_ep = None
+            for ep in episodes:
+                try:
+                    if episode_content_hash(ep) == current_hash:
+                        duplicate_ep = ep
+                        break
+                except Exception:
+                    continue
+
+            # If content hasn't changed and no explicit published date is available,
+            # avoid creating a new episode for the same hub-page content.
+            no_explicit_date = not issue_item.get("published") and (title_date is None)
+            if duplicate_ep and no_explicit_date:
+                logger.info("No change detected on hub page; skipping new episode and refreshing feed/index")
+                force_rewrite_feed = True
+                # Optionally refresh description of the existing episode with latest cleaned HTML
+                try:
+                    new_desc = issue_item.get("desc_html")
+                    if new_desc:
+                        duplicate_ep["description_html"] = new_desc
+                except Exception:
+                    pass
+                # Nothing further to do in this branch
+                issue_item = None  # prevent further generation logic
+
             # Gating: if an episode for this date already exists AND has audio, skip;
             # otherwise allow re-synthesis to recover from prior TTS failure.
             has_episode_with_audio = False
@@ -291,7 +330,10 @@ def run(config: AppConfig) -> int:
                         break
                 except Exception:
                     continue
-            if has_episode_with_audio:
+            if issue_item is None:
+                # Already handled as duplicate-no-change case above
+                skip_generation = True
+            elif has_episode_with_audio:
                 logger.info("Issue already published with audio; will refresh feed/index")
                 force_rewrite_feed = True
                 skip_generation = True
@@ -359,7 +401,7 @@ def run(config: AppConfig) -> int:
                     desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
 
                 episode = {
-                    "id": f"issue::{effective_date.isoformat()}::{sha256(text)}",
+                    "id": f"issue::{effective_date.isoformat()}::{current_hash}",
                     "title": title,
                     "link": link,
                     "pub_date": pub_dt,
@@ -370,6 +412,7 @@ def run(config: AppConfig) -> int:
                         {"title": issue_item.get("title"), "link": link, "source": issue_item.get("content_source")}
                     ],
                     "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
+                    "content_hash": current_hash,
                 }
                 # Drop any existing episode for the same date to avoid duplicates
                 episodes = [ep for ep in episodes if not (
