@@ -27,12 +27,15 @@ jobs:
         run: |
           H=$(TZ=America/New_York date +%H)
           M=$(TZ=America/New_York date +%M)
-          if [ "$H$M" = "1030" ]; then
+          echo "Current ET time: $H:$M"
+          # Allow a tolerance window to absorb GitHub Actions schedule drift
+          # Run only between 10:20 and 10:50 ET (inclusive)
+          if [ "$H" = "10" ] && [ "$M" -ge 20 ] && [ "$M" -le 50 ]; then
             echo "should_run=true" >> $GITHUB_OUTPUT
-            echo "Running at $H:$M ET"
+            echo "Within 10:20–10:50 ET window; proceeding"
           else
             echo "should_run=false" >> $GITHUB_OUTPUT
-            echo "Not at 10:30 ET (now $H:$M); skipping guarded steps"
+            echo "Outside 10:20–10:50 ET window; skipping guarded steps"
           fi
 
       - name: Checkout
