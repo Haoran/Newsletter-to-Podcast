@@ -1,0 +1,67 @@
+OpenAI isn't satisfied with being the top chatbot. It's making a play for total tech supremacy, one platform at a time.
+
+Tuesday's launch of OpenAI's new browser, Atlas, is a fast follow to the company's Sora social media app, app store-like developer tools, commerce plays, plus rumors of future hardware devices with still-unknown form factors.
+
+OpenAI doesn't just want ChatGPT to be the everything app. It wants to be the everything company and knock all of its competitors aside.
+
+OpenAI's new browser is another swipe at Google, which has struggled to keep pace since ChatGPT's debut. Atlas is essentially an insertion of the world's most popular chatbot into a browser experience. The move positions the company against other AI-fueled rivals with browsers like Perplexity's Comet, Apple's Safari and Microsoft's Edge.
+
+Both Google Chrome and Microsoft Edge already integrate their chatbots with the browser. It remains to be seen whether browsing with a chatbot is a killer use case. If it becomes one, ChatGPT's popularity could lure Chrome and Edge devotees to Atlas.
+
+OpenAI's Sora not only upended reality on the web, it also became the first real competitor to Meta's social media dominance since TikTok. The invite-only app rocketed to and stayed at the top of Apple's download charts. OpenAI CEO Sam Altman promised to include features that would keep users from infinitely scrolling until their brain rotted, but the app's already got early adopters hooked.
+
+At OpenAI's developer day in early October, the company gave developers a way to offer their apps directly within ChatGPT, so users could summon Spotify, Zillow, Figma, Canva and others directly from the chatbot. Developers can already submit their own apps, with monetization coming soon, putting OpenAI in direct competition with Apple's and Google's app stores.
+
+OpenAI has also partnered with the world's biggest retailer, Walmart, to compete with the world's biggest online retailer, Amazon. ChatGPT users can buy products straight from Walmart through its new Instant Checkout program. The company also made deals with Etsy and over a million Shopify merchants for shopping through chat.
+
+Reports of OpenAI's hardware partnership with former Apple designer Jony Ive have been percolating for over a year. The company paid five billion dollars in stock for Ive's startup in May, including the acquisition of Ive and three other veteran Apple designers. OpenAI's poaching continued with recruits from Apple's design, manufacturing and supply chain teams. In September, OpenAI began talks with Apple's third-party suppliers themselves. The company is reportedly working on a smart speaker without a display, smart glasses, a digital voice recorder and a wearable pin, targeted for a late 2026 or early 2027 release, according to a report from The Information.
+
+OpenAI's land grab could invite the same kind of antitrust nightmares that have dogged Microsoft and Google.
+
+The company's growing control over models, distribution platforms and hardware will likely make it harder for rivals and startups to compete on fair terms. There's also the small matter of cost — all these ventures are expensive, and OpenAI's already on the hook to spend $1 trillion over the next five years, against about $13 billion in annual revenue.
+
+Yes, but: So far, the Trump administration's tech regulators have leaned into the "make America competitive again" mantra and leaned away from curbing any AI efforts at all.
+
+Reddit is suing Perplexity and several data scraping companies, alleging they are improperly taking content from its online forums.
+
+Why it matters: The suit is the latest in a string of lawsuits against AI companies alleging their products infringe on publishers' intellectual property.
+
+Driving the news: Reddit is accusing Perplexity and the other firms of what it dubs "data laundering," whereby the data firms scrape loads of data and then sell it to AI firms, in this case Perplexity.
+
+The lawsuit alleges that the defendants evade Reddit anti-scraping measures and circumvent Google's controls by scraping Reddit results from Google search.
+
+What they're saying: "AI companies are locked in an arms race for quality human content — and that pressure has fueled an industrial-scale 'data laundering' economy," Reddit chief legal officer Ben Lee said in a statement.
+
+"Scrapers bypass technological protections to steal data, then sell it to clients hungry for training material." "Defendants are similar to would-be bank robbers, who, knowing they cannot get into the bank vault, break into the armored truck carrying the cash instead," the suit says. "Perplexity has not received the lawsuit yet, but we will always fight vigorously for users' rights to freely and fairly access public knowledge," Perplexity told Axios in a statement. "We will not tolerate threats against openness and the public interest."
+
+The big picture: Perplexity is also facing suits from other publishers, including Encyclopedia Britannica and several newspapers, while similar lawsuits have been brought against OpenAI and others.
+
+OpenAI and Google have cut deals with Reddit to use its content to train models.
+
+General Motors will introduce an "eyes-off" autonomous driving system on a consumer SUV in 2028.
+
+Why it matters: No major automaker has yet commercialized self-driving car technology that legally allows car owners to travel from place to place in their vehicle without keeping their eyes on the road.
+
+"It's more than just a vehicle," GM CEO Mary Barra said at a press event. "It makes your life easier, more streamlined, and, more importantly, safer."
+
+Driving the news: The system will debut on the Cadillac Escalade IQ electric SUV, starting with highway driving and eventually transitioning to include urban roads.
+
+"This allows you to do something else at that time, connect with others, catch up on work, your favorite TV show," GM chief product officer Sterling Anderson told Axios.
+
+What they did: GM customers have already driven 700 million miles using the company's current Super Cruise system, which drives the vehicle under certain conditions while using eye-tracking technology to ensure the operator is still paying attention to the road.
+
+The new eyes-off system builds off of Super Cruise's learnings, as well as the advancements made by the Cruise driverless car division that GM shuttered in late 2024.
+
+State of play: Unlike GM's planned offering, Tesla's full self-driving system drives the vehicle in many environments but requires drivers to keep their eyes on the road.
+
+Waymo provides driverless rides in several major cities, but does not sell vehicles to the public.
+
+How it works: GM's eyes-off system will use a mix of light detection and ranging, radar and cameras.
+
+The big question: What will it cost?
+
+Keep reading and subscribe to Axios Future of Mobility.
+
+Amazon plans AI-powered goggles for delivery drivers to help them scan packages and capture proof of delivery. Amazon is also launching an AI-powered shopping tool to pick the best item for buyers who don't want to choose for themselves. A new complaint from the parents of a teen who died by suicide after using ChatGPT alleges that OpenAI twice changed its rules around discussing self-harm in order to boost engagement.
+
+Nike today announced the Therma-FIT Air Milano, with a new type of air cushioning that lets you adjust the air pockets to make the jacket feel like a lightweight hoodie or a puffer.
