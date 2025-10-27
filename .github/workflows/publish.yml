@@ -60,18 +60,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Prepare secrets (GCP TTS)
-        if: ${{ github.event_name == 'workflow_dispatch' || steps.time_guard.outputs.should_run == 'true' }}
-        env:
-          GCP_TTS_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_TTS_SERVICE_ACCOUNT_JSON }}
-        run: |
-          if [ -n "${GCP_TTS_SERVICE_ACCOUNT_JSON}" ]; then 
-            mkdir -p .secrets
-            echo "$GCP_TTS_SERVICE_ACCOUNT_JSON" > .secrets/gcp_tts_sa.json
-            echo "GOOGLE_APPLICATION_CREDENTIALS=$PWD/.secrets/gcp_tts_sa.json" >> $GITHUB_ENV
-          else
-            echo "GCP_TTS_SERVICE_ACCOUNT_JSON secret not set; TTS may fail" >&2
-          fi
+      # GCP TTS preparation removed; OpenAI TTS is used by default
 
       - name: Run generator
         if: ${{ github.event_name == 'workflow_dispatch' || steps.time_guard.outputs.should_run == 'true' }}

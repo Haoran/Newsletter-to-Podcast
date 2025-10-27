@@ -19,7 +19,10 @@ REWRITE_SYSTEM_PROMPT = (
     "- Remove or rephrase visual-only references (e.g., 'see chart below').\n"
     "- Ensure good spoken flow with appropriate rhythm and emphasis.\n"
     "Style: Calm, confident, like an NPR host or Morning Brew Daily — conversational but concise.\n"
-    "Return plain text only. Do not add new facts or commentary."
+    "Hard rules:\n"
+    "- Do NOT add greetings or generic intros/outros (e.g., 'Welcome to...', 'Let's dive in', 'In today's').\n"
+    "- Do NOT fabricate or add content not present in the input.\n"
+    "- Return plain text only."
 )
 
 
@@ -68,6 +71,13 @@ def maybe_rewrite_for_audio(text: str, cfg: AppConfig) -> str:
         logger.info("LLM rewrite skipped: client not available or api key missing")
         return text
 
+    # If input is too short, skip rewrite to avoid generic filler intros
+    try:
+        if len(text.strip()) < 200:
+            return text
+    except Exception:
+        pass
+
     # Soft chunk by paragraphs to ~3000-3500 chars
     paras: List[str] = text.split("\n\n")
     chunks: List[str] = []
@@ -96,4 +106,3 @@ def maybe_rewrite_for_audio(text: str, cfg: AppConfig) -> str:
         extra={"chunks": len(chunks), "orig_len": len(text), "rewritten_len": len(result)},
     )
     return result
-

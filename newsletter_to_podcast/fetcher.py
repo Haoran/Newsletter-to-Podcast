@@ -17,6 +17,10 @@ import trafilatura
 from newspaper import Article
 import nltk
 from bs4 import BeautifulSoup
+try:
+    from .openai_web import fetch_via_openai_web  # optional
+except Exception:  # pragma: no cover
+    fetch_via_openai_web = None  # type: ignore
 
 
 logger = logging.getLogger(__name__)
@@ -421,12 +425,32 @@ def fetch_article_page(url: str, max_retries: int = 3, timeout: float = 10.0) ->
             f"Article fetch non-200 ({resp.status_code})",
             extra={"url": url, "status": resp.status_code, "reason": getattr(resp, "reason", "")},
         )
+        # Try OpenAI web fallback first (if available)
+        if fetch_via_openai_web:
+            try:
+                via = fetch_via_openai_web(url)
+                if via and len(via.strip()) > 200:
+                    logger.info("Fetched via OpenAI web fallback", extra={"url": url})
+                    return via
+            except Exception:
+                pass
+        # Then r.jina.ai fallback
         alt = fetch_via_jina(url, timeout=timeout)
         if alt:
             logger.info("Fetched via r.jina.ai fallback", extra={"url": url})
             return alt
     except Exception as e:  # noqa: BLE001
         logger.warning("Article fetch error", extra={"url": url, "error": str(e)})
+        # Try OpenAI web fallback first (if available)
+        if fetch_via_openai_web:
+            try:
+                via = fetch_via_openai_web(url)
+                if via and len(via.strip()) > 200:
+                    logger.info("Fetched via OpenAI web fallback", extra={"url": url})
+                    return via
+            except Exception:
+                pass
+        # Then r.jina.ai fallback
         alt = fetch_via_jina(url, timeout=timeout)
         if alt:
             logger.info("Fetched via r.jina.ai fallback", extra={"url": url})
@@ -460,6 +484,27 @@ def fetch_via_jina(url: str, timeout: float = 10.0) -> Optional[str]:
     except Exception:
         pass
     return None
+
+
+def _looks_blocked_or_too_short(text: str) -> bool:
+    try:
+        if not text:
+            return True
+        t = text.strip()
+        if len(t) < 200:
+            return True
+        lowered = t.lower()
+        signals = (
+            "verify you are human",
+            "needs to review the security of your connection",
+            "access denied",
+            "forbidden",
+            "captcha",
+            "target url returned error",
+        )
+        return any(s in lowered for s in signals)
+    except Exception:
+        return True
 
 
 def extract_main_html(page_html: str, base_url: Optional[str] = None) -> Tuple[Optional[str], Optional[str]]:
