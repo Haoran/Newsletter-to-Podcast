@@ -5,9 +5,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::e289092243cdb1fda96bcf490db741f0c16ccbdd2ccae4cd00db9be64aab0c8b": "2025-10-16T04:41:34.903500+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::aa75238360ab931975badc7bfbe644f110776d5d126b8fc0e0c6f6ef93411f42": "2025-10-16T14:56:50.300044+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::e71c145a85f0ef0450ec04cfe7ec442eef5842b75e6522058cf0afcfadb6bd8e": "2025-10-22T14:50:46.370442+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::e344ce2e3230a0e07c5c004d81a9eda3489c441b7c7261e0982c8d7b0a2b6ca5": "2025-10-23T14:48:12.667664+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::e344ce2e3230a0e07c5c004d81a9eda3489c441b7c7261e0982c8d7b0a2b6ca5": "2025-10-23T14:48:12.667664+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::1fd0e2b5c2dbbb3d9dbf974b43c639b96d7f55db90491c9a199dc17e5ca77925": "2025-10-27T17:19:44.131689+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-10-27::1fd0e2b5c2dbbb3d9dbf974b43c639b96d7f55db90491c9a199dc17e5ca77925",
+      "title": "Axios: 2025-10-27",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-10-27T17:19:28.333432+00:00",
+      "description_html": "<p>The AI boom is built on a series of bets that the logic of exponential growth will drive the future. The industry&#x27;s belief is that perpetually steepening curves will continue to improve AI technology itself, accelerate human demand for its fruits, and supercharge society&#x27;s ability to quench AI&#x27;s thirst for chips, power, and data. This belief is evident in the substantial investments pouring into the sector, with trillions of dollars being committed globally. However, this optimism is tempered by concerns that AI&#x27;s growth may eventually plateau, potentially leading to financial instability. The open question is how far the AI curve can go—how many doublings we can put the technology through—before it reaches a limit.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/10/2025-10-27.mp3",
+      "audio_bytes": 647424,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/10/2025-10-27.txt",
+      "content_hash": "1fd0e2b5c2dbbb3d9dbf974b43c639b96d7f55db90491c9a199dc17e5ca77925"
+    },
     {
       "id": "issue::2025-10-25::934497e0c398accc60eebccdeec41be1a6edc0e34c1ce23ee37a98c396ecfd6f",
       "title": "Axios AI Plus — Latest",
