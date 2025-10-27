@@ -36,46 +36,51 @@ def fetch_via_openai_web(
         return None
 
     # Prefer Responses API (with web search tool) if available in current SDK/account
-    try:
-        # Some SDK/accounts support a built-in web tool via responses.create(tools=[{"type":"web_search"}])
-        resp = client.responses.create(  # type: ignore[attr-defined]
-            model=model,
-            input=[
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": (
-                                "Fetch the main article content from the following URL and return plain text only,"
-                                " without any greeting/intro/outro, no summary beyond what is present: " + url
-                            ),
-                        }
-                    ],
-                }
-            ],
-            tools=[{"type": "web_search"}],  # if not supported, will raise
-        )
-        # Many SDK versions expose a convenience accessor
-        text = getattr(resp, "output_text", None)
-        if isinstance(text, str) and text.strip():
-            return text.strip()
-        # Fallback – try to navigate the generic structure
+    # Attempt with Responses API using the correct typed content 'input_text'
+    # Try tool name 'web_search' first; if unsupported, optionally try 'web'.
+    for tool_name in ("web_search", "web"):
         try:
-            if resp.output and len(resp.output) > 0:  # type: ignore[attr-defined]
-                parts = []
-                for seg in resp.output:  # type: ignore[attr-defined]
-                    if isinstance(seg, dict):
-                        for c in seg.get("content", []):
-                            if c.get("type") == "output_text" and c.get("text"):
-                                parts.append(c["text"])  # type: ignore[index]
-                if parts:
-                    return "\n".join(parts).strip()
-        except Exception:
-            pass
-    except Exception as e:  # noqa: BLE001
-        logger.info("OpenAI web fetch via Responses tool not available", extra={"error": str(e)})
+            resp = client.responses.create(  # type: ignore[attr-defined]
+                model=model,
+                input=[
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "input_text",
+                                "text": (
+                                    "Fetch the main article content from the following URL and return plain text only,"
+                                    " without any greeting/intro/outro, no commentary beyond what's present: " + url
+                                ),
+                            }
+                        ],
+                    }
+                ],
+                tools=[{"type": tool_name}],
+            )
+            text = getattr(resp, "output_text", None)
+            if isinstance(text, str) and text.strip():
+                return text.strip()
+            # Generic structure fallback
+            try:
+                out = getattr(resp, "output", None)  # type: ignore[attr-defined]
+                if out and isinstance(out, list):
+                    parts = []
+                    for seg in out:
+                        if isinstance(seg, dict):
+                            for c in seg.get("content", []):
+                                if c.get("type") in ("output_text", "summary_text") and c.get("text"):
+                                    parts.append(c["text"])  # type: ignore[index]
+                    if parts:
+                        return "\n".join(parts).strip()
+            except Exception:
+                pass
+        except Exception as e:  # noqa: BLE001
+            # Try next tool name or give up
+            logger.info(
+                "OpenAI web fetch via Responses tool not available",
+                extra={"error": str(e), "tool": tool_name},
+            )
 
     # If the tool/path above isn't available, skip (avoid hallucinated content)
     return None
-
