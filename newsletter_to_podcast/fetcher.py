@@ -18,9 +18,9 @@ from newspaper import Article
 import nltk
 from bs4 import BeautifulSoup
 try:
-    from .openai_web import fetch_via_openai_web  # optional
+    from .diffbot_client import fetch_via_diffbot  # optional
 except Exception:  # pragma: no cover
-    fetch_via_openai_web = None  # type: ignore
+    fetch_via_diffbot = None  # type: ignore
 
 
 logger = logging.getLogger(__name__)
@@ -425,12 +425,12 @@ def fetch_article_page(url: str, max_retries: int = 3, timeout: float = 10.0) ->
             f"Article fetch non-200 ({resp.status_code})",
             extra={"url": url, "status": resp.status_code, "reason": getattr(resp, "reason", "")},
         )
-        # Try OpenAI web fallback first (if available)
-        if fetch_via_openai_web:
+        # Try Diffbot first (if available via env token)
+        if fetch_via_diffbot:
             try:
-                via = fetch_via_openai_web(url)
+                via = fetch_via_diffbot(url)
                 if via and len(via.strip()) > 200:
-                    logger.info("Fetched via OpenAI web fallback", extra={"url": url})
+                    logger.info("Fetched via Diffbot fallback", extra={"url": url})
                     return via
             except Exception:
                 pass
@@ -441,12 +441,12 @@ def fetch_article_page(url: str, max_retries: int = 3, timeout: float = 10.0) ->
             return alt
     except Exception as e:  # noqa: BLE001
         logger.warning("Article fetch error", extra={"url": url, "error": str(e)})
-        # Try OpenAI web fallback first (if available)
-        if fetch_via_openai_web:
+        # Try Diffbot first (if available)
+        if fetch_via_diffbot:
             try:
-                via = fetch_via_openai_web(url)
+                via = fetch_via_diffbot(url)
                 if via and len(via.strip()) > 200:
-                    logger.info("Fetched via OpenAI web fallback", extra={"url": url})
+                    logger.info("Fetched via Diffbot fallback", extra={"url": url})
                     return via
             except Exception:
                 pass
@@ -505,6 +505,14 @@ def _looks_blocked_or_too_short(text: str) -> bool:
         return any(s in lowered for s in signals)
     except Exception:
         return True
+
+
+def _web_text_looks_useful(text: str) -> bool:
+    # Deprecated: kept for backward compatibility; we now just check length for Diffbot
+    try:
+        return bool(text and len(text.strip()) > 200)
+    except Exception:
+        return False
 
 
 def extract_main_html(page_html: str, base_url: Optional[str] = None) -> Tuple[Optional[str], Optional[str]]:

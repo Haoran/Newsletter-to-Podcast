@@ -49,8 +49,9 @@ def fetch_via_openai_web(
                             {
                                 "type": "input_text",
                                 "text": (
-                                    "Fetch the main article content from the following URL and return plain text only,"
-                                    " without any greeting/intro/outro, no commentary beyond what's present: " + url
+                                    "Extract the readable body text from this URL and return VERBATIM paragraphs only. "
+                                    "Do NOT summarize, do NOT add intros/outros, do NOT add commentary. "
+                                    "Preserve section headings and numbered items if present. URL: " + url
                                 ),
                             }
                         ],

@@ -31,6 +31,7 @@ Minimal, deploy-ready Python 3.11 project to:
 Environment variables
 - Copy `.env.sample` to `.env`, fill values, and load with `set -a; source .env; set +a` for local runs.
 - `OPENAI_API_KEY` is read when using OpenAI TTS or LLM features.
+- Optional: `DIFFBOT_TOKEN` — enables Diffbot fallback fetching when direct requests are blocked.
 
 4) Run locally (optional)
 ```
