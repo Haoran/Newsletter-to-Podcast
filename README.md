@@ -28,6 +28,10 @@ Minimal, deploy-ready Python 3.11 project to:
 3) Configure
 - Adjust `config.yaml` as needed (mode, naming, cleaning, provider/models).
 
+Environment variables
+- Copy `.env.sample` to `.env`, fill values, and load with `set -a; source .env; set +a` for local runs.
+- `OPENAI_API_KEY` is read when using OpenAI TTS or LLM features.
+
 4) Run locally (optional)
 ```
 python3.11 -m venv .venv

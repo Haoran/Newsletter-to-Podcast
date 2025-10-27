@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 import yaml
+import os
+import logging
 
 
 @dataclass
@@ -155,3 +157,36 @@ def load_config(path: str = "config.yaml") -> AppConfig:
             rewrite_model=llm_cfg.get("rewrite_model", "gpt-4o"),
         ),
     )
+
+
+def validate_config(cfg: AppConfig) -> List[str]:
+    """Lightweight config validation that logs warnings but avoids hard failures.
+
+    Returns a list of warning strings (empty if none).
+    """
+    warnings: List[str] = []
+
+    # Site link
+    if not cfg.site.link:
+        warnings.append("site.link is empty; RSS links may be invalid")
+
+    # Feed URL
+    if not cfg.feed.url:
+        warnings.append("feed.url is empty; nothing to fetch")
+
+    # TTS provider
+    if cfg.tts.enabled:
+        provider = (cfg.tts.provider or "").lower()
+        if provider not in {"openai", "gcp"}:
+            warnings.append(f"tts.provider '{cfg.tts.provider}' not in ['openai','gcp']; default paths may fail")
+        if provider == "openai":
+            # Use LLM api_key_env to source OpenAI credentials
+            api_env = getattr(cfg.llm, "api_key_env", "OPENAI_API_KEY") if cfg.llm else "OPENAI_API_KEY"
+            if not os.environ.get(api_env):
+                warnings.append(f"OpenAI TTS selected but env var '{api_env}' not set")
+
+    # LLM rewrite optional check
+    if cfg.llm and cfg.llm.enabled and not os.environ.get(cfg.llm.api_key_env):
+        warnings.append(f"LLM enabled but env var '{cfg.llm.api_key_env}' not set")
+
+    return warnings

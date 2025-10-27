@@ -10,7 +10,7 @@ from dateutil import parser as dateparser
 from mutagen.easyid3 import EasyID3
 from mutagen.id3 import ID3, WOAF
 
-from .config import AppConfig, load_config
+from .config import AppConfig, load_config, validate_config
 from .fetcher import fetch_feed
 from .cleaner import clean_html_text
 from .logger import setup_logging, gha_notice
@@ -243,6 +243,9 @@ def run(config: AppConfig) -> int:
             source = it.get("content_source", "unknown")
             desc_html = it["desc_html"] + f"<p><small>Source: {source}</small></p>"
 
+            canonical_text = it.get("clean_text") or it.get("content_html", "")
+            canonical_hash = sha256(canonical_text or "")
+
             episode = {
                 "id": it["key"],
                 "title": episode_title,
@@ -255,6 +258,7 @@ def run(config: AppConfig) -> int:
                     {"title": orig_title, "link": link, "source": source},
                 ],
                 "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
+                "content_hash": canonical_hash,
             }
             created_episodes.append(episode)
 
@@ -798,6 +802,12 @@ def run(config: AppConfig) -> int:
 def main() -> None:
     cfg = load_config()
     setup_logging(cfg.logging.level)
+    # Best-effort config validation with warnings
+    try:
+        for msg in validate_config(cfg):
+            logging.getLogger(__name__).warning("Config warning: %s", msg)
+    except Exception:
+        pass
     try:
         code = run(cfg)
         raise SystemExit(code)
