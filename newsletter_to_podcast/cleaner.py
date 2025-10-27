@@ -111,6 +111,13 @@ def clean_html_text(content_html: str, remove_emoji: bool, remove_ads: bool, ad_
             r"^\s*Share this story\.?\s*$",
             r"^\s*Thanks to\b.*$",
             r"^\s*(?:Photo|Photograph|Photography|Credit|Courtesy)\s*:\s*.*$",
+            # Common proxy / anti-bot / captcha warnings
+            r"^\s*Warning:\s*Target URL returned error\s*\d+.*$",
+            r"^\s*Warning:\s*This page.*captcha.*$",
+            r"^\s*Verify you are human.*$",
+            r"^.*needs to review the security of your connection.*$",
+            r"^\s*Access denied.*$",
+            r"^\s*Forbidden\s*$",
         ]
         for pat in patterns_line:
             if re.match(pat, t, flags=re.IGNORECASE):

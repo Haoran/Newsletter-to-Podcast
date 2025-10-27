@@ -21,14 +21,6 @@
       <link>https://haoran.github.io/Newsletter-to-Podcast/</link>
     </image>
 
-    <item>
-      <title>Axios: 2025-10-27</title>
-      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
-      <guid isPermaLink="false">issue::2025-10-27::e7e78eb97ed7007dacb9504e1ef1c5f26a8970b7b0498bfe25979c4521f2d3bb</guid>
-      <pubDate>Mon, 27 Oct 2025 14:43:52 +0000</pubDate>
-            <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/10/2025-10-27.txt" type="text/plain" />
-      <description><![CDATA[<p>Warning: Target URL returned error 403: Forbidden Warning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.</p><p>Verify you are human by completing the action below.</p><p>www.axios.com needs to review the security of your connection before proceeding.</p><p><em>TTS failed: Speech.create() got an unexpected keyword argument 'format'</em></p>]]></description>
-    </item>
 
     <item>
       <title>Axios AI Plus — Latest</title>

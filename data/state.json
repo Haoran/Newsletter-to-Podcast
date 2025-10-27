@@ -10,24 +10,6 @@
   },
   "episodes": [
     {
-      "id": "issue::2025-10-27::e7e78eb97ed7007dacb9504e1ef1c5f26a8970b7b0498bfe25979c4521f2d3bb",
-      "title": "Axios: 2025-10-27",
-      "link": "https://www.axios.com/newsletters/axios-ai-plus",
-      "pub_date": "2025-10-27T14:43:52.899041+00:00",
-      "description_html": "<p>Warning: Target URL returned error 403: Forbidden Warning: This page maybe requiring CAPTCHA, please make sure you are authorized to access this page.</p><p>Verify you are human by completing the action below.</p><p>www.axios.com needs to review the security of your connection before proceeding.</p><p><em>TTS failed: Speech.create() got an unexpected keyword argument 'format'</em></p>",
-      "audio_url": null,
-      "audio_bytes": 0,
-      "components": [
-        {
-          "title": "Axios AI Plus — Latest",
-          "link": "https://www.axios.com/newsletters/axios-ai-plus",
-          "source": "newsletter_issue"
-        }
-      ],
-      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/10/2025-10-27.txt",
-      "content_hash": "e7e78eb97ed7007dacb9504e1ef1c5f26a8970b7b0498bfe25979c4521f2d3bb"
-    },
-    {
       "id": "issue::2025-10-25::934497e0c398accc60eebccdeec41be1a6edc0e34c1ce23ee37a98c396ecfd6f",
       "title": "Axios AI Plus — Latest",
       "link": "https://www.axios.com/newsletters/axios-ai-plus",
