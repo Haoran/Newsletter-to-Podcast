@@ -3,7 +3,7 @@
 Minimal, deploy-ready Python 3.11 project to:
 - Fetch Axios newsletter RSS daily
 - Clean and normalize text
-- Generate TTS audio (Google Cloud Text-to-Speech)
+- Generate TTS audio (Google Cloud Text-to-Speech or OpenAI TTS)
 - Produce Podcast 2.0-compatible RSS feed
 - Publish static files to GitHub Pages (docs/)
 - Automate via GitHub Actions on a schedule
@@ -14,12 +14,19 @@ Minimal, deploy-ready Python 3.11 project to:
 - In your repo settings, enable Pages with source: `main` branch, `/docs` folder.
 - Update `config.yaml` `site.link` to your Pages URL.
 
-2) Google Cloud TTS Credentials
+2) Choose TTS Provider
+- The project supports Google TTS and OpenAI TTS. Set in `config.yaml` → `tts.provider` to `gcp` or `openai`.
+
+2a) Google Cloud TTS Credentials (if using `gcp`)
 - Create a service account with Text-to-Speech permission.
 - Add the JSON key as a GitHub secret named `GCP_TTS_SERVICE_ACCOUNT_JSON` (full JSON content).
 
+2b) OpenAI TTS and LLM
+- Add a repository secret `OPENAI_API_KEY` (used for OpenAI TTS and LLM steps).
+- Optional: enable audio-friendly rewrite: `llm.rewrite_enabled: true` and select `llm.rewrite_model`.
+
 3) Configure
-- Adjust `config.yaml` as needed (voice, rate, mode).
+- Adjust `config.yaml` as needed (mode, naming, cleaning, provider/models).
 
 4) Run locally (optional)
 ```

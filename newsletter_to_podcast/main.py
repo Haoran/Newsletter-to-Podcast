@@ -17,7 +17,9 @@ from .logger import setup_logging, gha_notice
 from .rss import render_rss, render_index_html
 from .storage import ensure_dirs, load_state, save_state, sha256, slugify
 from .tts import synthesize_mp3
+from .tts_openai import synthesize_mp3_openai
 from .llm_cleaner import maybe_clean_text_with_llm
+from .llm_rewriter import maybe_rewrite_for_audio
 
 
 logger = logging.getLogger(__name__)
@@ -158,15 +160,23 @@ def run(config: AppConfig) -> int:
 
     if config.mode == "separate":
         for it in new_items:
-            title = it["title"]
+            orig_title = it["title"]
             author = it.get("author", config.site.author)
             link = it.get("link", "")
             pub_dt = parse_datetime(it.get("published", ""))
             # Prefer date present in the title when available
-            title_date = extract_date_from_title(title)
+            title_date = extract_date_from_title(orig_title)
             effective_date = title_date or pub_dt.date()
-            text = f"{title}. By {author}. {it['clean_text']}" if author else f"{title}. {it['clean_text']}"
+            # Episode display title: `<feed.name>: YYYY-MM-DD — <original title>`
+            episode_title = f"{config.feed.name}: {effective_date.isoformat()} — {orig_title}"
+            # TTS text still uses the original article title for natural narration
+            text = (
+                f"{orig_title}. By {author}. {it['clean_text']}"
+                if author
+                else f"{orig_title}. {it['clean_text']}"
+            )
             text = maybe_clean_text_with_llm(text, config)
+            text = maybe_rewrite_for_audio(text, config)
 
             audio_rel = None
             audio_bytes_len = 0
@@ -190,22 +200,38 @@ def run(config: AppConfig) -> int:
 
             if config.tts.enabled:
                 try:
-                    mp3 = synthesize_mp3(
-                        text=text,
-                        language_code=config.tts.language_code,
-                        voice_name=config.tts.voice_name,
-                        speaking_rate=config.tts.speaking_rate,
-                        pitch=config.tts.pitch,
-                        volume_gain_db=config.tts.volume_gain_db,
-                        max_chars_per_chunk=config.tts.max_chars_per_chunk,
-                        max_retries=config.tts.max_retries,
-                        initial_retry_delay=config.tts.initial_retry_delay,
-                    )
+                    if config.tts.provider.lower() == "openai":
+                        mp3 = synthesize_mp3_openai(
+                            text=text,
+                            model=config.tts.openai_model,
+                            voice=config.tts.openai_voice,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                            api_key_env=(getattr(config.llm, "api_key_env", "OPENAI_API_KEY") if getattr(config, "llm", None) else "OPENAI_API_KEY"),
+                        )
+                    else:
+                        mp3 = synthesize_mp3(
+                            text=text,
+                            language_code=config.tts.language_code,
+                            voice_name=config.tts.voice_name,
+                            speaking_rate=config.tts.speaking_rate,
+                            pitch=config.tts.pitch,
+                            volume_gain_db=config.tts.volume_gain_db,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                        )
                     # Build audio path
                     fname = f"{slug}.mp3"
                     path = os.path.join(out_dir, fname)
                     write_audio_with_id3(
-                        path, mp3, title=title, artist=author or config.site.title, date_str=str(effective_date), link=link
+                        path,
+                        mp3,
+                        title=episode_title,
+                        artist=author or config.site.title,
+                        date_str=str(effective_date),
+                        link=link,
                     )
                     audio_rel = os.path.join(date_folder, fname)
                     audio_bytes_len = len(mp3)
@@ -219,14 +245,14 @@ def run(config: AppConfig) -> int:
 
             episode = {
                 "id": it["key"],
-                "title": title,
+                "title": episode_title,
                 "link": link,
                 "pub_date": pub_dt,
                 "description_html": desc_html + (f"<p><em>TTS failed: {tts_error}</em></p>" if tts_error else ""),
                 "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
                 "audio_bytes": audio_bytes_len,
                 "components": [
-                    {"title": title, "link": link, "source": source},
+                    {"title": orig_title, "link": link, "source": source},
                 ],
                 "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
             }
@@ -265,23 +291,30 @@ def run(config: AppConfig) -> int:
             )[0]
 
         if issue_item is not None:
-            title = issue_item.get("title") or f"{config.feed.name} — Latest"
+            orig_title = issue_item.get("title") or f"{config.feed.name} — Latest"
             author = issue_item.get("author", config.site.author)
             link = issue_item.get("link", "")
             pub_dt = parse_datetime(issue_item.get("published", ""))
             # Prefer title date if available, and normalize pub_dt's date to match
-            title_date = extract_date_from_title(title)
+            title_date = extract_date_from_title(orig_title)
             effective_date = title_date or pub_dt.date()
             try:
                 pub_dt = pub_dt.replace(year=effective_date.year, month=effective_date.month, day=effective_date.day)
             except Exception:
                 # Fallback: keep original pub_dt if replace fails (shouldn't happen for valid dates)
                 pass
-            text = f"{title}." + (f" By {author}." if author else "") + f" {issue_item.get('clean_text', issue_item.get('content_html',''))}"
-            text = maybe_clean_text_with_llm(text, config)
+            # Episode display title: `<feed.name>: YYYY-MM-DD`
+            episode_title = f"{config.feed.name}: {effective_date.isoformat()}"
+            # Compute canonical hash BEFORE any LLM rewrite to avoid false diffs
+            canonical_text = issue_item.get('clean_text') or issue_item.get('content_html', '') or ''
+            current_hash = sha256(canonical_text)
 
-            # Compute content hash to detect duplicates across days when the site hasn't updated
-            current_hash = sha256(text)
+            # TTS text keeps the newsletter's own title for natural narration, then LLM steps
+            text = (
+                f"{orig_title}." + (f" By {author}." if author else "") + f" {issue_item.get('clean_text', issue_item.get('content_html',''))}"
+            )
+            text = maybe_clean_text_with_llm(text, config)
+            text = maybe_rewrite_for_audio(text, config)
 
             def episode_content_hash(ep: Dict[str, Any]) -> str | None:
                 try:
@@ -303,21 +336,18 @@ def run(config: AppConfig) -> int:
                 except Exception:
                     continue
 
-            # If content hasn't changed and no explicit published date is available,
-            # avoid creating a new episode for the same hub-page content.
-            no_explicit_date = not issue_item.get("published") and (title_date is None)
-            if duplicate_ep and no_explicit_date:
-                logger.info("No change detected on hub page; skipping new episode and refreshing feed/index")
-                force_rewrite_feed = True
-                # Optionally refresh description of the existing episode with latest cleaned HTML
+            # If content hasn't changed, avoid creating a new episode (allow re-synthesis if no audio yet)
+            if duplicate_ep:
                 try:
-                    new_desc = issue_item.get("desc_html")
-                    if new_desc:
-                        duplicate_ep["description_html"] = new_desc
+                    if duplicate_ep.get("audio_url"):
+                        logger.info("No change detected; existing episode has audio. Skipping generation, refreshing feed/index")
+                        force_rewrite_feed = True
+                        new_desc = issue_item.get("desc_html")
+                        if new_desc:
+                            duplicate_ep["description_html"] = new_desc
+                        issue_item = None  # prevent further generation logic
                 except Exception:
                     pass
-                # Nothing further to do in this branch
-                issue_item = None  # prevent further generation logic
 
             # Gating: if an episode for this date already exists AND has audio, skip;
             # otherwise allow re-synthesis to recover from prior TTS failure.
@@ -333,23 +363,9 @@ def run(config: AppConfig) -> int:
             if issue_item is None:
                 # Already handled as duplicate-no-change case above
                 skip_generation = True
-            elif has_episode_with_audio:
-                logger.info("Issue already published with audio; will refresh feed/index")
-                force_rewrite_feed = True
-                skip_generation = True
-                # Also refresh the existing episode's description to apply latest cleaning rules
-                try:
-                    for ep in episodes:
-                        ep_dt = ep.get("pub_date")
-                        if isinstance(ep_dt, dt.datetime) and ep_dt.date() == effective_date:
-                            # Prefer the freshly cleaned HTML description from the current item
-                            new_desc = issue_item.get("desc_html") or ep.get("description_html")
-                            if new_desc:
-                                ep["description_html"] = new_desc
-                            break
-                except Exception:
-                    pass
             else:
+                # Even if an episode exists for the same date, allow regeneration
+                # when content changed (we'll replace the older one below).
                 skip_generation = False
 
             audio_rel = None
@@ -373,21 +389,37 @@ def run(config: AppConfig) -> int:
 
             if (not skip_generation) and config.tts.enabled:
                 try:
-                    mp3 = synthesize_mp3(
-                        text=text,
-                        language_code=config.tts.language_code,
-                        voice_name=config.tts.voice_name,
-                        speaking_rate=config.tts.speaking_rate,
-                        pitch=config.tts.pitch,
-                        volume_gain_db=config.tts.volume_gain_db,
-                        max_chars_per_chunk=config.tts.max_chars_per_chunk,
-                        max_retries=config.tts.max_retries,
-                        initial_retry_delay=config.tts.initial_retry_delay,
-                    )
+                    if config.tts.provider.lower() == "openai":
+                        mp3 = synthesize_mp3_openai(
+                            text=text,
+                            model=config.tts.openai_model,
+                            voice=config.tts.openai_voice,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                            api_key_env=(getattr(config.llm, "api_key_env", "OPENAI_API_KEY") if getattr(config, "llm", None) else "OPENAI_API_KEY"),
+                        )
+                    else:
+                        mp3 = synthesize_mp3(
+                            text=text,
+                            language_code=config.tts.language_code,
+                            voice_name=config.tts.voice_name,
+                            speaking_rate=config.tts.speaking_rate,
+                            pitch=config.tts.pitch,
+                            volume_gain_db=config.tts.volume_gain_db,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                        )
                     fname = f"{effective_date.isoformat()}.mp3"
                     path = os.path.join(out_dir, fname)
                     write_audio_with_id3(
-                        path, mp3, title=title, artist=config.site.title, date_str=str(effective_date), link=link
+                        path,
+                        mp3,
+                        title=episode_title,
+                        artist=config.site.title,
+                        date_str=str(effective_date),
+                        link=link,
                     )
                     audio_rel = os.path.join(date_folder, fname)
                     audio_bytes_len = len(mp3)
@@ -402,7 +434,7 @@ def run(config: AppConfig) -> int:
 
                 episode = {
                     "id": f"issue::{effective_date.isoformat()}::{current_hash}",
-                    "title": title,
+                    "title": episode_title,
                     "link": link,
                     "pub_date": pub_dt,
                     "description_html": desc_html,
@@ -445,12 +477,52 @@ def run(config: AppConfig) -> int:
                 dtv = parse_datetime(it.get("published", ""))
                 latest_dt = max(latest_dt, dtv) if latest_dt else dtv
             text = "\n\n".join(parts)
+            # Canonical hash (pre-LLM) for today's compilation
+            try:
+                canonical_concat = "\n\n".join([it.get("clean_text", "") for it in todays])
+            except Exception:
+                canonical_concat = text
+            today_hash = sha256(canonical_concat)
             text = maybe_clean_text_with_llm(text, config)
-            text = maybe_clean_text_with_llm(text, config)
+            text = maybe_rewrite_for_audio(text, config)
 
-            title = f"{config.feed.name} – Latest Compilation"
+            # Episode display title for compilation fallback: `<feed.name>: YYYY-MM-DD`
             link = links[0] if links else config.site.link
             pub_dt = latest_dt or dt.datetime.now(dt.timezone.utc)
+            episode_title = f"{config.feed.name}: {pub_dt.date().isoformat()}"
+
+            # Canonical hash from cleaned text only (pre-LLM rewrite)
+            try:
+                canonical_concat = "\n\n".join([it.get("clean_text", "") for it in base_pool])
+            except Exception:
+                canonical_concat = text
+            comp_hash = sha256(canonical_concat)
+
+            # If identical content already exists with audio, skip generation
+            do_generate = True
+            for ep in episodes:
+                try:
+                    h = ep.get("content_hash")
+                    if not h:
+                        ep_id = ep.get("id")
+                        if isinstance(ep_id, str) and "::" in ep_id:
+                            h = ep_id.split("::")[-1]
+                    if h == comp_hash and ep.get("audio_url"):
+                        logger.info("Compilation (forced) unchanged; skipping generation and refreshing feed/index")
+                        do_generate = False
+                        force_rewrite_feed = True
+                        # Refresh description of existing episode
+                        try:
+                            new_desc = "".join(
+                                f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(base_pool, start=1)
+                            )
+                            if new_desc:
+                                ep["description_html"] = new_desc
+                        except Exception:
+                            pass
+                        break
+                except Exception:
+                    continue
 
             audio_rel = None
             audio_bytes_len = 0
@@ -467,27 +539,44 @@ def run(config: AppConfig) -> int:
             ensure_dirs(out_dir)
             transcript_fname = f"{pub_dt.date().isoformat()}.txt"
             transcript_path = os.path.join(out_dir, transcript_fname)
-            with open(transcript_path, "w", encoding="utf-8") as tf:
-                tf.write(text)
-            transcript_rel = os.path.join(date_folder, transcript_fname)
+            if do_generate:
+                with open(transcript_path, "w", encoding="utf-8") as tf:
+                    tf.write(text)
+                transcript_rel = os.path.join(date_folder, transcript_fname)
 
-            if config.tts.enabled:
+            if config.tts.enabled and do_generate:
                 try:
-                    mp3 = synthesize_mp3(
-                        text=text,
-                        language_code=config.tts.language_code,
-                        voice_name=config.tts.voice_name,
-                        speaking_rate=config.tts.speaking_rate,
-                        pitch=config.tts.pitch,
-                        volume_gain_db=config.tts.volume_gain_db,
-                        max_chars_per_chunk=config.tts.max_chars_per_chunk,
-                        max_retries=config.tts.max_retries,
-                        initial_retry_delay=config.tts.initial_retry_delay,
-                    )
+                    if config.tts.provider.lower() == "openai":
+                        mp3 = synthesize_mp3_openai(
+                            text=text,
+                            model=config.tts.openai_model,
+                            voice=config.tts.openai_voice,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                            api_key_env=(getattr(config.llm, "api_key_env", "OPENAI_API_KEY") if getattr(config, "llm", None) else "OPENAI_API_KEY"),
+                        )
+                    else:
+                        mp3 = synthesize_mp3(
+                            text=text,
+                            language_code=config.tts.language_code,
+                            voice_name=config.tts.voice_name,
+                            speaking_rate=config.tts.speaking_rate,
+                            pitch=config.tts.pitch,
+                            volume_gain_db=config.tts.volume_gain_db,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                        )
                     fname = f"{pub_dt.date().isoformat()}.mp3"
                     path = os.path.join(out_dir, fname)
                     write_audio_with_id3(
-                        path, mp3, title=title, artist=config.site.title, date_str=str(pub_dt.date()), link=link
+                        path,
+                        mp3,
+                        title=episode_title,
+                        artist=config.site.title,
+                        date_str=str(pub_dt.date()),
+                        link=link,
                     )
                     audio_rel = os.path.join(date_folder, fname)
                     audio_bytes_len = len(mp3)
@@ -495,29 +584,31 @@ def run(config: AppConfig) -> int:
                     tts_error = str(e)
                     gha_notice("ERROR", f"TTS failed for forced compilation: {tts_error}")
 
-            desc_html = "".join(
-                f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(base_pool, start=1)
-            )
-            comp_list = "".join(
-                f"<li><a href=\"{c.get('link','')}\">{c.get('title','')}</a> — source: {c.get('source','unknown')}</li>"
-                for c in components
-            )
-            desc_html += f"<h4>Included items</h4><ul>{comp_list}</ul>"
-            if tts_error:
-                desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
+            if do_generate:
+                desc_html = "".join(
+                    f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(base_pool, start=1)
+                )
+                comp_list = "".join(
+                    f"<li><a href=\"{c.get('link','')}\">{c.get('title','')}</a> — source: {c.get('source','unknown')}</li>"
+                    for c in components
+                )
+                desc_html += f"<h4>Included items</h4><ul>{comp_list}</ul>"
+                if tts_error:
+                    desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
 
-            episode = {
-                "id": f"forced::{pub_dt.date().isoformat()}::{sha256(text)}",
-                "title": title,
-                "link": link,
-                "pub_date": pub_dt,
-                "description_html": desc_html,
-                "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
-                "audio_bytes": audio_bytes_len,
-                "components": components,
-                "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
-            }
-            created_episodes.append(episode)
+                episode = {
+                    "id": f"forced::{pub_dt.date().isoformat()}::{comp_hash}",
+                    "title": episode_title,
+                    "link": link,
+                    "pub_date": pub_dt,
+                    "description_html": desc_html,
+                    "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
+                    "audio_bytes": audio_bytes_len,
+                    "components": components,
+                    "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
+                    "content_hash": comp_hash,
+                }
+                created_episodes.append(episode)
 
     else:  # compilation
         # Group items for today only
@@ -539,9 +630,36 @@ def run(config: AppConfig) -> int:
                 })
             text = "\n\n".join(parts)
 
-            title = f"{config.feed.name} – {today.isoformat()}"
+            # Episode display title for standard compilation: `<feed.name>: YYYY-MM-DD`
+            episode_title = f"{config.feed.name}: {today.isoformat()}"
             link = links[0] if links else config.site.link
             pub_dt = dt.datetime.combine(today, dt.time(9, 0, tzinfo=dt.timezone.utc))
+
+            # If identical content already exists with audio, skip generation
+            do_generate = True
+            for ep in episodes:
+                try:
+                    h = ep.get("content_hash")
+                    if not h:
+                        ep_id = ep.get("id")
+                        if isinstance(ep_id, str) and "::" in ep_id:
+                            h = ep_id.split("::")[-1]
+                    if h == today_hash and ep.get("audio_url"):
+                        logger.info("Today's compilation unchanged; skipping generation and refreshing feed/index")
+                        do_generate = False
+                        force_rewrite_feed = True
+                        # Refresh description
+                        try:
+                            new_desc = "".join(
+                                f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(todays, start=1)
+                            )
+                            if new_desc:
+                                ep["description_html"] = new_desc
+                        except Exception:
+                            pass
+                        break
+                except Exception:
+                    continue
 
             audio_rel = None
             audio_bytes_len = 0
@@ -558,27 +676,44 @@ def run(config: AppConfig) -> int:
             ensure_dirs(out_dir)
             transcript_fname = f"{today.isoformat()}.txt"
             transcript_path = os.path.join(out_dir, transcript_fname)
-            with open(transcript_path, "w", encoding="utf-8") as tf:
-                tf.write(text)
-            transcript_rel = os.path.join(date_folder, transcript_fname)
+            if do_generate:
+                with open(transcript_path, "w", encoding="utf-8") as tf:
+                    tf.write(text)
+                transcript_rel = os.path.join(date_folder, transcript_fname)
 
-            if config.tts.enabled:
+            if config.tts.enabled and do_generate:
                 try:
-                    mp3 = synthesize_mp3(
-                        text=text,
-                        language_code=config.tts.language_code,
-                        voice_name=config.tts.voice_name,
-                        speaking_rate=config.tts.speaking_rate,
-                        pitch=config.tts.pitch,
-                        volume_gain_db=config.tts.volume_gain_db,
-                        max_chars_per_chunk=config.tts.max_chars_per_chunk,
-                        max_retries=config.tts.max_retries,
-                        initial_retry_delay=config.tts.initial_retry_delay,
-                    )
+                    if config.tts.provider.lower() == "openai":
+                        mp3 = synthesize_mp3_openai(
+                            text=text,
+                            model=config.tts.openai_model,
+                            voice=config.tts.openai_voice,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                            api_key_env=(getattr(config.llm, "api_key_env", "OPENAI_API_KEY") if getattr(config, "llm", None) else "OPENAI_API_KEY"),
+                        )
+                    else:
+                        mp3 = synthesize_mp3(
+                            text=text,
+                            language_code=config.tts.language_code,
+                            voice_name=config.tts.voice_name,
+                            speaking_rate=config.tts.speaking_rate,
+                            pitch=config.tts.pitch,
+                            volume_gain_db=config.tts.volume_gain_db,
+                            max_chars_per_chunk=config.tts.max_chars_per_chunk,
+                            max_retries=config.tts.max_retries,
+                            initial_retry_delay=config.tts.initial_retry_delay,
+                        )
                     fname = f"{today.isoformat()}.mp3"
                     path = os.path.join(out_dir, fname)
                     write_audio_with_id3(
-                        path, mp3, title=title, artist=config.site.title, date_str=str(pub_dt.date()), link=link
+                        path,
+                        mp3,
+                        title=episode_title,
+                        artist=config.site.title,
+                        date_str=str(pub_dt.date()),
+                        link=link,
                     )
                     audio_rel = os.path.join(date_folder, fname)
                     audio_bytes_len = len(mp3)
@@ -586,30 +721,32 @@ def run(config: AppConfig) -> int:
                     tts_error = str(e)
                     gha_notice("ERROR", f"TTS failed for compiled episode: {tts_error}")
 
-            desc_html = "".join(
-                f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(todays, start=1)
-            )
-            # Append component summary with sources
-            comp_list = "".join(
-                f"<li><a href=\"{c.get('link','')}\">{c.get('title','')}</a> — source: {c.get('source','unknown')}</li>"
-                for c in components
-            )
-            desc_html += f"<h4>Included items</h4><ul>{comp_list}</ul>"
-            if tts_error:
-                desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
+            if do_generate:
+                desc_html = "".join(
+                    f"<p><strong>{idx}. {it['title']}</strong><br/>{it['desc_html']}</p>" for idx, it in enumerate(todays, start=1)
+                )
+                # Append component summary with sources
+                comp_list = "".join(
+                    f"<li><a href=\"{c.get('link','')}\">{c.get('title','')}</a> — source: {c.get('source','unknown')}</li>"
+                    for c in components
+                )
+                desc_html += f"<h4>Included items</h4><ul>{comp_list}</ul>"
+                if tts_error:
+                    desc_html += f"<p><em>TTS failed: {tts_error}</em></p>"
 
-            episode = {
-                "id": f"compilation::{today.isoformat()}::{sha256(text)}",
-                "title": title,
-                "link": link,
-                "pub_date": pub_dt,
-                "description_html": desc_html,
-                "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
-                "audio_bytes": audio_bytes_len,
-                "components": components,
-                "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
-            }
-            created_episodes.append(episode)
+                episode = {
+                    "id": f"compilation::{today.isoformat()}::{today_hash}",
+                    "title": episode_title,
+                    "link": link,
+                    "pub_date": pub_dt,
+                    "description_html": desc_html,
+                    "audio_url": build_public_url(config.site.link, audio_rel) if audio_rel else None,
+                    "audio_bytes": audio_bytes_len,
+                    "components": components,
+                    "transcript_url": build_public_url(config.site.link, transcript_rel) if transcript_rel else None,
+                    "content_hash": today_hash,
+                }
+                created_episodes.append(episode)
 
     if not created_episodes and not force_rewrite_feed:
         logger.info("Nothing to publish after filtering; exiting")

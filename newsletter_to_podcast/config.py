@@ -37,6 +37,7 @@ class OutputConfig:
 @dataclass
 class TTSConfig:
     enabled: bool
+    provider: str
     language_code: str
     voice_name: str
     speaking_rate: float
@@ -46,6 +47,9 @@ class TTSConfig:
     max_chars_per_chunk: int
     max_retries: int
     initial_retry_delay: float
+    # OpenAI TTS specific
+    openai_model: str
+    openai_voice: str
 
 
 @dataclass
@@ -67,6 +71,9 @@ class LLMConfig:
     provider: str
     model: str
     api_key_env: str
+    # Optional audio-friendly rewrite step
+    rewrite_enabled: bool
+    rewrite_model: str
 
 
 @dataclass
@@ -119,6 +126,7 @@ def load_config(path: str = "config.yaml") -> AppConfig:
         mode=data.get("mode", "compilation"),
         tts=TTSConfig(
             enabled=bool(tts.get("enabled", True)),
+            provider=tts.get("provider", "gcp"),
             language_code=tts.get("language_code", "en-US"),
             voice_name=tts.get("voice_name", "en-US-Standard-C"),
             speaking_rate=float(tts.get("speaking_rate", 1.0)),
@@ -128,6 +136,8 @@ def load_config(path: str = "config.yaml") -> AppConfig:
             max_chars_per_chunk=int(tts.get("max_chars_per_chunk", 4500)),
             max_retries=int(tts.get("max_retries", 3)),
             initial_retry_delay=float(tts.get("initial_retry_delay", 2.0)),
+            openai_model=tts.get("openai_model", "gpt-4o-mini-tts"),
+            openai_voice=tts.get("openai_voice", "alloy"),
         ),
         clean=CleanConfig(
             remove_emoji=bool(clean.get("remove_emoji", True)),
@@ -141,5 +151,7 @@ def load_config(path: str = "config.yaml") -> AppConfig:
             provider=llm_cfg.get("provider", "openai"),
             model=llm_cfg.get("model", "gpt-4o-mini"),
             api_key_env=llm_cfg.get("api_key_env", "OPENAI_API_KEY"),
+            rewrite_enabled=bool(llm_cfg.get("rewrite_enabled", False)),
+            rewrite_model=llm_cfg.get("rewrite_model", "gpt-4o"),
         ),
     )

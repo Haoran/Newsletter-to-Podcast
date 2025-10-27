@@ -29,6 +29,7 @@ mode: "forced_compilation"
 # TTS options (Google Cloud Text-to-Speech)
 tts:
   enabled: true
+  provider: "openai"  # options: openai, gcp
   language_code: "en-US"
   voice_name: "en-US-Wavenet-D"
   speaking_rate: 1.0
@@ -38,6 +39,9 @@ tts:
   max_chars_per_chunk: 4500
   max_retries: 3
   initial_retry_delay: 2.0  # seconds
+  # OpenAI TTS settings
+  openai_model: "gpt-4o-mini-tts"
+  openai_voice: "alloy"
 
 # Filtering & cleaning
 clean:
@@ -61,3 +65,6 @@ llm:
   model: "gpt-4o-mini"
   # API key is read from env var below
   api_key_env: "OPENAI_API_KEY"
+  # Additional audio-friendly rewrite
+  rewrite_enabled: true
+  rewrite_model: "gpt-4o"
