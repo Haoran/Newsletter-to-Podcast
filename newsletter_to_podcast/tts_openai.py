@@ -53,7 +53,6 @@ def synthesize_mp3_openai(
                     model=model,
                     voice=voice,
                     input=chunk,
-                    format="mp3",
                 ) as response:
                     buf = b"".join(response.iter_bytes())
                 if not buf:
@@ -71,4 +70,3 @@ def synthesize_mp3_openai(
                 delay *= 2
 
     return b"".join(audio_parts)
-
