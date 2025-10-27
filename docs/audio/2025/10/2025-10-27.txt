@@ -1,0 +1,29 @@
+October 27, 2025
+
+1 big thing: Exclusive — OpenAI's 2026 policy vision
+
+OpenAI's new internal analysis, shared with Axios, suggests that the first trillion dollars invested in AI infrastructure could boost GDP growth by over 5% in just three years. But this isn't solely about AI; it's a chance for America to reindustrialize. OpenAI believes that the push for computing power, grid modernization, and supply chain rebuilding could revitalize U.S. manufacturing and energy sectors.
+
+Over the next five years, there will be a huge demand for electricians, mechanics, and construction workers, with OpenAI estimating it will need about 20% of these workforces. However, this AI infrastructure boom might divert energy and capital from other manufacturing efforts. While spending on new factory construction is down 2.5% this year, data center construction is up nearly 18%, according to Bloomberg.
+
+Driving the news: President Trump's AI action plan asks companies to identify regulatory obstacles to AI development, with comments due today.
+
+What's inside: OpenAI's analysis outlines several requests for the federal government. Chris Lehane, OpenAI's chief global affairs officer, suggests setting a national target to build 100 GW of new energy capacity annually to close the electron gap with China. The company also urges expanding tax credits for AI sectors and using AI to expedite federal permitting and environmental reviews. Lehane also proposes immunity for responsible AI companies conducting child safety evaluations.
+
+The government should promote partnerships with the Center for AI Standards and Innovation, possibly offering liability protections to participating companies. The focus for 2026 is on helping AI companies build infrastructure, following 2025's momentum against federal AI regulations. Lehane emphasizes OpenAI's commitment to these goals through its Stargate data center project.
+
+Looking ahead, OpenAI plans to strengthen the domestic supply chain by collaborating with U.S. suppliers and manufacturers, investing in onshore production of critical data center components. The company also aims to develop strategic partnerships and investments in American manufacturing to advance AI robotics and devices.
+
+Qualcomm aims to take on Nvidia and AMD
+
+Nvidia CEO Jensen Huang is heading to Washington, D.C., for the company's first developer conference in the capital, highlighting how crucial Washington has become to Nvidia's goals.
+
+Nvidia's GPU Technology Conference is heading to D.C., highlighting its growing relationship with the federal government. CEO Jensen Huang will keynote the event for the first time, which features over 70 sessions covering AI and quantum computing.
+
+Before the conference, Huang and Eric Schmidt from the Special Competitive Studies Project will announce a new Task Force on AI and the Future of Work. This group, launching in early 2026, will include members from industry, academia, and government. They plan to release an interim report in May, followed by a final report in October 2026. Nvidia's Ned Finkle emphasizes the need to invest in people to maintain America's AI leadership. Meanwhile, SCSP's Ylli Bajraktari notes the task force aims to prepare Americans for an AI-driven economy.
+
+In Washington, there's a strong focus on how AI might affect jobs, a concern for many constituents. This topic will be a key discussion point at the conference, which primarily focuses on computing advancements.
+
+In other news, Australia is suing Microsoft over a Copilot-related price increase. Sam Altman has brought on researcher Mikhail Shapiro for his brain-computer interface startup, Merge Labs. OpenAI is reportedly looking into the music-generation market. And at the NBA All-Star Game, fans will get to create digital worlds using AI prompts at the Intuit Dome in Los Angeles.
+
+Lastly, if you need a break, there's a delightful video of a baby elephant playing with a pumpkin that's worth watching.
