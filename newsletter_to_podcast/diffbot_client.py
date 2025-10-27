@@ -79,6 +79,7 @@ def fetch_via_diffbot(url: str, token_env: str = "DIFFBOT_TOKEN", timeout: float
     """
     token = os.environ.get(token_env)
     if not token:
+        logger.info("Diffbot token missing; skipping Diffbot fallback", extra={"env": token_env})
         return None
 
     url_lc = url.lower()
@@ -110,4 +111,3 @@ def fetch_via_diffbot(url: str, token_env: str = "DIFFBOT_TOKEN", timeout: float
         if text and len(text) > 200:
             return text
     return None
-

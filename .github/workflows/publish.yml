@@ -66,6 +66,7 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' || steps.time_guard.outputs.should_run == 'true' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DIFFBOT_TOKEN: ${{ secrets.DIFFBOT_TOKEN }}
         run: |
           python -m newsletter_to_podcast || exit 1
 
