@@ -7,7 +7,8 @@ import os
 import time
 from typing import List
 
-from google.cloud import texttospeech
+# Import Google TTS lazily inside the function to avoid requiring
+# google-cloud-texttospeech when provider is not 'gcp'.
 
 
 logger = logging.getLogger(__name__)
@@ -64,6 +65,14 @@ def synthesize_mp3(
     max_retries: int,
     initial_retry_delay: float,
 ) -> bytes:
+    # Lazy import to prevent hard dependency when not used
+    try:
+        from google.cloud import texttospeech  # type: ignore
+    except Exception as e:  # noqa: BLE001
+        raise RuntimeError(
+            "Google TTS not available. Install google-cloud-texttospeech (and its deps) or set tts.provider: openai"
+        ) from e
+
     _ensure_credentials_from_inline_json()
     client = texttospeech.TextToSpeechClient()
 
@@ -110,4 +119,3 @@ def synthesize_mp3(
     # Concatenate MP3 frames (Google returns raw frames without ID3 tags)
     mp3_bytes = b"".join(audio_parts)
     return mp3_bytes
-
