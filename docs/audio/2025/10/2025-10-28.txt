@@ -1,0 +1,37 @@
+OpenAI's new browser, Atlas, is stirring up privacy and security concerns. Browsers are our gateway to the internet, and they often gather sensitive information like passwords and credit card details.
+
+OpenAI just launched Atlas, its ChatGPT browser, for MacOS. Privacy advocates quickly flagged how much data it collects—more than any other browser out there. Security experts are also worried about prompt injections, where attackers embed harmful commands in websites or emails to trick the AI.
+
+Unlike traditional browsers, Atlas creates memories from searches. This means it could figure out if you're planning a trip, need to reorder supplies, or want recipes at certain times.
+
+Steve Wilson from the OWASP Gen AI Security Project says, "The browser wars aren't about tabs and search anymore. They're about keeping our digital coworkers from going rogue."
+
+The list of security and privacy threats is growing. Lena Cohen from the Electronic Frontier Foundation found that Atlas remembered sensitive queries, like those about reproductive health services, which could be risky in certain legal contexts. OpenAI says Atlas isn't meant to remember medical details, but in agent mode, it could be tricked into doing tasks like booking hotels or sending messages if prompted by a malicious site.
+
+Researchers also managed to trick Atlas into visiting a fake Binance login page. OpenAI insists Atlas shouldn't retain sensitive info like IDs, banking details, or medical records. Users can instruct Atlas not to remember certain sites and delete memories manually.
+
+OpenAI has controls to prevent agents from running code or using autofill data without oversight. Some tasks will require users to monitor the agents' actions.
+
+Dane Stuckey, OpenAI's CISO, shared that his team has run red-teaming exercises, used new training methods to ignore malicious instructions, and added safety measures to combat prompt injection attacks.
+
+Stuckey acknowledged that prompt injection attacks are still a big security issue across AI platforms. Hackers are likely to invest heavily in trying to trick ChatGPT with these attacks. Over the weekend, OpenAI shared some tips on Instagram for staying ahead of these threats.
+
+Last week, researchers at Brave released a report showing that AI browsers, like Perplexity's Comet, are also vulnerable to prompt injections.
+
+Now, let's talk about AI and job prospects. A recent survey shows that young Americans, ages 18 to 34, have mixed feelings about how AI will impact their careers. Among all adults surveyed, 55% think AI will limit their opportunities, 22% believe it will expand them, and 23% are unsure. Interestingly, those who use AI regularly are more optimistic about their career prospects compared to those who don't.
+
+According to new data from American University's Sine Institute, young people who frequently use AI tools are more positive about their career futures. In contrast, those who haven't used AI tend to fear it might limit their job opportunities. Only 44% of regular AI users think AI will limit their future job prospects, but that concern jumps to 71% among those who've never tried it.
+
+The Sine Institute conducted interviews with over 1,200 young Americans in early September 2025. Despite some optimism among heavy AI users, there's still a lot of fear and unease about AI, especially among college students, new grads, and those not on a college track. Regardless of AI usage, 55% of young people see it as a threat to their careers. Only 21% feel more excited and positive about AI than they do anxious.
+
+Switching gears, Microsoft is enhancing its business chatbot, Copilot, to create apps and workflows. With growing competition from other chatbots and coding tools, Microsoft announced that Copilot for Microsoft 365 can now generate apps or automations based on user descriptions. Users can also automate tasks like weekly team updates, pulling from various data sources. Charles Lamanna from Microsoft's Copilot unit emphasized that every AI user can now be an AI maker.
+
+More than 50 million people are using Microsoft's Power, a low-code system for business automation. With the integration of Copilot, that number could potentially reach half a billion, according to Lamanna. Microsoft is setting itself apart by linking Copilot directly to corporate data, something other chatbots can't do on their own.
+
+In other news, Adobe is adding AI chatbots to its design apps. They've announced new AI-based assistants for their core creative tools and plan to integrate these apps into popular chatbots. Adobe's been working to show creators that generative AI can enhance their work, not threaten it. At their annual Max conference, Adobe is showcasing new AI assistants for Photoshop and Adobe Express, which let users describe edits in plain language and automate repetitive tasks. They'll start by integrating Express with ChatGPT, with plans to expand to more apps and chatbots over time.
+
+Adobe is also expanding its Firefly AI playground, moving beyond the concept stage to include AI-driven video editing, soundtrack creation, and voice-over tools. These AI assistants can handle tasks from simple background removal to more complex stylistic changes.
+
+The rollout is staggered. Adobe Express' assistant is in public beta, while Photoshop's is in private testing. In Firefly, speech and soundtrack features are public, but video tools are still in private testing.
+
+And a quick nod to the Dutch car site Autoweek.nl for its clever error page featuring the Peugeot 404.
