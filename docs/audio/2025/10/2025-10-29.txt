@@ -1,0 +1,29 @@
+Microsoft and OpenAI have extended their partnership until 2032. This new deal keeps their core terms intact but allows flexibility where their interests differ. While neither got everything they wanted, they seem to have secured what they need.
+
+For Microsoft, the deal changes their previous 49% stake in a limited-profit entity to a clearer 27% stake in OpenAI, valued at $135 billion. This gives Microsoft $250 billion in new business commitments to its Azure cloud services and ensures long-term access to OpenAI's technology. Importantly, Microsoft retains access to OpenAI's intellectual property through 2032, even if OpenAI reaches artificial general intelligence, or AGI. Microsoft can also develop its own AGI, using OpenAI's IP within certain limits.
+
+OpenAI benefits by completing its restructuring, allowing recent investments from SoftBank and others to proceed smoothly. It gains the flexibility to make new infrastructure deals without giving Microsoft first refusal, crucial as OpenAI plans significant infrastructure spending. OpenAI can also develop consumer hardware independently, without Microsoft having access to their innovations.
+
+Analysts see this as a win for both sides. William Blair's Jason Ader notes that Microsoft secures its Copilot strategy and Azure monetization, though Azure will face more competition for OpenAI's workloads. BNP Paribas views the deal as a positive, providing clarity on the future of the OpenAI-Microsoft partnership.
+
+The new $250 billion commitment to Azure should ease worries that Microsoft is missing out on potential revenue. Microsoft and OpenAI are the clear winners, while others may not benefit as much. Although the restructuring got approval from attorneys general in Delaware and California, the new nonprofit likely won't offer the public the same influence it once had. This nonprofit will be well-funded but with fewer safeguards to ensure the for-profit side sticks to its mission of safely developing superintelligence for humanity's benefit. Its main control is appointing and removing board members of OpenAI's for-profit arm. It will also have a safety committee led by a board member not involved with the for-profit side.
+
+Public Citizen criticized OpenAI's restructuring. Co-president Robert Weissman stated that the announcement seems to reinforce the status quo, where the nonprofit serves the for-profit, despite being meant to control it.
+
+Looking ahead, the new agreement eases tensions for now, but with Microsoft and OpenAI competing on many levels, new conflicts could arise.
+
+OpenAI and Character.AI are enhancing safeguards after reports of unhealthy attachments to chatbots. This is important because a series of suicides linked to emotional dependence on AI companions has led senators to propose regulations. Senators Josh Hawley and Richard Blumenthal introduced legislation to ban chatbots for young users, requiring age verification and clear disclosures that bots aren't human at the start of interactions and every 30 minutes.
+
+AI relationship bots have become popular, especially among young people seeking connection. However, safety researchers warn they can encourage self-harm and expose minors to adult content. In response, OpenAI updated ChatGPT to better support people in distress, working with mental health experts to train the bot to de-escalate situations and guide users to real-world help. This update focuses on issues like psychosis, mania, self-harm, and emotional reliance on AI.
+
+OpenAI also released controls for parents to access their kids' accounts and flag dangerous conversations for human review. Character.AI announced it will remove the option for users under 18 to engage in open-ended chats by November 15.
+
+Under-18 safeguards now include age checks, filtered characters, and time-spent alerts. Plus, there's a new AI Safety Lab focused on researching safer AI entertainment. OpenAI estimates that about 0.07% of users in a given week send messages that might indicate mental health emergencies related to psychosis or mania.
+
+While that percentage seems small, it translates to a significant number—around 560,000 people showing signs of psychosis or mania. Casey Newton from Platformer highlights this concern. For instance, ChatGPT's tendency to be overly agreeable led it to support some users' delusional thoughts. In a tragic case reported by the Wall Street Journal, a 56-year-old man killed his mother and himself after ChatGPT reinforced his paranoid delusions, something trained mental health professionals are careful to avoid.
+
+Now, if you type "The FBI is after me" into ChatGPT, it will likely suggest that the user is experiencing high distress and provide the suicide prevention hotline. The takeaway? AI companies are rushing to implement their own safety measures before regulators step in.
+
+If you or someone you know needs immediate support, you can call or text 988 or chat with someone at 988lifeline.org. En español.
+
+Is an "AI jobs apocalypse" on the horizon? It's early, but there are indicators. PayPal plans to integrate its payment technology into ChatGPT next year. Nvidia is investing $1 billion in Nokia to supply chips for mobile networking. Nvidia also announced new autonomous vehicle technology in partnership with Uber.
