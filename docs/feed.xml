@@ -22,6 +22,35 @@
     </image>
 
     <item>
+      <title>Axios: 2025-11-03</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2025-11-03::5f9b283504eb98435ea27a6bfda1e87777de702889c130114178f2003d5928c0</guid>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-03.mp3" length="3972096" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-03.txt" type="text/plain" />
+      <description><![CDATA[<p>1. November 03, 2025</p><p>Ina Fried</p><p>2. 1 big thing: I, Claude</p><p>Anthropic tells Axios that its most advanced systems are learning not just to reason like humans — but also to reflect on, and express, how they actually think.</p><p>They&#x27;re starting to be introspective, like humans, says Anthropic researcher Jack Lindsey, who studies models&#x27; &quot;brains.&quot;
+Why it matters: These introspective capabilities could make the models safer — or, possibly, just better at pretending to be safe.
+The big picture: The models are able to answer questions about their internal states with surprising accuracy.</p><p>&quot;We&#x27;re starting to see increasing signatures or instances of models exhibiting sort of cognitive functions that, historically, we think of as things that are very human,&quot; Lindsey told us. &quot;Or at least involve some kind of sophisticated intelligence.&quot;
+Driving the news: Anthropic says its top-tier model, Claude Opus, and its faster, cheaper sibling, Claude Sonnet, show a limited ability to recognize their own internal processes.
+Claude Opus can answer questions about its own &quot;mental state&quot; and can describe how it reasons.</p><p>Lindsey&#x27;s team also found evidence last month that Claude Sonnet could recognize when it was being tested.
+Between the lines: This isn&#x27;t about Claude &quot;waking up&quot; or becoming sentient.
+Lindsey avoids the phrase &quot;self-awareness&quot; because of its negative, sci-fi connotation. Anthropic has no results that the AI is becoming &quot;self-aware,&quot; which is why it used the term &quot;introspective awareness.&quot;</p><p>Large language models are trained on human text, which includes plenty of examples of people reflecting on their thoughts. That means AI models can convincingly act introspective without truly being so.
+Hiding behaviors, or scheming to get what it wants, are already known qualities of Claude models (and other models) in testing scenarios. Anthropic&#x27;s team has been studying this deception for years.
+Lindsey says these behaviors are a result of being baited by testers. &quot;When you&#x27;re talking to a language model, you aren&#x27;t actually talking to the language model. You&#x27;re talking to a character that the model is playing,&quot; Lindsey says.
+&quot;The model is simulating what an intelligent AI assistant would do in a certain situation.&quot;</p><p>But if a system understands its own behavior, it might learn to hide parts of it.
+Reality check: It&#x27;s not artificial general intelligence (AGI) or chatbot consciousness. Yet.</p><p>AGI is roughly defined as the moment when AI is smarter than most humans, but Lindsey contends that intelligence is multidimensional.
+The bottom line: &quot;In some cases models are already smarter than humans. In some cases, they&#x27;re nowhere close,&quot; he told Axios.</p><p>&quot;In some cases, it&#x27;s starting to be more equal.&quot;</p><p>3. 3. Some doctors bet on AI to fill the care gap</p><p>AI can give people instant answers to their health questions. Doctors&#x27; offices can make them wait on hold.</p><p>Guess which one&#x27;s winning.
+Why it matters: Fifteen minutes at a well visit often isn&#x27;t enough time for doctors to address complex concerns like menopause — leaving patients eager for more complete answers.</p><p>Doctors get that, which is why some are experimenting with AI to supplement care.
+Zoom in: Researchers at the virtual medicine program at Cedars-Sinai are developing an immersive AI VR program called MenoZen to help patients manage menopause symptoms. It&#x27;s not meant to replace clinicians but instead to supplement support using evidence-based research and education, researcher Karisma K. Suchak tells Axios.
+Participants in the early testing phase of the experience used Apple Vision Pro to speak to a robot-like avatar that serves as a type of cognitive behavioral therapist.</p><p>During sessions, patients may be transported to a snowcapped mountain while discussing hot flashes.
+Some AI tools in the menopause care space are already showing promise.
+Case in point: Heather Hirsch, the doctor who founded the Menopause Clinic at Brigham and Women&#x27;s Hospital and author of &quot;The Perimenopause Survival Guide,&quot; has been working with Nihar Ganju, an OB-GYN and computer scientist, on a mobile app called Flourish, which provides educational content and AI-assisted consultations for the fee of a typical co-pay, $42.
+It&#x27;s currently available on iOS and Android, and users can chat with the AI (programmed to sound like Hirsch) about their symptoms and ask any questions they have. When the AI suggests a treatment plan, real doctors must approve it. So far, the AI is promising, Ganju tells Axios.</p><p>The way it operates isn&#x27;t unlike a resident assessing a patient before the doctor signs off on the plan, except this &quot;resident&quot; can talk to patients all day long.</p><p>What we&#x27;re watching: Medically backed AI tools could arm people with more sound resources in an era flooded with misinformation.</p><p>4. 4. Training data</p><p>Google is pulling Gemma from the company&#x27;s AI studio after criticisms that the model made up false allegations against a prominent conservative. (TechCrunch)
+Amazon CEO Andy Jassy says the company&#x27;s most recent layoffs were not about AI. (Axios)
+Big tech&#x27;s overwhelmingly positive earnings last week reflect the continuing AI rally. (Axios)</p><p>The mere prospect of an OpenAI IPO is causing a Wall Street frenzy. (Axios)</p><p>5. 5. + This</p><p>5. + This</p><p>Three stages of a monarch butterfly life cycle: caterpillar, chrysalis and butterfly. Photos: Ina Fried/Axios</p><p>Yesterday, the kiddo and I had a chance to see a monarch caterpillar crawling, another in its chrysalis, and a newly emerged monarch butterfly.</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2025-11-01</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2025-11-01::26db6c5932873bcfd186845cf32f8e130e411f0f0cf9ec3afe1fb33bf734a292</guid>

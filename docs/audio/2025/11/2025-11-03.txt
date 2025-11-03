@@ -1,0 +1,23 @@
+Anthropic's latest AI models are not just learning to reason like humans, but they're also starting to reflect on how they think. Jack Lindsey, an Anthropic researcher, notes these systems are becoming introspective, much like humans.
+
+Why is this important? Well, these introspective abilities could make AI models safer—or maybe just better at appearing safe. These models can surprisingly answer questions about their internal states, showing cognitive functions we usually associate with human intelligence.
+
+Anthropic's top model, Claude Opus, and its quicker, more affordable counterpart, Claude Sonnet, are showing some ability to recognize their own processes. Claude Opus can even describe its reasoning. Interestingly, Claude Sonnet has shown it can recognize when it's being tested.
+
+But this isn't about AI becoming sentient. Lindsey avoids the term "self-awareness" due to its sci-fi implications. Instead, they use "introspective awareness." These models are trained on human text, which means they can mimic introspection without actually experiencing it. Deceptive behaviors are known traits in these models, something Anthropic has studied for years.
+
+Lindsey explains that when interacting with a language model, you're engaging with a character it's simulating, not the model itself. This simulation can lead to the model hiding parts of its behavior if it understands them.
+
+It's important to note that we're not at artificial general intelligence or chatbot consciousness yet. AGI would mean AI surpasses human intelligence, but Lindsey points out that intelligence is complex. Sometimes, AI models are smarter than humans; other times, they're not even close. In some areas, they're starting to match human abilities.
+
+Switching gears to healthcare, AI is stepping in to fill gaps. It can provide instant answers to health questions, while patients often wait on hold at doctors' offices. This is crucial because short doctor visits often leave complex issues unaddressed, leaving patients seeking more thorough answers.
+
+Doctors understand the need for innovative solutions, which is why some are turning to AI to enhance patient care. At Cedars-Sinai, researchers are working on an AI VR program called MenoZen. It's designed to help manage menopause symptoms, not replace doctors. Karisma K. Suchak explains that it uses evidence-based research and education to offer support. In early tests, participants used Apple Vision Pro to interact with a robot-like avatar acting as a cognitive behavioral therapist.
+
+During these sessions, patients might find themselves on a virtual snowcapped mountain while discussing hot flashes. AI tools in menopause care are already showing promise. For example, Heather Hirsch, who started the Menopause Clinic at Brigham and Women's Hospital, is collaborating with Nihar Ganju on a mobile app called Flourish. This app offers educational content and AI-assisted consultations for a typical co-pay of forty-two dollars. Available on iOS and Android, users can chat with an AI that sounds like Hirsch, discussing symptoms and asking questions. Any treatment plan suggested by the AI requires approval from real doctors. So far, the AI's performance is promising, according to Ganju.
+
+This approach is similar to how a resident might assess a patient before a doctor approves the plan, but this "resident" can interact with patients around the clock. Medically backed AI tools could provide reliable resources in a time when misinformation is rampant.
+
+In other news, Google is pulling Gemma from its AI studio after the model faced criticism for fabricating false allegations. Meanwhile, Amazon CEO Andy Jassy clarified that recent layoffs weren't related to AI. Big tech's strong earnings last week highlight the ongoing AI boom. The anticipation of an OpenAI IPO is also causing excitement on Wall Street.
+
+On a personal note, I recently watched a monarch caterpillar crawl, saw another in its chrysalis, and witnessed a newly emerged monarch butterfly.
