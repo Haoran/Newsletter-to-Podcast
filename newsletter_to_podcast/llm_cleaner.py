@@ -24,6 +24,7 @@ def _get_openai_client(api_key: Optional[str]):
         return None, None
 
 
+# Default, used when no external prompt file is provided
 SYSTEM_PROMPT = (
     "You clean newsletter text for text-to-speech. Return plain text only.\n"
     "Rules:\n"
@@ -39,12 +40,12 @@ SYSTEM_PROMPT = (
 )
 
 
-def _clean_chunk_with_openai(client, model: str, chunk: str) -> Optional[str]:
+def _clean_chunk_with_openai(client, model: str, chunk: str, system_prompt: str) -> Optional[str]:
     try:
         resp = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {
                     "role": "user",
                     "content": (
@@ -74,6 +75,18 @@ def maybe_clean_text_with_llm(text: str, cfg: AppConfig) -> str:
         logger.info("LLM cleaning skipped: client not available or api key missing")
         return text
 
+    # Resolve system prompt: external file takes precedence if configured
+    system_prompt = SYSTEM_PROMPT
+    try:
+        prompt_path = getattr(getattr(cfg, "llm", None), "clean_prompt_file", None)
+        if prompt_path and os.path.exists(prompt_path):
+            with open(prompt_path, "r", encoding="utf-8") as pf:
+                content = pf.read().strip()
+                if content:
+                    system_prompt = content
+    except Exception:
+        pass
+
     # Soft chunking by paragraph to ~3500 chars per chunk
     paras: List[str] = text.split("\n\n")
     chunks: List[str] = []
@@ -93,7 +106,7 @@ def maybe_clean_text_with_llm(text: str, cfg: AppConfig) -> str:
     cleaned_parts: List[str] = []
     model = getattr(llm, "model", "gpt-4o-mini")
     for idx, ch in enumerate(chunks):
-        out = _clean_chunk_with_openai(client, model, ch)
+        out = _clean_chunk_with_openai(client, model, ch, system_prompt)
         cleaned_parts.append(out if out else ch)
 
     result = "\n\n".join(cleaned_parts)

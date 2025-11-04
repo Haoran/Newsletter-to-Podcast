@@ -24,6 +24,7 @@ Minimal, deploy-ready Python 3.11 project to:
 2b) OpenAI TTS and LLM
 - Add a repository secret `OPENAI_API_KEY` (used for OpenAI TTS and LLM steps).
 - Optional: enable audio-friendly rewrite: `llm.rewrite_enabled: true` and select `llm.rewrite_model`.
+  - You can customize prompts without touching code by editing files under `prompts/` (see below).
 
 3) Configure
 - Adjust `config.yaml` as needed (mode, naming, cleaning, provider/models).
@@ -82,5 +83,15 @@ Feed URL after first run: `https://<user>.github.io/<repo>/feed.xml`
   - `docs/feed.xml` RSS
   - `docs/audio/...` MP3 files
   - `data/state.json` state for dedup/episodes
+
+### Customize Prompts (No Code Changes)
+
+- Cleaning prompt (pre-TTS): `prompts/clean_system_prompt.txt`
+- Audio rewrite prompt: `prompts/rewrite_system_prompt.txt`
+
+These files are referenced by `config.yaml` → `llm.clean_prompt_file` and `llm.rewrite_prompt_file`.
+If a file path is set and the file exists, the app uses its contents. If not, it falls back to built‑in defaults.
+
+This allows non-developers to tweak narration style and cleaning rules just by editing text files.
 
 - Large repos: audio files grow repo size. For long-term use, consider object storage for MP3s and point `site.link` there.

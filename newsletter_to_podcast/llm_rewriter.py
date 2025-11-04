@@ -9,6 +9,7 @@ from .config import AppConfig
 logger = logging.getLogger(__name__)
 
 
+# Default, used when no external prompt file is provided
 REWRITE_SYSTEM_PROMPT = (
     "You are a professional audio editor and voice adaptation expert.\n"
     "Transform the written newsletter into a version that sounds great when read aloud.\n"
@@ -40,12 +41,12 @@ def _get_openai_client(api_key: Optional[str]):
         return None, None
 
 
-def _rewrite_chunk_with_openai(client, model: str, chunk: str) -> Optional[str]:
+def _rewrite_chunk_with_openai(client, model: str, chunk: str, system_prompt: str) -> Optional[str]:
     try:
         resp = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": REWRITE_SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": chunk},
             ],
             temperature=0.4,
@@ -70,6 +71,18 @@ def maybe_rewrite_for_audio(text: str, cfg: AppConfig) -> str:
     if client is None:
         logger.info("LLM rewrite skipped: client not available or api key missing")
         return text
+
+    # Resolve system prompt: external file takes precedence if configured
+    system_prompt = REWRITE_SYSTEM_PROMPT
+    try:
+        prompt_path = getattr(getattr(cfg, "llm", None), "rewrite_prompt_file", None)
+        if prompt_path and os.path.exists(prompt_path):
+            with open(prompt_path, "r", encoding="utf-8") as pf:
+                content = pf.read().strip()
+                if content:
+                    system_prompt = content
+    except Exception:
+        pass
 
     # If input is too short, skip rewrite to avoid generic filler intros
     try:
@@ -97,7 +110,7 @@ def maybe_rewrite_for_audio(text: str, cfg: AppConfig) -> str:
     out_parts: List[str] = []
     model = getattr(llm, "rewrite_model", "gpt-4o")
     for ch in chunks:
-        out = _rewrite_chunk_with_openai(client, model, ch)
+        out = _rewrite_chunk_with_openai(client, model, ch, system_prompt)
         out_parts.append(out if out else ch)
 
     result = "\n\n".join(out_parts)

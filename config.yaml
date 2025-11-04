@@ -68,3 +68,6 @@ llm:
   # Additional audio-friendly rewrite
   rewrite_enabled: true
   rewrite_model: "gpt-4o"
+  # External prompt files (editable by non-developers)
+  clean_prompt_file: "prompts/clean_system_prompt.txt"
+  rewrite_prompt_file: "prompts/rewrite_system_prompt.txt"

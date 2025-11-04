@@ -76,6 +76,9 @@ class LLMConfig:
     # Optional audio-friendly rewrite step
     rewrite_enabled: bool
     rewrite_model: str
+    # Optional external prompt files
+    clean_prompt_file: str | None
+    rewrite_prompt_file: str | None
 
 
 @dataclass
@@ -155,6 +158,8 @@ def load_config(path: str = "config.yaml") -> AppConfig:
             api_key_env=llm_cfg.get("api_key_env", "OPENAI_API_KEY"),
             rewrite_enabled=bool(llm_cfg.get("rewrite_enabled", False)),
             rewrite_model=llm_cfg.get("rewrite_model", "gpt-4o"),
+            clean_prompt_file=llm_cfg.get("clean_prompt_file"),
+            rewrite_prompt_file=llm_cfg.get("rewrite_prompt_file"),
         ),
     )
 
