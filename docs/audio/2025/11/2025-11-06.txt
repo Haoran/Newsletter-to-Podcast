@@ -1,0 +1,21 @@
+First up, let's talk about the upcoming Axios AI+ Summit in San Francisco on December 4th. It's shaping up to be an exciting event with a stellar lineup of speakers. You'll hear from leaders like Demis Hassabis of Google DeepMind, Aaron Levie of Box, and others who are at the forefront of AI innovation.
+
+Next, the AI boom is showing no signs of slowing down. Spending in the AI sector is skyrocketing, with major companies like Meta, Microsoft, and Google making significant investments. Meta plans to spend at least $70 billion this year on AI infrastructure, while Google is upping its forecast to at least $91 billion. Microsoft is also ramping up its investments due to strong demand.
+
+Meanwhile, there's a bit of caution in the air. While tech giants are excited about the growth, there's concern that some companies might be overspending or relying too heavily on each other for financing. This could create a fragile situation if any part of the chain weakens.
+
+Zooming out, the AI boom is becoming a major economic force. Federal Reserve Chair Jerome Powell doesn't believe the Fed's interest rate policies are fueling an AI bubble. Instead, he sees the spending as a long-term investment in productivity and growth.
+
+Finally, the impact of AI spending is clear across various industries. Companies like Caterpillar are seeing significant growth in their power generation segment, driven by demand for data center equipment. This shows that AI is boosting demand not just for tech companies, but across the entire industrial supply chain.
+
+First up, the booming economy is boosting profits and driving stock market highs. But jobs aren't seeing the same growth. Fed Chair Powell pointed out that the labor market is still softening. While data centers offer short-term construction jobs, they don't need much staff once operational. Companies like Nvidia are expanding and hiring, but it's unclear if this will balance out the rise in corporate layoffs.
+
+Next, there's growing local opposition to building data centers. Communities are concerned about their size, cost, and impact on utility prices due to high power consumption. Although spending continues, this could change how and where investments are made.
+
+Meanwhile, the AI industry is far from finished with its expansion. Recent earnings reports show no end in sight. Axios reports that a new policy advocacy group, Build American AI, is gearing up for a multimillion-dollar ad campaign. This move highlights the industry's push for federal regulation over state-level policies.
+
+Zooming out, Build American AI is a branch of the pro-AI super PAC, Leading the Future. While Leading the Future plans to invest heavily in the 2026 midterms, Build American AI will focus on promoting its legislative agenda through issue-oriented ads. Unlike the super PAC, Build American AI is a nonprofit, meaning it doesn't have to disclose its donors. Leading the Future has already raised $100 million, positioning itself as a significant player in upcoming elections.
+
+Zooming in, the new group will advocate for federal regulation of AI, opposing state-by-state policies. This aligns with President Trump's stance. The industry fears state regulations could lead to overregulation, preferring consistent federal guidelines. Some states, like California, have already enacted AI regulations. Build American AI plans to spend heavily on advertising by spring, though specific target states remain unspecified.
+
+Finally, the leaders of Leading the Future emphasize their commitment to showcasing the benefits of AI for workers and communities. They also aim to counter misinformation from groups they believe are hindering America's leadership in AI.
