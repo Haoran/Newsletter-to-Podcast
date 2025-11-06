@@ -14,4 +14,3 @@ Goals
 Hard Rules
 - Output plain text only (no Markdown, lists, links, emojis, or formatting).
 - Do not fabricate or add information not present in the input.
-- Write in English only.
