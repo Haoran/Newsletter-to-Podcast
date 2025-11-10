@@ -1,0 +1,13 @@
+First up, let's talk about the sleeping giant in the AI world: Google. Top AI executives are pointing to Google as their biggest American rival. While Google seemed a bit slow at first in the AI race, it's now gaining momentum. With its scientific expertise, vast data access, and strong revenue streams, Google is becoming a formidable competitor. OpenAI, the early leader in consumer AI, is feeling the heat as both companies compete to redefine search with AI-driven answers. Google has been quietly advancing in AI, with successful projects like the Nano Banana image model and the Veo video model. Even Apple might rely on Google for the next generation of Siri. Google's financial strength and widespread distribution through its search engine, browser, and operating system give it an edge. There's even speculation that Google might offer its AI services for free to attract ChatGPT users. The real challenge is turning these AI advancements into a sustainable business model.
+
+Next, let's shift our focus to the job market and its bright spot: AI skills.
+
+First up, hiring trends are shifting. While overall tech hiring is down, demand for AI skills is on the rise. Business leaders notice a gap between workers who fully embrace AI and those who don't. In fact, mentions of AI skills in job postings have jumped 16% in just three months. However, some job seekers are inflating their AI expertise. 
+
+Next, the launch of ChatGPT has led to a surge in job applications, overwhelming hiring teams with low-intent submissions. The hottest AI jobs now focus on data management, like data labeling and analysis. Companies want employees who can interpret AI output and integrate it into business decisions. Demand for freelancers with data-mining and AI skills is also climbing.
+
+Meanwhile, more than half of businesses plan to hire data analysts and scientists soon. Key skills include math, statistics, and programming, especially Python. Human skills are crucial too, such as curiosity and adaptability. The ability to pair technical skills with creativity and strategic thinking is in high demand.
+
+Finally, the AI landscape is rapidly evolving. How someone learns is becoming more important than having advanced degrees in AI. However, in a weak job market, a Ph.D. in generative AI can still be beneficial. 
+
+In other news, big AI firms are targeting India as a major market for their chatbots. Google highlights that AI hallucination issues worsen when consumer models are used improperly. And on a lighter note, there's a humorous mix-up with AI technologies named Devin and Scott being promoted by people with matching names. What a world!
