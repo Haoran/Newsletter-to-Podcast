@@ -15,9 +15,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus#November 04, 2025::4ac2f4692ce9951a4915f7b4f08b488e9853a2b49447653f4371d5ab0259846a": "2025-11-04T15:44:54.328627+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#November 05, 2025::c231bbe2c4c9c3de2376a7b2fecc15fb7f048960f925898d844019ee31c88652": "2025-11-05T15:43:56.015601+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::72268aa56a403f31fa4842fde5666ce0d43ff16b8f7aa744882641f17b254663": "2025-11-07T15:43:02.324133+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus#November 10, 2025::3122eff8a122415b975549dec740f42bce6aba4a202d088c7a96488d916010a5": "2025-11-10T15:44:47.947956+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus#November 10, 2025::3122eff8a122415b975549dec740f42bce6aba4a202d088c7a96488d916010a5": "2025-11-10T15:44:47.947956+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::f838500ccc0fe85f69636a4308a833820b71b7356d3bf155559668ca4e9b5fbe": "2025-11-12T15:46:03.613626+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-11-12::f838500ccc0fe85f69636a4308a833820b71b7356d3bf155559668ca4e9b5fbe",
+      "title": "Axios: 2025-11-12",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-11-12T15:45:34.691042+00:00",
+      "description_html": "<p>1. A new digital awakening</p><p>Why it matters: AI is helping some churches stay relevant in the face of shrinking staff, empty pews and growing online audiences. But the practice raises new questions about who, or what, is guiding the flock.</p><p>2. New AI-powered apps allow you to &quot;text with Jesus&quot; or &quot;talk to the Bible,&quot; giving the impression you are communicating with a deity or angel.</p><p>New AI-powered apps allow you to &quot;text with Jesus&quot; or &quot;talk to the Bible,&quot; giving the impression you are communicating with a deity or angel.</p><p>3. Other apps can create personalized prayers, let you confess your sins or offer religious advice on life&#x27;s decisions.</p><p>Other apps can create personalized prayers, let you confess your sins or offer religious advice on life&#x27;s decisions.</p><p>4. Public Religion Research Institute</p><p>&quot;What could go wrong?&quot; Robert P. Jones, CEO of the nonpartisan Public Religion Research Institute, sarcastically asked.</p><p>5. Megachurches are consolidating the remaining faithful, but even the most charismatic pastors struggle to offer private counseling with such large congregations.</p><p>Megachurches are consolidating the remaining faithful, but even the most charismatic pastors struggle to offer private counseling with such large congregations.</p><p>6. TryTank Research Institute</p><p>for the Episcopal Church, responds to spiritual or faith-related queries, drawing on church resources.</p><p>7. congregational data</p><p>Other AI apps analyze congregational data (attendance and engagement) to tailor outreach and communications.</p><p>8. And more</p><p>And more pastors are admitting that they use AI to assist in creating sermons or reduce writing time.</p><p>9. Hope&#x27;s consulting firm helps churches and minority-owned businesses use &quot;ethical&quot; AI.</p><p>Hope&#x27;s consulting firm helps churches and minority-owned businesses use &quot;ethical&quot; AI.</p><p>10. &quot;AI can help with greater scheduling, coordination of preaching engagements and missions work. We haven&#x27;t tapped the surface with how we could integrate these technologies to advance the word of God.&quot;</p><p>&quot;AI can help with greater scheduling, coordination of preaching engagements and missions work. We haven&#x27;t tapped the surface with how we could integrate these technologies to advance the word of God.&quot;</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-12.mp3",
+      "audio_bytes": 1569024,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-12.txt",
+      "content_hash": "f838500ccc0fe85f69636a4308a833820b71b7356d3bf155559668ca4e9b5fbe"
+    },
     {
       "id": "issue::2025-11-10::3122eff8a122415b975549dec740f42bce6aba4a202d088c7a96488d916010a5",
       "title": "Axios: 2025-11-10",
@@ -342,7 +361,7 @@
     }
   ],
   "last_issue": {
-    "published": "November 10, 2025",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus#November 10, 2025"
+    "published": "",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
   }
 }
