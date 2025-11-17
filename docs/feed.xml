@@ -22,6 +22,40 @@
     </image>
 
     <item>
+      <title>Axios: 2025-11-17</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2025-11-17::5dfa0889fee8999f8ef6f716e6140bcb500d4db9e252b4a67d52c5b7c371301d</guid>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-17.mp3" length="3656064" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-17.txt" type="text/plain" />
+      <description><![CDATA[<p>1. November 17, 2025</p><p>2. 1 big thing: World models move beyond language</p><p>Move over large language models — the new frontier in AI is world models that can understand and simulate reality.
+Why it matters: Such models are key to creating useful AI for everything from robotics to video games.</p><p>For all the book smarts of LLMs, they currently have little sense for how the real world works.
+Driving the news: Some of the biggest names in AI are working on world models, including Fei-Fei Li, whose World Labs announced Marble, its first commercial release.
+Machine learning veteran Yann LeCun reportedly plans to launch a world model startup when he leaves Meta in the coming months.
+Google and Meta are also developing world models, both for robotics and to make their video models more realistic.
+Meanwhile, OpenAI has posited that building better video models could also be a pathway toward a world model.</p><p>Tangentially related, the New York Times reported Monday that Jeff Bezos has started a new AI company focused on engineering and manufacturing, where he&#x27;ll serve as co-CEO. &quot;Project Prometheus&quot; is seeded with more than $6 billion in funding.
+As with the broader AI race, it&#x27;s also a global battle.
+Chinese tech companies, including Tencent, are developing world models that include an understanding of both physics and three-dimensional data.</p><p>Last week, the United Arab Emirates-based Mohamed bin Zayed University of Artificial Intelligence, a growing player in AI, announced PAN, its first world model.
+What they&#x27;re saying: &quot;I&#x27;ve been not making friends in various corners of Silicon Valley, including at Meta, saying that within three to five years, this [world models, not LLMs] will be the dominant model for AI architectures, and nobody in their right mind would use LLMs of the type that we have today,&quot; LeCun said last month at a symposium at the Massachusetts Institute of Technology, as noted in a Wall Street Journal profile.
+How they work: World models learn by watching video or digesting simulation data and other spatial inputs, building internal representations of objects, scenes and physical dynamics.
+Instead of predicting the next word, as a language model does, they predict what will happen next in the world, modeling how things move, collide, fall, interact and persist over time.</p><p>The goal is to create models that understand concepts like gravity, occlusion, object permanence and cause-and-effect without having been explicitly programmed on those topics.
+Context: There&#x27;s a similar but related concept called a &quot;digital twin&quot; where companies create a digital version of a specific place or environment, often with a flow of real-time data for sensors allowing for remote monitoring or maintenance predictions.
+Between the lines: Data is one of the key challenges. Those building large language models have been able to get most of what they need by scraping the breadth of the internet.
+World models also need a massive amount of information, but from data that&#x27;s not consolidated or as readily available.
+&quot;One of the biggest hurdles to developing world models has been the fact that they require high-quality multimodal data at massive scale in order to capture how agents perceive and interact with physical environments,&quot; Encord president and co-founder Ulrik Stig Hansen said in an email interview.
+Encord offers one of the largest open source datasets for world models, with 1 billion data pairs across images, videos, text, audio and 3D point clouds as well as a million human annotations assembled over months.</p><p>But even that is just a baseline, Hansen said. &quot;Production systems will likely need significantly more.&quot;
+What we&#x27;re watching: While world models are clearly needed for a variety of uses, whether they can advance as rapidly as language models remains uncertain.</p><p>Though clearly they&#x27;re benefiting from a fresh wave of interest and investment.</p><p>3. 2. Investors sour on Big Tech&#x27;s debt amid AI race</p><p>Data: FactSet. Chart: Axios Visuals
+Oracle&#x27;s $3.5 billion, 30-year bond has dropped roughly 8% since its October peak and is now trading at just 65 cents on the dollar.
+Why it matters: It&#x27;s a sign of growing investor unease over Big Tech&#x27;s borrowing binge to fund AI infrastructure.
+Zoom in: Oracle&#x27;s credit risk has widened faster than the overall investment-grade market has, according to Bank of America analysts.
+Five-year credit default swaps (insurance-like contracts that protect investors against a default of a company&#x27;s debt) have widened to around 80 basis points, the highest in about two years.</p><p>BofA flags this as a warning that investors aren&#x27;t comfortable with how Big Tech is financing its AI buildout.
+Zoom out: Financial conditions have loosened, helped by lower interest rates and a rally in risk assets.
+Even as credit spreads have widened recently amid some AI bubble concerns, they remain near historically low levels.
+Still, the bond spreads and credit default swap spreads of tech companies are widening, making it more expensive for investors to insure against defaults in the debt.</p><p>Bank of America says that trend reflects concern that tech companies may not have enough cash to finance the &quot;AI capex arms race.&quot;
+The bottom line: Just two weeks ago, bond investors were clamoring for their piece of the AI pie, with Meta&#x27;s latest debt issuance four times oversubscribed.</p><p>A drop in demand coupled with a selloff in Big Tech stocks could be an indicator that investors are questioning how much is too much to spend on an AI buildout without a clear path for returns on that investment.</p><p>4. 4. Training data</p><p>Here&#x27;s a look at the AI infrastructure race, broken down into six charts. (WSJ)</p><p>Apple will require developers to disclose when they are sending data to third-party AI engines and get users&#x27; permission before doing so. (Cult of Mac)</p><p>5. 5. + This</p><p>The middle schooler is long past sharing my joy for &quot;Sesame Street,&quot; but I do think he will like this, from Count von Count.</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2025-11-13</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2025-11-13::db7db9adfbf4dfa4514e5870a8cb4725c9577946c1e09357df2c3b1311236922</guid>
