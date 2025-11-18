@@ -19,9 +19,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::f838500ccc0fe85f69636a4308a833820b71b7356d3bf155559668ca4e9b5fbe": "2025-11-12T15:46:03.613626+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::8e2e3cff35e0c55daeac849b364bfa84ff697403a4af7150208098679b6854c1": "2025-11-13T15:43:49.564703+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#November 13, 2025::db7db9adfbf4dfa4514e5870a8cb4725c9577946c1e09357df2c3b1311236922": "2025-11-14T15:42:17.226838+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus#November 17, 2025::5dfa0889fee8999f8ef6f716e6140bcb500d4db9e252b4a67d52c5b7c371301d": "2025-11-17T15:46:37.569560+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus#November 17, 2025::5dfa0889fee8999f8ef6f716e6140bcb500d4db9e252b4a67d52c5b7c371301d": "2025-11-17T15:46:37.569560+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::dbe57a7ee49774038317e966365dbbd5cb45a2d488fbb0b9129f3cb6174503ee": "2025-11-18T15:46:17.066841+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-11-18::dbe57a7ee49774038317e966365dbbd5cb45a2d488fbb0b9129f3cb6174503ee",
+      "title": "Axios: 2025-11-18",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-11-18T15:45:51.926921+00:00",
+      "description_html": "<p>1. From making up to breaking up,</p><p>Why it matters: We&#x27;re outsourcing our hearts to AI and feeding our most intimate data to a handful of tech giants.</p><p>2. Future of Marriage report</p><p>3. Between the lines</p><p>The AI girlfriend and boyfriend businesses are booming, with some creating their own bot companions in their teens or earlier.</p><p>And why not? Bots are learning to be friendly, empathetic, self-reflective and even funny.</p><p>4. Some ex-spouses say ChatGPT was</p><p>Some ex-spouses say ChatGPT was the cause of their divorce, citing one partner&#x27;s dependence on the bot as driving a wedge between them.</p><p>5. Singles in America study by the Kinsey Institute and Match.</p><p>And be careful if you have a human relationship and keep an AI on the side. 40% of singles say this is cheating, per this year&#x27;s Singles in America study by the Kinsey Institute and Match.</p><p>6. One Reddit poster</p><p>his wife-to-be left him at the altar when she realized he&#x27;d used ChatGPT to write his vows.</p><p>7. What we&#x27;re watching:</p><p>8. The bottom line:</p><p>Because of the huge sums of cash required to create and run AI models, tech companies will inevitably try to pay for them by selling our personal information, Signal president and privacy expert Meredith Whittaker told Axios last year.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-18.mp3",
+      "audio_bytes": 1095168,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-18.txt",
+      "content_hash": "dbe57a7ee49774038317e966365dbbd5cb45a2d488fbb0b9129f3cb6174503ee"
+    },
     {
       "id": "issue::2025-11-17::5dfa0889fee8999f8ef6f716e6140bcb500d4db9e252b4a67d52c5b7c371301d",
       "title": "Axios: 2025-11-17",
@@ -400,7 +419,7 @@
     }
   ],
   "last_issue": {
-    "published": "November 17, 2025",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus#November 17, 2025"
+    "published": "",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
   }
 }
