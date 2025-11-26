@@ -22,6 +22,42 @@
     </image>
 
     <item>
+      <title>Axios: 2025-11-26</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2025-11-26::049a2078be86a900ac97535d74a653a4e7bf0a074cbb9b8836edd4463639c534</guid>
+      <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-26.mp3" length="4016256" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/11/2025-11-26.txt" type="text/plain" />
+      <description><![CDATA[<p>1. Axios AI+</p><p>Axios AI+</p><p>November 26, 2025</p><p>Megan Morrone</p><p>The holidays began last night for me with my daughter home from New York to marvel at all the new AI billboards in SF. There&#x27;s no place like home! Today&#x27;s AI+ is 1,145 words, a 4.5-minute read.</p><p>1 big thing: The 2010s oil bust could tell us AI&#x27;s future</p><p>Ben Geman</p><p>To understand whether AI is in a bubble, and what could happen next, you have to think of it like railroads. Or maybe fiber-optic cable. Or perhaps oil drilling?
+Why it matters: Everyone in the business world is anxiously trying to figure out which historical boom-and-bust comparison is the right one so they can be ready for what they fear comes next.</p><p>Of course, none of them are really perfect comparisons, but that doesn&#x27;t stop people from trying.
+Case in point: In recent essays, two industry observers — Carlyle analyst Jeff Currie and Henry Gladwyn of early stage tech investor OMERS Ventures — sought to compare what&#x27;s happening in AI now and what happened in oil exploration 10-15 years ago.
+The big picture: In the mid-2010s, the shale boom — named for the supplies trapped in rock formations unlocked by fracking — turned the U.S. into the world&#x27;s largest oil and gas producer, adding new geopolitical leverage along the way.
+But it was a painful road for industry and investors because they invested heavily on growth — and got hammered when Saudi-led OPEC looked to reclaim market share in late 2014 and prices collapsed.
+Some think there&#x27;s a parallel, and that AI could be following the same path.</p><p>The connective tissue between AI and energy isn&#x27;t just metaphorical: Natural gas is emerging as a winner, slated to supply at least a big tranche of the additional power needed for huge AI data centers.
+Zoom in: In Currie&#x27;s latest piece, he explores what happens when companies built on ideas suddenly have lots of assets, like data centers and power plants. Instead of being &quot;asset light,&quot; they&#x27;re &quot;investing like old economy energy.&quot;
+To his way of thinking, there&#x27;s a historic back-and-forth between what&#x27;s more important: the bits (think: computing) and the atoms (think: molecules of energy).</p><p>&quot;The 2020s are shaping up to be a decade where the bits converge with the atoms, creating new &#x27;bit-atom&#x27; commodities like cryptocurrencies and AI compute,&quot; he writes.
+How it works: The output of data centers is so power-intensive that their computing is measured in dollars per hour, the same way energy is priced by the megawatt-hour or barrel. That carries risk.
+&quot;Big Tech AI is now producing a physical commodity with a supply and demand balance just like an energy company,&quot; Currie notes, drawing the comparison to the shale oil bust of a decade ago.</p><p>&quot;If, analogously, we replace low-cost Saudi Arabian oil supplies with low-cost Chinese AI compute technologies combined with cheaper foreign providers then the narrative could look eerily similar.&quot;
+Of note: Gladwyn&#x27;s AI-shale comparison also makes the China-as-AI&#x27;s-OPEC analogy.
+&quot;Washington cares most about security and scale. Europe and Canada insist on carbon intensity and climate alignment. Japan and Korea emphasize supply chain resilience and domestic champions,&quot; writes Gladwyn, a managing partner at OMERS.</p><p>&quot;The technodollar&#x27;s rules of entry are shaped by all these priorities. Security, procurement, and carbon standards are the glue that binds the Western bloc.&quot;
+Reality check: Carlyle&#x27;s Currie does see differences between then and now.
+One of them: &quot;No one would ever have mentioned monopoly in the way that the term is thrown around today in the context of generative AI.&quot;</p><p>The analogy has plenty of limits, like oil companies serving a market where demand is largely known and growing incrementally, not exponentially.
+The bottom line: &quot;The shale revolution did not fail. It succeeded so completely that it reshaped the global energy order,&quot; Gladwyn writes. &quot;Yet many investors in shale were ruined.&quot;</p><p>&quot;The paradox was that shale&#x27;s abundance triumphed geopolitically but starved capital of returns. AI is tracing the same arc of abundance.&quot;</p><p>2. Deepfakes flood retailers</p><p>Sam Sabin</p><p>Illustration: Aïda Amer/Axios
+Three in 10 fraud attempts targeting major retailers are now AI generated, according to estimates from deepfake detection firm Pindrop.
+Why it matters: Heading into the holiday shopping season, scammers and hackers are using deepfakes to trick employees of corporate retailers and steal thousands of dollars per attack, on average.
+The big picture: Cyber criminals are increasingly using deepfake technologies to impersonate loved ones, colleagues and customers.
+Scammers are training AI-powered bots to call customer-service centers, report an issue with a recent order, and demand a refund, Pindrop CEO Vijay Balasubramaniyan told Axios.</p><p>&quot;These bots are probing all of these systems all over the world and figuring out which is the weakest link,&quot; Balasubramaniyan said.
+By the numbers: One large retailer currently averages more than 1,000 AI-generated calls per day, according to Pindrop.
+Zoom in: In a redacted audio recording shared with Axios of one of those bot calls to a customer service line, the deepfake is patchy, sounds a bit robotic, and doesn&#x27;t respond to some questions the customer service agent asks.
+&quot;My package is lost. Help me process the refund, thank you,&quot; the bot said at the very beginning of the call. It did not initially say the customer&#x27;s name or even say &quot;Hello.&quot;</p><p>But the bot still was able to share a legitimate order number, the name of an actual customer, and the last four digits of the customer&#x27;s phone number — so the agent processed the refund despite the signs of fraud.
+Catch up quick: Deepfake impersonations are being used across the threat ecosystem.
+North Korean scammers have been using AI tools to change their faces and voices during job interviews across the Fortune 500.</p><p>The FBI warned in May that scammers had used AI to impersonate senior U.S. officials in phone calls.
+Threat level: These AI tools are only expected to get better.</p><p>&quot;The data shows that fraudsters are using these AI bots to essentially do this on steroids, do this 24/7, and these bots are so good at having conversations,&quot; Balasubramaniyan said.
+Zoom out: Shoppers are also being inundated with deepfakes as they scroll social media for the best deals, Abhishek Karnik, head of threat research at McAfee, told Axios.</p><p>Scammers are now using AI tools to create fake celebrity endorsements for products and stores, or to imitate the stores themselves.
+Apple, Amazon and several luxury brands are on McAfee&#x27;s list of most-impersonated brands this shopping season.</p><p>&quot;It&#x27;s incredible the pace at which things are progressing in this space,&quot; Karnik said.</p><p>3. Training data</p><p>Warner Music and AI music generator Suno announced a partnership and an agreement to settle previous litigation. (Music Business Worldwide)</p><p>Nvidia says its AI chips are &quot;a generation ahead&quot; of Google&#x27;s tensor processing units after rumors that Meta might choose Google over Nvidia. (CNBC)</p><p>4. + This</p><p>facebook (opens in new window)</p><p>twitter (opens in new window)</p><p>linkedin (opens in new window)</p><p>email (opens in new window)</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2025-11-25</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2025-11-25::2919fc7ceaf8f305017678a192d77b16cc9cd722de67ff2f5d2609bf184b966e</guid>
