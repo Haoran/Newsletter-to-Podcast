@@ -25,9 +25,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus#November 25, 2025::2919fc7ceaf8f305017678a192d77b16cc9cd722de67ff2f5d2609bf184b966e": "2025-11-25T15:47:44.767940+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#November 26, 2025::049a2078be86a900ac97535d74a653a4e7bf0a074cbb9b8836edd4463639c534": "2025-11-26T15:45:19.984020+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#December 01, 2025::27116af5ce14c61a9b235dfcb8228bc1cd3a0c917f31847fc276e9dfbd1cac8d": "2025-12-01T15:46:09.728068+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::79c764c01d8f040aecbca0ffdef158f3c7f64bb015fc1eba652b9864cae74c52": "2025-12-02T15:48:40.666743+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::79c764c01d8f040aecbca0ffdef158f3c7f64bb015fc1eba652b9864cae74c52": "2025-12-02T15:48:40.666743+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::6078d6b70c9e757de01535a10b44ca5d4721da8e853f2d94469eb111a13fe2e5": "2025-12-03T15:47:52.578173+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-12-03::6078d6b70c9e757de01535a10b44ca5d4721da8e853f2d94469eb111a13fe2e5",
+      "title": "Axios: 2025-12-03",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-12-03T15:47:24.660158+00:00",
+      "description_html": "<p>1. OpenAI CEO Sam Altman is feeling three prongs</p><p>2. original Microsoft deal</p><p>The original Microsoft deal helped cover those costs. Now that the partnership has been restructured, OpenAI will have to generate far more revenue on its own to fund future training and inference.</p><p>3. it hopes</p><p>OpenAI has committed to spending $1.4 trillion in infrastructure and says it hopes to build a gigawatt of new capacity per week, at a cost of around $20 billion per gigawatt. But when questioned about those figures, Altman has gotten defensive of late.</p><p>4. job market are rattling the industry — to say nothing of a blowup over even</p><p>You don&#x27;t have to understand or even believe in the AI bubble to know that allegations of circular investing, mounting debt and a weakening job market are rattling the industry — to say nothing of a blowup over even the hint of a federal backstop for AI companies.</p><p>5. 2. Safety</p><p>Facing multiple lawsuits from families whose teens and other loved ones got bad advice while in crisis, OpenAI has added parental controls and other mental health guardrails.\nThese updates have neither stopped the lawsuits nor appeased users as a whole.</p><p>The company&#x27;s latest model — GPT-5 — had a bumpy rollout, and users openly rebelled, calling the new model &quot;the lobotomization of GPT-4o&quot; and accusing the company of &quot;psychological paternalism.&quot;</p><p>6. 3. Gemini</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-03.mp3",
+      "audio_bytes": 1235328,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-03.txt",
+      "content_hash": "6078d6b70c9e757de01535a10b44ca5d4721da8e853f2d94469eb111a13fe2e5"
+    },
     {
       "id": "issue::2025-12-02::79c764c01d8f040aecbca0ffdef158f3c7f64bb015fc1eba652b9864cae74c52",
       "title": "Axios: 2025-12-02",
