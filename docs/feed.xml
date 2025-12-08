@@ -22,6 +22,43 @@
     </image>
 
     <item>
+      <title>Axios: 2025-12-08</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2025-12-08::155751f637bcd1f09cd0c284c4e2654ec44b68b8cd86c3829a8b825b7deca0cc</guid>
+      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-08.mp3" length="4051968" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-08.txt" type="text/plain" />
+      <description><![CDATA[<p>1. Axios AI+</p><p>Axios AI+</p><p>December 08, 2025</p><p>Ina Fried
+Thanks to everyone who came to last week&#x27;s Axios AI+ Summit in San Francisco or watched online.
+Join Axios tomorrow at 6pm ET for an event exploring the evolving threat of retail crime with Visa chief risk and client services officer Paul Fabara and Georgia Attorney General Christopher Carr. RSVP here.</p><p>Today&#x27;s AI+ is 1,169 words, a 4.5-minute read.</p><p>1 big thing: Yes, AI is in a bubble. No, it&#x27;s not just hype.</p><p>We may well be in an AI bubble — the money, momentum and magical thinking all point that way.
+Why it matters: A financial bubble doesn&#x27;t mean AI won&#x27;t transform the way we live and work.</p><p>It means the risks are higher — for investors, for partners tethered to OpenAI, Google and Microsoft, and for the broader economy — if trillion-dollar bets don&#x27;t pay off.
+The big picture: Bubble talk is everywhere. Mentions of &quot;AI bubble&quot; rose 880% since last quarter&#x27;s investor calls, according to AlphaSense.
+What they&#x27;re saying: Speakers at recent Axios events were buzzing about the risks of an overheated market and buzzing about the buzz itself.
+&quot;Some parts of AI are probably in a bubble,&quot; Google DeepMind CEO Demis Hassabis told Axios&#x27; Mike Allen at the AI+ Summit on Dec. 4. But, he added, &quot;It&#x27;s not a binary.&quot;
+&quot;I, more than anyone, believe that AI is the most transformative technology ever, so I think in the fullness of time, this is all going to be more than justified,&quot; Hassabis said.
+&quot;I think it would be a mistake to dismiss [AI] as snake oil,&quot; OpenAI chairman and Sierra co-founder Bret Taylor said at the AI+ Summit.
+Taylor acknowledged that there &quot;probably is a bubble,&quot; but said businesses, ideas and technologies endure even after bubbles pop. &quot;There&#x27;s going to be a handful of companies that are truly generational,&quot; Taylor said.</p><p>Such was the case with the dot-com boom. While companies like Pets.com and Webvan were washed away during the bust, Taylor noted that Amazon and Google grew from the rubble.
+Zoom in: Others have argued that AI isn&#x27;t a bubble, but large language models could be.
+LLMs are becoming a commodity and the market is facing diminishing returns, scientist and author Gary Marcus told Axios last week. &quot;The return on investment has not been that high. The costs are very high. Nobody except Nvidia is making all that much money. The big players are losing money.&quot;</p><p>This sentiment was echoed by Hugging Face CEO Clem Delangue. &quot;I think the LLM bubble might be bursting next year,&quot; Delangue told Axios&#x27; Dan Primack onstage at the Axios BFD Summit last month.
+Zoom out: Many of the suppliers to the AI economy are trying to take advantage of a boom, while also trying to avoid being left holding the bag if the good times end.
+Wendell Huang, CFO of leading chip foundry Taiwan Semiconductor Manufacturing Co. (TSMC), told Axios in an interview that the company is talking not just to its customers, but also to its customers&#x27; customers to determine demand.</p><p>&quot;We believe the AI megatrend is real. But our internal approach remains a disciplined one,&quot; Huang said.
+Reality check: There are still risks of getting the timing wrong.
+Moody&#x27;s warned on Friday that OpenAI&#x27;s plan to spend $1.4 trillion on infrastructure in the coming years presents a significant gamble, not just for the ChatGPT creator, but also its partners and suppliers.
+Nearly two-thirds of Oracle&#x27;s future business commitments are from its $300 billion contract with OpenAI, Moody&#x27;s said. The credit rating firm estimated that about half of Microsoft&#x27;s order backlog is tied to OpenAI based on the two companies&#x27; recently renegotiated deal.</p><p>Chipmaker AMD could be counting on 25% to 30% of its 2027 revenue from OpenAI, per Moody&#x27;s.
+Between the lines: Bubble or no, the mix of heavy investment and stiff competition has made vast computing power available to developers and businesses at comparatively low cost.
+Google, OpenAI, Microsoft, Anthropic and others are all constantly looking to one-up each other on performance while undercutting others on price, Levie said.</p><p>&quot;The great thing from just a user of these technologies, whether as an end user or a developer, is you have hundreds of billions of dollars of capital expense, capital expenditure and R&amp;D going into technology that you get to use instantaneously,&quot; Box CEO Aaron Levie told Axios at the summit.</p><p>The bottom line: An AI bubble doesn&#x27;t mean the technology is hype, or that today&#x27;s frenzy isn&#x27;t also minting the next generation of tech giants, but it does mean the financial stakes are rising fast.</p><p>2. Anthropic has no immediate plans to IPO</p><p>Christine Wang</p><p>Sasha de Marigny, chief communications officer of Anthropic, speaks with Axios&#x27; Eleanor Hawkins at last week&#x27;s Communicators Live in New York City
+Anthropic has no immediate plans to file for an initial public offering, the artificial intelligence company&#x27;s chief communications officer, Sasha de Marigny, said at Axios Communicators Live.
+Why it matters: An IPO could be among the largest ever for a U.S. company and come at a time when optimism around AI is already driving stock markets.
+Catch up quick: The Financial Times reported that Anthropic has hired lawyers for a potential IPO as soon as next year.</p><p>The FT also reported the company is in discussions for a private funding round that could value the company at over $300 billion.
+What they&#x27;re saying: &quot;Right now, we&#x27;re keeping our options open. There are no immediate plans to go public,&quot; de Marigny told Axios&#x27; Eleanor Hawkins.
+She explained that &quot;AI development is moving so rapidly it has eclipsed our ability to keep up with understanding it,&quot; and now there are entire fields of research dedicated to understanding why the large language models act in unexpected ways.</p><p>&quot;But if you want to be a well-run company that is serving enterprises ... there&#x27;s an element of rigor and discipline that we are going to have to get into, to be able to be a stable company,&quot; de Marigny said.
+The big picture: AI optimism is already driving stock markets, and investors will be eager to pile in when the first major AI company goes public.
+While Wall Street has boomed along with AI hype, the lofty valuations have raised questions about a potential bubble as investors increasingly scrutinize how much Big Tech companies are spending on their AI ambitions.
+Shares of publicly traded Big Tech companies like Meta, Google, Nvidia and others have seen volatility following executive commentary and figures gleaned from earnings reports.</p><p>An IPO would let AI companies tap public market funding, but also expose them to that scrutiny.</p><p>What to watch: Anthropic has been vocal about regulation, endorsing a major AI bill in California. De Marigny said the company is in favor of regulation that promotes transparency.</p><p>3. Training data</p><p>Meta is buying AI wearable startup Limitless. (TechCrunch)
+A federal judge ruled that any deals Google signs requiring its search or AI apps to be preloaded on devices must be renegotiated at least every year. (CNBC)</p><p>Meta is delaying the mixed reality glasses it planned to release next year until 2027. (Business Insider)</p><p>4. + This</p><p>A seal walked (technically galumphed) into a bar last week in New Zealand, prompting the owners to grab some salmon to lure it back out.</p><p>facebook (opens in new window)</p><p>twitter (opens in new window)</p><p>linkedin (opens in new window)</p><p>email (opens in new window)</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2025-12-04</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2025-12-04::4bdfc495d6f9cbf34ed91f1ecc23faa1ffe887a9c7f59290bc61c39edb3128a6</guid>

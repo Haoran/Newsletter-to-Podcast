@@ -1,0 +1,23 @@
+First up, there's a lot of buzz about AI being in a bubble. While it might seem like hype, this doesn't mean AI won't change our lives and work. It just means there's more risk if big investments don't pay off. Mentions of an "AI bubble" have skyrocketed recently, suggesting caution. Experts at recent events agree that while some parts of AI may be overheated, the technology itself is transformative and here to stay.
+
+Next, OpenAI's Bret Taylor and Google DeepMind's Demis Hassabis both acknowledge the bubble but emphasize that AI's potential is vast. They believe that despite any market corrections, AI will lead to generational companies, much like Amazon and Google emerged from the dot-com bust.
+
+Meanwhile, there's debate over whether large language models (LLMs) are the real bubble. Scientist Gary Marcus points out that while LLMs are becoming common, the high costs aren't yielding high returns. Only Nvidia seems to be profiting significantly, while others are losing money.
+
+Finally, Hugging Face CEO Clem Delangue predicts the LLM bubble might burst soon. Companies are trying to capitalize on the current boom but are cautious about future demand. Taiwan Semiconductor Manufacturing Co. is even consulting not just their customers, but their customers' customers to gauge the market's direction.
+
+First up, let's talk about the AI megatrend. NVIDIA's CEO, Jensen Huang, emphasizes a disciplined approach despite the buzz. But there's a reality check: Moody's has flagged OpenAI's massive $1.4 trillion infrastructure plan as a significant risk. This gamble affects not just OpenAI but also partners like Oracle and Microsoft, who have substantial business commitments tied to it. For AMD, a big chunk of future revenue might hinge on OpenAI. Despite the risks, this intense investment and competition have made powerful computing more accessible and affordable for developers and businesses.
+
+Next, Aaron Levie from Box highlights a silver lining for users and developers. He points out that the massive capital and R&D investments in AI technologies are instantly available for use, which is a huge advantage.
+
+Meanwhile, there's chatter about a potential AI bubble. While it doesn't mean the technology is all hype, it does indicate rising financial stakes. The current frenzy is likely paving the way for the next generation of tech giants.
+
+Finally, let's turn to Anthropic. The AI company has no immediate plans for an IPO, according to their chief communications officer, Sasha de Marigny. However, the Financial Times reports Anthropic is preparing for a possible IPO next year and is also exploring a private funding round that could value the company at over $300 billion. De Marigny notes that AI development is advancing so quickly that it's outpacing our understanding, leading to new research fields dedicated to these challenges.
+
+First up, AI is making waves in the stock market. There's a lot of excitement around AI, and it's pushing stock prices up. But with this hype comes concerns about a potential bubble. Investors are keeping a close eye on how much big tech companies are spending on AI. Companies like Meta, Google, and Nvidia have seen their stock prices fluctuate based on what their executives say and their earnings reports.
+
+Next, AI companies might soon go public to access more funding, but this means they'll face more scrutiny. Anthropic, for example, is actively supporting AI regulation in California to ensure transparency in the industry.
+
+Meanwhile, Meta is expanding its AI capabilities by acquiring the AI wearable startup Limitless. In other news, a judge has ruled that Google must renegotiate deals involving its search or AI apps on devices every year. Also, Meta is pushing back the release of its mixed reality glasses to 2027.
+
+Finally, a lighter story from New Zealand: a seal wandered into a bar, and the owners had to use salmon to coax it back outside.
