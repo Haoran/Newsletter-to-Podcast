@@ -1,0 +1,17 @@
+First up, let's talk about how communities of color are dealing with the AI boom. Civil rights groups are raising alarms about the environmental impact of AI's physical infrastructure, like massive data centers. These centers use a lot of water, energy, and land, often in areas where marginalized communities already face high pollution and climate challenges. For example, in Southwest Memphis, a supercomputer data center is facing legal action for violating the Clean Air Act, with concerns about increased pollution and health risks. Meanwhile, in Amarillo, Texas, there's worry that a huge AI data center could deplete the Ogallala Aquifer, a crucial water source. And in Northern Virginia, the expansion of data centers is causing pushback from Black families who feel their communities are being overwhelmed. Activists are also speaking out against proposed data centers in Arizona and Florida. The concern is that these centers don't bring many jobs and target areas in need of economic development, potentially setting a precedent for future regulation.
+
+Next, let's shift gears to the tech world. Former President Trump has decided to allow Nvidia to sell its chips to China.
+
+First up, President Trump has decided to allow the export of Nvidia's H200 chips to China. The U.S. government will take a 25% cut from these sales. Nvidia's CEO, Jensen Huang, has been advocating for this move, arguing it's crucial for the U.S. to stay ahead in the AI race. Trump announced this decision on Truth Social, extending the same offer to companies like AMD and Intel. While some fear these chips could boost China's military capabilities, Trump assures that national security measures will be in place. Nvidia praised the decision, highlighting its potential to support American jobs and manufacturing.
+
+Next, President Trump is preparing to sign an executive order aimed at creating a unified rulebook for AI, rather than allowing a mix of state laws. He believes a single set of regulations is essential for maintaining the U.S. lead in AI development. Trump argues that having 50 different state regulations would hinder AI progress. However, critics, including Florida Governor Ron DeSantis, argue that Trump lacks the authority to override state laws. They suggest that only Congress could potentially establish a nationwide regulatory framework, but no such legislation has been proposed yet. The upcoming executive order is not expected to completely block state AI laws.
+
+First up, Meta is developing a new AI model called Avocado. It's expected to launch by early 2026 and might be a proprietary model, unlike their open-source Llama.
+
+Next, the creator of ICEBlock, an app for tracking immigration raids, is suing the Trump administration. The claim? Officials allegedly forced Apple to remove the app, violating constitutional rights.
+
+Meanwhile, Paramount is making waves with a bold move to take over Warner Bros. Discovery. They're offering an all-cash deal at thirty dollars per share, and Jared Kushner is reportedly involved in securing the financing.
+
+In other news, Apple’s chip leader, Johny Srouji, reassured employees he’s staying put. This follows rumors that he might be considering leaving the company.
+
+Finally, a film to keep an eye on during the holidays is "Come See Me in the Good Light." It explores the journey of Colorado poet laureate Andrea Gibson after a cancer diagnosis, capturing their final days.
