@@ -30,9 +30,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::756a7f431b8d8851bede3779693be006e74936837d94d8bddb48170e502c6dac": "2025-12-04T15:48:52.764083+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#December 04, 2025::4bdfc495d6f9cbf34ed91f1ecc23faa1ffe887a9c7f59290bc61c39edb3128a6": "2025-12-06T15:40:42.628621+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#December 08, 2025::155751f637bcd1f09cd0c284c4e2654ec44b68b8cd86c3829a8b825b7deca0cc": "2025-12-08T15:46:37.281077+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::f9f09e323748d3a900f18c307f830bdeef74dc39444161bd23a53e39f739f74d": "2025-12-09T15:46:26.614022+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::f9f09e323748d3a900f18c307f830bdeef74dc39444161bd23a53e39f739f74d": "2025-12-09T15:46:26.614022+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::99e72394ab9728830aadf638eb60d1e17f9f5deeb56ec3e4434d9282962d050d": "2025-12-10T15:46:43.687756+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-12-10::99e72394ab9728830aadf638eb60d1e17f9f5deeb56ec3e4434d9282962d050d",
+      "title": "Axios: 2025-12-10",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-12-10T15:46:11.090563+00:00",
+      "description_html": "<p>1. Google</p><p>Why it matters: For all the bravado from across the sector, the generative AI boom won&#x27;t stay frothy forever. Tech companies are spending billions with little proven revenue, setting the stage for clear winners — and spectacular failures.</p><p>2. Nano Banana</p><p>Once seen as having squandered its early research advantage, Google has been showing signs of a comeback for months, even before the release of its</p><p>3. threatens to upend</p><p>the search business that has funded the bulk of Google&#x27;s empire.</p><p>4. Meta</p><p>The company that defined the category with ChatGPT is now on its heels enough to declare an internal &quot;code red&quot; as it looks to accelerate a competitive response to the latest Gemini model — a release that could come this week.\nMore broadly, without a separate business to fund its operation, OpenAI must borrow heavily and quickly build products that generate revenue now.</p><p>OpenAI is in many ways still the one to beat, especially from the consumer perspective. There&#x27;s a reason everyone is clamoring to get their apps inside ChatGPT.</p><p>5. Mark Zuckerberg&#x27;s company is in the midst of a massive reboot after seeing its open source Llama models fall behind the pack.</p><p>6. The company went on a</p><p>to bring in new leadership and is reportedly pinning its hopes on a new model, code-named</p><p>7. Meta&#x27;s flailing efforts are buttressed by an incredibly strong existing operation.</p><p>8. While it flies somewhat under the radar due to its low presence in the consumer space, Anthropic&#x27;s Claude is still the go-to choice for many coders and enterprise customers.</p><p>9. deal with Accenture</p><p>, announced yesterday, is an example of how it can expand its operation without being a household name.</p><p>10. Like OpenAI, it has to fund its massive ambitions by rapidly growing its business and/or raising vast amounts of money. A potential 2026 IPO could help along those lines, but as an AI-native company, it&#x27;s more vulnerable to a shift in investor whims.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-10.mp3",
+      "audio_bytes": 1157760,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-10.txt",
+      "content_hash": "99e72394ab9728830aadf638eb60d1e17f9f5deeb56ec3e4434d9282962d050d"
+    },
     {
       "id": "issue::2025-12-09::f9f09e323748d3a900f18c307f830bdeef74dc39444161bd23a53e39f739f74d",
       "title": "Axios: 2025-12-09",
