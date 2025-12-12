@@ -1,0 +1,13 @@
+First up, OpenAI is raising alarms about the increasing cyber capabilities of its AI models. In a report shared with Axios, OpenAI warns that upcoming models could significantly boost the number of people capable of launching cyberattacks. Recent models have shown improved abilities, like operating autonomously for longer periods, which could lead to more brute force attacks. OpenAI's GPT-5.1-Codex-Max, for instance, scored 76% on a capture-the-flag exercise last month. The company is preparing as if each new model could reach high cybersecurity capability levels. While OpenAI hasn't specified when these high-risk models might emerge, they emphasize the importance of models' ability to work over extended periods. This capability, while potentially dangerous, can be countered in well-defended environments.
+
+Meanwhile, AI advancements aren't just a concern for OpenAI. Other companies are also seeing their models improve at identifying security vulnerabilities, which can aid both attackers and defenders. Notably, Anthropic recently reported a foreign government using AI to automate a cyber operation. The growing power of generative AI models is also fueling other crimes, from fraud to deepfake extortion. In response, OpenAI is ramping up collaboration efforts across the industry, including through the Frontier Model Forum and a new Frontier Risk Council. They're also testing a tool called Aardvark to help developers find security gaps in their products.
+
+Next, Wall Street is eagerly anticipating a potential $3 trillion IPO surge.
+
+First up, some of the world's biggest startups, including major players in AI, are eyeing IPOs next year. These potential public offerings could create $3 trillion in new public companies. The catch? Many of these companies aren’t profitable yet but have sky-high valuations. This has some experts worried about a repeat of the dot-com bubble.
+
+Next, Elon Musk's SpaceX is planning to go public with a staggering $1.5 trillion valuation, which would make it the richest listing ever. Meanwhile, OpenAI, valued at over $500 billion, is also sparking IPO rumors. Other tech giants like Anthropic are considering listings by 2026. The market's enthusiasm for AI, space, and crypto is at a peak.
+
+Meanwhile, there are concerns about a potential bubble in AI stocks. Oracle's recent disappointing results led to a significant drop in its stock price, highlighting investor jitters. Experts warn that if valuations get too high, we might see another WeWork scenario, where initial excitement doesn’t match reality.
+
+Finally, on a lighter note, In-N-Out has stopped using order number 67 to avoid chaos among younger customers. In contrast, Arby's is embracing the youth without hesitation.
