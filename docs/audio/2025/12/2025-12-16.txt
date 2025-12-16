@@ -1,0 +1,19 @@
+First up, Mattel and OpenAI are hitting pause on their plans to create AI-powered toys. This delay highlights growing concerns over safety, privacy, and regulations surrounding AI, especially when it comes to children. Mattel originally aimed to release a product by 2025 but now confirms there's no timeline for launch. The focus is on ensuring these AI toys are safe and compliant, particularly since OpenAI's tools are designed for users aged 13 and up. The landscape has shifted since their initial announcement, with increased scrutiny on AI's impact on young people and reports of AI-enabled toys behaving inappropriately. Regulators and safety groups have raised alarms about these toys discussing explicit topics and lacking parental controls, posing risks of emotional dependence and privacy issues. Toymakers face a balancing act between leveraging AI for interactive play and managing potential reputational risks if things go wrong.
+
+Next, the White House is forming a new AI-focused Tech Force, drawing talent from major tech companies. This move signals the tech industry's growing support for President Trump. The initiative seems to be a response to previous disruptions in federal tech expertise, aiming to bolster the government's capabilities in AI.
+
+First up, the administration is teaming up with major tech players like Adobe, Amazon Web Services, IBM, Meta, Microsoft, and more. They're launching a program where tech employees can temporarily join the federal government for two years. These workers will maintain their stock options and can return to their companies afterward. The aim is to modernize government operations by bringing in fresh talent, with salaries ranging from $135,000 to $195,000 a year. Participants must take a leave of absence from their companies and follow government ethics rules. The program targets early-career technologists and experienced managers, hoping to attract around 1,000 recruits.
+
+Next, Whole Foods is taking a step towards sustainability with AI-powered composting bins. These bins will transform fruit and vegetable scraps into chicken feed, which will then help produce eggs for the store. This innovative approach, developed by startup Mill, could reduce waste by up to 80%, cutting greenhouse gas emissions and saving money. Amazon, which owns Whole Foods, is partnering with Mill to implement these bins across stores by 2027. Mill has raised $250 million since its inception in 2020, with Amazon and other big names like Google Ventures investing.
+
+Finally, OpenAI's chief communications officer, Hannah Wong, is stepping down. She'll leave the company at the end of January. Wong was OpenAI's first CCO and played a crucial role during the launch of ChatGPT, navigating regulatory challenges, and managing various deals and controversies. Her departure marks a significant change for the AI company.
+
+First up, a major executive departure is making waves as the company pushes forward on multiple fronts. With $1.4 trillion committed to infrastructure, new products like Sora, and a potential IPO on the horizon, there's a lot in motion.
+
+Next, OpenAI is making headlines by bringing on Albert Lee, a seasoned Google executive, to lead their corporate development. This move signals a strong push for growth and innovation.
+
+Meanwhile, Nvidia is shaking things up by releasing Nemotron 3 as an open model. Uniquely, they're also sharing much of the training data, which is a rare move in the industry.
+
+Finally, a new survey reveals a split between investors and executives at public companies regarding AI returns. Expectations seem to vary widely, highlighting the uncertainty in the field.
+
+And in a lighter note, AI's influence is undeniable as Merriam-Webster names "slop" the 2025 word of the year, showing just how mainstream AI has become.
