@@ -22,6 +22,42 @@
     </image>
 
     <item>
+      <title>Axios: 2025-12-17</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2025-12-17::c04a201967a30a7bbd1b0ffc002c1ecf0bde883e1f304343a07a5047880f1198</guid>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-17.mp3" length="3018624" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-17.txt" type="text/plain" />
+      <description><![CDATA[<p>1. Axios AI+</p><p>Axios AI+</p><p>December 17, 2025</p><p>Ina Fried</p><p>A new study finds daytime napping is correlated with a larger brain. The study was unable to determine if the relationship is causal, so I guess I will have to spend some more time &quot;gathering data.&quot; Today&#x27;s AI+ is 1,089 words, a 4-minute read.</p><p>1 big thing: ChatGPT Images swipes at Google</p><p>Megan Morrone</p><p>AI images created by ChatGPT Images</p><p>ChatGPT&#x27;s image update — released yesterday — shows another front has opened up in OpenAI and Google&#x27;s battle to dominate AI.
+Why it matters: Users have been marveling at the image advances in Google&#x27;s Nano Banana, putting the pressure on OpenAI to show real progress to keep up.
+Driving the news: The new ChatGPT Images is designed for both editing images and generating them.
+OpenAI says the tool offers precise edits while keeping details intact, and generates images up to four times faster.</p><p>The update will appear in a new ChatGPT sidebar for all users, and in the API as GPT Image 1.5.
+What they&#x27;re saying: The original ChatGPT interface wasn&#x27;t designed for creating images, Fidji Simo, OpenAI&#x27;s CEO of applications, said in a blog post yesterday.
+&quot;The new image viewing and editing screens make it easier to create images that match your vision or get inspiration from trending prompts and preset filters,&quot; Simo said.</p><p>&quot;The model adheres to your intent more reliably — down to the small details — changing only what you ask for while keeping elements like lighting, composition, and people&#x27;s appearance consistent across inputs, outputs, and subsequent edits,&quot; OpenAI said in a separate blog post.
+State of play: The advanced image generation and editing model behind Nano Banana launched in late November 2025 and has the industry buzzing about studio-quality outputs, precise text rendering, multi-image blending, and natural-language edits.
+Nano Banana has been integrated into Adobe Firefly and Photoshop since its release.</p><p>But ChatGPT Images&#x27; integration into ChatGPT (still the most popular chatbot in the world) could pose another big threat to Adobe, the once undisputed king of photo editing.
+Between the lines: The back-and-forth competition is shaping up to be a trend that will continue into 2026, according to industry insiders.
+&quot;We will be having the exact same conversation all throughout next year on the model front,&quot; Box CEO Aaron Levie told Axios. &quot;We&#x27;re just going to be in this constant race. I think that&#x27;s what makes it fun and great.&quot;
+It&#x27;s a dynamic that benefits the enterprise and consumer customers making use of the latest models, but could prove costly for the leading AI companies who have to keep up an unrelenting pace.</p><p>Expect more model releases this week before the AI companies go down for their long winter&#x27;s nap, which should last until around CES the first week in January.
+OpenAI teased the release of ChatGPT Images in a post on X with a yearbook-style image of CEO Sam Altman, presumably created with the new tool, and the words &quot;Most likely to launch a new image model.&quot;</p><p>What we&#x27;re watching: The AI race appears to be narrowing into a binary competition between OpenAI and Google, with the fronts they compete on widening.</p><p>2. AI is creating more jobs, for now</p><p>Emily Peck</p><p>Illustration: Aïda Amer/Axios
+Here&#x27;s something to tell the AI doomers: There&#x27;s new evidence that instead of bringing on a job apocalypse, AI is creating more work, and, yes, jobs.
+Why it matters: There&#x27;s a more nuanced and optimistic story at play when it comes to AI and the workplace.
+The latest: The fund giant Vanguard has released an analysis finding that both wage and job growth increased over the past two years in the occupations most exposed to AI, compared with those with less exposure.</p><p>A separate survey, meanwhile, found that most institutional investors and CEOs expect AI to drive an increase in hiring across all levels in 2026.
+The big picture: There&#x27;s no question the job market has slowed down this year — the latest numbers from the federal government show persistent weakness.
+The tech sector and professional occupations like consulting are seeing job losses and fewer job openings.
+But the explanations are less about AI and more about other big macroeconomic factors.</p><p>More recently, sweeping federal job cuts and restrictive immigration policy have had an impact.
+&quot;There&#x27;s a lot of change happening in the labor market right now,&quot; says economist Martha Gimbel, executive director of the Yale Budget Lab.</p><p>It has been difficult to tease out the impact that AI is having amid these other shifts.
+Zoom in: Vanguard looked at a Labor Department database with detailed information on nearly every occupation in the U.S. — things like skill and knowledge requirements and day-to-day responsibilities.</p><p>It identified jobs where people perform tasks that can be augmented or replaced by AI — data analysis, for example — as well as roles with low exposure to AI, like construction or cleaning.
+What they found: Real wages increased 3.8% in the occupations with the highest AI exposure from the second quarter of 2023 to the second quarter of 2025, compared with 0.7% in all other occupations.
+Job growth was up 1.7%, compared with a 0.8% gain.</p><p>AI is making work more productive and letting people focus on more higher-value activities, the analysis concludes.
+Between the lines: Improvements in tech creating more demand and work is not a new trend. Think back, for example, to the iPhone&#x27;s early days. The new device enabled an entirely new app-based economy and new jobs we&#x27;d never seen before.
+Reality check: We are still in the early stages of the AI transition and the technology is moving faster than anyone could&#x27;ve predicted. The new evidence is a snapshot of where we are now — not a forecast of where we are headed.</p><p>What to watch: Much of the current investment in AI is in infrastructure that supports the technology — in building data centers, for example, not hiring.</p><p>3. Training data</p><p>Amazon and OpenAI are in preliminary talks for a $10 billion investment that would include OpenAI using Amazon&#x27;s Trainium chips. (Bloomberg)
+Former British Chancellor George Osborne is joining OpenAI to head its OpenAI for Countries effort. (X, Axios)
+Google announced CC, an experimental AI assistant that helps proactively sort through personal Gmail and Google Calendar accounts. (The Verge)
+The AI boom is raising prices and causing shortages on memory for phones, PCs and game consoles. (Axios)</p><p>Exclusive: OpenAI model GPT-5 has demonstrated that it can do &quot;wet lab&quot; work, paving the way for AI to take a bigger role in scientific experiments. (Axios)</p><p>4. + This</p><p>More than 1,400 couples gathered for a simultaneous smooch in Washington, D.C., over the weekend to break the world record for most people kissing under the mistletoe in one spot.</p><p>facebook (opens in new window)</p><p>twitter (opens in new window)</p><p>linkedin (opens in new window)</p><p>email (opens in new window)</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2025-12-16</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2025-12-16::4e70836e66b2ac5c4a1f9720a2bce0eeb0ffbf9148b48485eefa7a1967b35c10</guid>
