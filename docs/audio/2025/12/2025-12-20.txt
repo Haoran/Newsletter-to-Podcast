@@ -1,0 +1,7 @@
+First up, Google has launched its new Gemini 3 Flash model. This marks a significant moment in the ongoing AI race between Google and OpenAI, with big implications for technology and the economy. Tulsee Doshi, the senior director and Gemini product lead, emphasized that the goal is to make powerful AI tools more accessible to everyone.
+
+Next, Gemini 3 Flash will now be the default model in the Gemini app, taking over from the previous version, Gemini 2.5 Flash. It will also be the main model for AI Mode in Google search, meaning it will reach everyday users globally. Big names like Salesforce, Workday, and Figma are already on board with the new model.
+
+Meanwhile, this release comes hot on the heels of OpenAI's launch of GPT-5.2. Google highlights that Gemini 3 Flash is particularly strong in tasks like planning last-minute trips or quickly grasping complex educational concepts. Its advanced multimodal reasoning allows it to process videos, images, audio, and text, making it a valuable tool for business clients. This is a space where Anthropic's Claude has been gaining ground and OpenAI is eager to compete.
+
+Finally, while OpenAI might have had the first-mover advantage, Google's reach is expanding rapidly. Gemini's presence in search and Google's core apps is growing, with increases in mobile app downloads, active users, and website visits outpacing those of ChatGPT, according to recent reports.
