@@ -36,9 +36,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::970f618af7f30f0f2aa8a2a28694712ab6ad041316d592fcf22f7d14e95c6104": "2025-12-15T15:50:57.538710+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::4e70836e66b2ac5c4a1f9720a2bce0eeb0ffbf9148b48485eefa7a1967b35c10": "2025-12-16T15:47:30.905174+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#December 17, 2025::c04a201967a30a7bbd1b0ffc002c1ecf0bde883e1f304343a07a5047880f1198": "2025-12-17T15:49:02.179139+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::2f0e3a00534c17ebf924dbaf231000dd083a201d7e9ee8b347e2da207751a585": "2025-12-18T15:47:12.722027+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::2f0e3a00534c17ebf924dbaf231000dd083a201d7e9ee8b347e2da207751a585": "2025-12-18T15:47:12.722027+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::a5d2cb1aee64e2290ffcb1a479d86fc6afb5f773c9632d7f7e867afdce4f43af": "2025-12-22T15:45:15.504674+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2025-12-22::a5d2cb1aee64e2290ffcb1a479d86fc6afb5f773c9632d7f7e867afdce4f43af",
+      "title": "Axios: 2025-12-22",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2025-12-22T15:45:10.424297+00:00",
+      "description_html": "<p>Verifying you are human. This may take a few seconds.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-22.mp3",
+      "audio_bytes": 106368,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2025/12/2025-12-22.txt",
+      "content_hash": "a5d2cb1aee64e2290ffcb1a479d86fc6afb5f773c9632d7f7e867afdce4f43af"
+    },
     {
       "id": "issue::2025-12-18::2f0e3a00534c17ebf924dbaf231000dd083a201d7e9ee8b347e2da207751a585",
       "title": "Axios: 2025-12-18",
