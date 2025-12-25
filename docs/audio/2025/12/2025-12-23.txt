@@ -1,27 +1,31 @@
-Happy holidays! Ina and the newsletter will return on Monday, January 5th. Now, let's dive into today's AI+.
+Happy holidays, everyone! We'll be back in your inbox on January 5th. Now, let's dive into today's top story.
 
-First up, the Democratic Party is facing a split over AI policy as we look ahead to 2028. This debate could significantly impact the economy and job market if Democrats reclaim the White House. The party is divided between those who want to embrace AI to compete with China and boost job creation, and those who advocate for more regulation due to concerns about job displacement and resource consumption.
+First up, the Democratic Party is facing a divide over AI policy as we look toward the 2028 elections. The future of AI is becoming a hot topic, with potential presidential candidates and party leaders taking different stances. If Democrats regain the White House, their position on AI could significantly impact the economy and workforce.
 
-Next, swing state governors like Pennsylvania's Josh Shapiro and Michigan's Gretchen Whitmer are welcoming AI companies with open arms. Shapiro has positioned Pennsylvania as a key player in the AI race against China, while Whitmer celebrated a major OpenAI project in Michigan, promising thousands of jobs. Labor unions are also on board, emphasizing the need for responsible planning and union labor in constructing data centers.
+On one side, some Democrats argue for embracing AI to compete with China and capitalize on job opportunities from new data centers. This view aligns somewhat with the Trump administration's approach, though Democrats criticize the current White House for giving AI companies too much freedom. Others in the party call for slowing down and implementing stricter regulations to address AI's potential to displace workers and the environmental impact of data centers.
 
-Meanwhile, progressive Democrats, including New York's Alexandria Ocasio-Cortez and California's Ro Khanna, are pushing for stricter regulations on AI. They highlight the risks of job displacement and call for protective measures. Vermont Senator Bernie Sanders has even suggested a pause on building new data centers until regulations catch up, echoing concerns about the rapid, unchecked growth of AI technology.
+Governors from key swing states, like Pennsylvania's Josh Shapiro and Michigan's Gretchen Whitmer, are welcoming AI companies with open arms. Shapiro has highlighted AI investments in Pennsylvania, while Whitmer celebrated a massive OpenAI project in Michigan, promising thousands of jobs. Labor unions, particularly in construction, are also embracing the potential job growth from AI.
 
-That's all for now. Stay tuned for more updates when we return in January.
+Meanwhile, progressive Democrats, including New York's Alexandria Ocasio-Cortez and California's Ro Khanna, are pushing for more government regulation to protect workers. Vermont Senator Bernie Sanders even called for a halt on building new data centers until proper regulations are in place. Ocasio-Cortez hasn't explicitly backed a moratorium but has emphasized the need for congressional action to address public health concerns related to AI.
 
-First up, there's growing concern over AI chatbots and their impact on society. Some say they're contributing to tragic outcomes for children and driving up electricity costs due to data centers. While a few unions are embracing AI, others are pushing back, fearing job losses. The Teamsters are demanding that self-driving trucks still have human operators, a stance supported by some Democrats like Senator John Fetterman. However, not everyone is speaking out, including Pennsylvania's governor, who remains silent on the issue.
+That's it for today's briefing. We'll keep an eye on how this debate unfolds.
 
-Next, let's talk about the financial outlook for AI in 2026. Despite some declines in tech stocks and concerns about data center overbuilding, Wall Street remains optimistic. They argue that high valuations are justified and that we're just at the beginning of the AI revolution. Analysts point out that companies like Nvidia, with significant sales growth, are actually undervalued. Meanwhile, the demand for AI continues to grow, with OpenAI's ChatGPT reaching 800 million weekly users.
+First up, there's growing concern over AI's impact on society. Some argue that AI chatbots are contributing to tragic outcomes for children, while AI data centers are driving up electricity costs and polluting communities. Unions are divided; some fear job losses, while others are finding ways to adapt.
 
-Meanwhile, there's a debate around the rapid expansion of data centers. Some local officials are starting to limit their growth, which experts say is a healthy market correction. The spending on AI infrastructure is also under scrutiny. Top tech firms are investing heavily, using cash that was previously idle, to fuel future growth. Analysts predict substantial capital expenditure in AI, seeing it as essential for surviving the AI revolution.
+Next, the Teamsters are pushing for regulations on self-driving trucks, insisting a human should always be present. This stance is supported by some Democrats like Senator John Fetterman, but not everyone is on board. Pennsylvania Governor Shapiro's team, for instance, is staying mum on the issue.
 
-Finally, the question remains: will AI be profitable? The answer seems to lie in monetization strategies, particularly through advertising. OpenAI is expected to lead the charge, with new product releases likely to open up more revenue opportunities in the near future.
+Meanwhile, Wall Street is bullish on AI's future, despite some challenges. High stock valuations? Analysts argue they're justified, especially with companies like Nvidia showing massive growth potential. While tech stocks aren't soaring as before, this selectivity is seen as a healthy sign.
 
-First up, OpenAI is making moves to expand its business reach. They've brought on former Slack CEO Denise Dresser as chief revenue officer, signaling a focus on selling to more enterprises. However, venture capitalist Paul Kedrosky warns that the AI bubble might be showing signs of bursting, despite efforts to spin negative signals positively.
+Demand for AI is undeniable, with ChatGPT hitting a record 800 million weekly users. Concerns about data center overbuilding are being addressed by local officials, who are capping growth to maintain balance in the market.
 
-Next, strategists are saying it's time to rethink traditional investing rules. The AI revolution is changing market dynamics, so those old business school textbooks might not apply anymore.
+Finally, the question of AI profitability looms. Analysts believe monetization will come through advertising, with OpenAI expected to lead the charge soon. New product releases could also unlock more revenue streams, ensuring AI's role in the future economy.
 
-Meanwhile, Google’s parent company Alphabet is acquiring data center firm Intersect for $4.75 billion in cash. This move is part of a larger trend where AI companies are aggressively seeking the power needed for energy-hungry data centers.
+First up, OpenAI is making moves to work more closely with businesses. They've brought on former Slack CEO Denise Dresser as their chief revenue officer, signaling a strong push to expand their enterprise sales. However, venture capitalist Paul Kedrosky warns that the AI market might be showing signs of a bubble, suggesting we should be cautious about overly optimistic interpretations.
 
-Finally, AI is already having a big impact on childhood, but safety measures are lacking. An investigation by 404 Media found that Flock's AI-powered surveillance cameras are being livestreamed online without any password protection, raising privacy concerns.
+Next, strategists are saying it's time to rethink traditional market strategies. The AI revolution is changing the game, and the old business school investing rules might not apply anymore.
 
-Thanks for tuning in. Remember, you can subscribe to Mike Allen's AM newsletter to catch Ina's predictions for AI in 2026 while we're on break.
+Meanwhile, Google’s parent company Alphabet is set to acquire data center firm Intersect for $4.75 billion in cash. This move highlights the ongoing race among AI companies to secure the power needed for their energy-intensive data centers.
+
+Finally, AI's impact is reaching into unexpected areas, including childhood experiences. Concerns are growing about the lack of safety measures, as seen with Flock's AI-powered surveillance cameras, which an investigation found to be accessible online without any security barriers.
+
+Thanks for tuning in, and remember to subscribe to Mike Allen's AM newsletter for more insights, including predictions for AI in 2026.
