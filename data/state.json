@@ -38,9 +38,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus#December 17, 2025::c04a201967a30a7bbd1b0ffc002c1ecf0bde883e1f304343a07a5047880f1198": "2025-12-17T15:49:02.179139+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::2f0e3a00534c17ebf924dbaf231000dd083a201d7e9ee8b347e2da207751a585": "2025-12-18T15:47:12.722027+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::a5d2cb1aee64e2290ffcb1a479d86fc6afb5f773c9632d7f7e867afdce4f43af": "2025-12-22T15:45:15.504674+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus#December 23, 2025::c530a8127b34586ea0bef73ecf0c0c67539672614521a01354d59027dc58b4eb": "2025-12-23T15:46:31.309253+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus#December 23, 2025::c530a8127b34586ea0bef73ecf0c0c67539672614521a01354d59027dc58b4eb": "2025-12-23T15:46:31.309253+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "2026-01-04T15:41:17.575959+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-01-04::b20daca3ca78d4e438bc73775fb113e052454bec4ab2637000bbd4686978f2f6",
+      "title": "Axios: 2026-01-04",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-01-04T15:41:13.703715+00:00",
+      "description_html": "",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/01/2026-01-04.mp3",
+      "audio_bytes": 41088,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/01/2026-01-04.txt",
+      "content_hash": "b20daca3ca78d4e438bc73775fb113e052454bec4ab2637000bbd4686978f2f6"
+    },
     {
       "id": "issue::2025-12-23::c530a8127b34586ea0bef73ecf0c0c67539672614521a01354d59027dc58b4eb",
       "title": "Axios: 2025-12-23",
@@ -743,7 +762,7 @@
     }
   ],
   "last_issue": {
-    "published": "December 23, 2025",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus#December 23, 2025"
+    "published": "",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
   }
 }
