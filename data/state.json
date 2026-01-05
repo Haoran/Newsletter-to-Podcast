@@ -39,9 +39,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::2f0e3a00534c17ebf924dbaf231000dd083a201d7e9ee8b347e2da207751a585": "2025-12-18T15:47:12.722027+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::a5d2cb1aee64e2290ffcb1a479d86fc6afb5f773c9632d7f7e867afdce4f43af": "2025-12-22T15:45:15.504674+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#December 23, 2025::c530a8127b34586ea0bef73ecf0c0c67539672614521a01354d59027dc58b4eb": "2025-12-23T15:46:31.309253+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "2026-01-04T15:41:17.575959+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "2026-01-04T15:41:17.575959+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::e6b1b94938100aeb5b8dd14361f033d4fd4a9f45dc4fb52482a7c8eda5423089": "2026-01-05T15:48:32.154430+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-01-05::e6b1b94938100aeb5b8dd14361f033d4fd4a9f45dc4fb52482a7c8eda5423089",
+      "title": "Axios: 2026-01-05",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-01-05T15:47:54.635335+00:00",
+      "description_html": "<p>1. The AI model maker race</p><p>Why it matters: AI may be both the current and next big thing, but success increasingly hinges less on being the &quot;best&quot; model and more on timing.</p><p>2. &quot;We&#x27;re just gonna be in this constant race,&quot; Box CEO Aaron Levie tells Axios.</p><p>The winners must understand when a technology is mature enough to deploy and how to integrate it into messy, human-run organizations without burning money or credibility.\n&quot;Good AI won&#x27;t need long prompts. The more you have to explain, the worse the product is.&quot; Winston Weinberg, CEO and co-founder of Harvey, tells Axios. &quot;The best systems will already know the context.&quot;</p><p>&quot;A jump in model capability does not instantly mean that task gets automated in the economy,&quot; Levie says. &quot;There&#x27;s still a lot of work and software that has to get built out from there.&quot;</p><p>3. Between the lines</p><p>&quot;You have the perfect workflow in coding,&quot; Levie says. And then you have knowledge work, &quot;which is 10 times messier than what engineering workflows look like.&quot;</p><p>4. Improved models could help make agents more of a reality.</p><p>Improved models could help make agents more of a reality.\n&quot;A year from now, answering questions will be the least useful thing AI can do. (And it will be excellent at answering questions!),&quot; Fidji Simo, OpenAI CEO of applications, tells Axios.</p><p>&quot;Instead, we&#x27;ll have proactive AI assistants constantly running in the background, getting things done for us across the web and the real world,&quot; she says. &quot;It will anticipate our needs, and we&#x27;ll be able to trust it to make decisions and take action on our behalf.&quot;</p><p>5. Yes, but</p><p>&quot;In 2026, the most successful companies will set goals that sound absurd without AI — and then use agent collaboration to make them routine,&quot; Dan Rogers, CEO of Asana, tells Axios.</p><p>6. Ryan Gavin, CMO of Slack at Salesforce, predicts that &quot;2026 will be the year of the lonely agent.&quot;</p><p>7. Gavin says companies will spin out &quot;hundreds of agents per employee,&quot; but most will sit idle, like unused software licenses.</p><p>8. &quot;In an agentic solution, you&#x27;re breaking down the problem into many, many steps. And the overall solution is only accurate if you&#x27;re accurate each step of the way,&quot; AT&amp;T chief data officer Andy Markus tells Axios. &quot;That&#x27;s the challenge.&quot;</p><p>9. The bottom line:</p><p>&quot;2026 is the &#x27;show me the money&#x27; year for AI,&quot; Venky Ganesan, a partner at Menlo Ventures, tells Axios. &quot;Enterprises will need to see real ROI in their spend, and countries need to see meaningful increases in productivity growth to keep the AI spend and infrastructure going.&quot;</p><p>Ganesan predicts that some of the aggressive spending could bankrupt major companies.</p><p>10. &quot;The agents that matter will show up where work happens, understand context, and just work,&quot; says Gavin.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/01/2026-01-05.mp3",
+      "audio_bytes": 1801728,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/01/2026-01-05.txt",
+      "content_hash": "e6b1b94938100aeb5b8dd14361f033d4fd4a9f45dc4fb52482a7c8eda5423089"
+    },
     {
       "id": "issue::2026-01-04::b20daca3ca78d4e438bc73775fb113e052454bec4ab2637000bbd4686978f2f6",
       "title": "Axios: 2026-01-04",
