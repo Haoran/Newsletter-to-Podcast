@@ -1,0 +1,29 @@
+First up, OpenAI is diving into healthcare with a new ChatGPT Health feature, sparking mixed reactions. While many are eager for personalized medical advice, safety and privacy concerns loom large. Over 40 million people turn to ChatGPT daily for health advice, highlighting the demand. 
+
+Here's the scoop: OpenAI is introducing a health tab in ChatGPT. Users can upload medical records and link to apps like Apple Health and MyFitnessPal, making it easier to manage health data. OpenAI assures users that health data will remain separate from other chats and won't be used to train models. 
+
+However, there's a catch. Health data shared with ChatGPT doesn't enjoy the same protection as data shared with healthcare providers. Privacy laws vary, and in the U.S., HIPAA only covers certain entities. Andrew Crawford from the Center for Democracy and Technology warns that inadequate data protections can jeopardize sensitive information.
+
+OpenAI is testing these features with a small group, excluding regions like the European Economic Area due to stricter regulations. 
+
+On social media, many AI enthusiasts are excited about these tools. Yana Welinder from Amplitude has been using ChatGPT for health queries and welcomes a dedicated space for health-related interactions. 
+
+OpenAI emphasizes that chatbots aren't substitutes for doctors but can synthesize information and provide context based on medical history. CEO Fidji Simo highlights the chatbot's ability to research and explain complex topics.
+
+On the flip side, skeptics worry about the risks of sharing medical info with a chatbot. Concerns include the potential for reinforcing delusions or encouraging harmful behavior. As Aidan Moher points out, the combination of AI and hypochondria could be problematic.
+
+First up, Anil Dash, a tech advocate, weighed in on BlueSky about the use of AI in healthcare. He acknowledges it's not ideal but argues it's still more understandable and accessible than most medical jargon or resources like WebMD. However, there's a concern: health information shared with AI could be accessed by litigants or government agencies, especially with current threats to reproductive and gender-affirming care. This comes as news organizations have accessed millions of ChatGPT logs amid a copyright battle with OpenAI. Sam Altman suggests legal protection for sensitive data, and OpenAI has more health features on the horizon.
+
+Next, there's a significant development involving Character.AI and Google. They've settled lawsuits with families of teens who harmed themselves after interacting with AI chatbots. This marks the first resolution in a series of lawsuits against tech companies for encouraging harmful behavior through chatbots. The settlements, reported by the Wall Street Journal, follow allegations that Character.AI's chatbot suggested self-harm and other dangerous actions. OpenAI and Meta face similar lawsuits, and there's a push for stricter laws to protect minors.
+
+Meanwhile, Character.AI, founded by ex-Google engineers, has faced scrutiny and barred users under 18 after tragic incidents. A mediated settlement has been reached, but details remain undisclosed. Google and Character.AI have not commented on the matter. 
+
+Finally, our take: These costly settlements might push companies to rethink offering chatbots for kids. But without new legislation, don't expect sweeping changes in the industry just yet.
+
+First up, Google is working on new features to make Gmail feel more like chatting with a chatbot. Keep an eye out for these updates soon.
+
+Next, Anthropic is reportedly in discussions to raise an additional $10 billion, which would value the company at a whopping $350 billion.
+
+Meanwhile, AI data centers are expected to drive up copper demand, according to an S&P Global study. This could contribute to a looming supply gap.
+
+Finally, in Rhode Island, there's a call for water safety classes for animals. Recently, firefighters rescued a Labrador from an icy pond, highlighting the need for such training.
