@@ -1,0 +1,7 @@
+First up, AI is changing the workplace landscape. It's not about whether AI will replace jobs, but how it's transforming the way we work. 
+
+Next, let's look at the impact on task completion. Without AI, tasks would take longer and require more education to understand complex responses. The question is whether people use AI to fully automate tasks or just to enhance their work. Currently, about 52% of tasks on the Claude platform are augmented by AI, showing a slight decrease since January. This suggests a near-even split between using AI for augmentation and automation, with a slight preference for augmentation.
+
+Meanwhile, there's a discussion on de-skilling. Some jobs are at risk of being automated, following a trend that's been happening for decades.
+
+Finally, AI is also about upskilling. By handling repetitive tasks, AI frees up time for workers to focus on higher-skill activities. Take radiologists or therapists, for example—they can now spend more time with clients and less on administrative duties.
