@@ -1,0 +1,9 @@
+First up, AI is transforming the workplace by changing how tasks are completed rather than eliminating jobs altogether. 
+
+Here's how it works: AI tools like Claude can either fully automate tasks, like translating text, or assist in completing them, such as co-writing a report. Currently, about half of the tasks on the Claude platform involve this kind of augmentation, with a slight preference for enhancing human efforts over full automation.
+
+Next, let's talk about de-skilling. Certain jobs, particularly in data entry and IT, are more vulnerable to being automated. This continues a long-standing trend of technology replacing repetitive tasks.
+
+Meanwhile, there's also the potential for upskilling. With AI handling routine work, professionals like radiologists and therapists can focus more on complex tasks that require human interaction, enhancing their roles and allowing them to spend more time with clients.
+
+Finally, the balance between automation and augmentation is key. While some jobs may be at risk, AI also offers opportunities to elevate and expand human capabilities in the workplace.
