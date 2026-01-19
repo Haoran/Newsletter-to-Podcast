@@ -1,0 +1,7 @@
+First up, AI is changing the way we work, focusing more on how tasks are done rather than if they get done. 
+
+Next, a study on the Claude AI site shows that 52% of tasks involve AI augmenting human work. This is a slight decrease from earlier this year, but it's still about an even split between using AI for augmentation and full automation, with a slight lean towards augmentation.
+
+Meanwhile, there's a trend towards de-skilling, where some jobs are increasingly at risk of being automated. This continues a pattern we've seen for decades.
+
+Finally, AI is also helping with upskilling. By taking over repetitive tasks, AI allows professionals like radiologists and therapists to spend more time on high-skill activities, such as client interactions, rather than getting bogged down in time-consuming backend work.
