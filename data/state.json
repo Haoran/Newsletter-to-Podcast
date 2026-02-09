@@ -48,9 +48,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::85ad511ba8e031eed21312ea85876c9baaf2a09cdfefba9c4f708b94d83b16e8": "2026-01-14T15:48:46.037397+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::83931c782b72c13b75832305c15fdd0c8c3318d66f830f0841ad5f1d200b7d53": "2026-01-16T15:47:47.374345+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#January 22, 2026::c26e348fc03c0dfd0d6f609eb46793b96be607e0c1fe4a0e6c028d68120b8594": "2026-01-24T15:43:16.775473+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::65f9906468eb717f50f492b4ab907580e88af2d04b7ad17a4011e9d00a4aa82d": "2026-02-08T15:51:12.557243+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::65f9906468eb717f50f492b4ab907580e88af2d04b7ad17a4011e9d00a4aa82d": "2026-02-08T15:51:12.557243+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus#February 09, 2026::1efb25dca0242b5c2233a8fcd94ac826c04ec808bee18490ccf8db6d9031990d": "2026-02-09T15:33:02.112384+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-02-09::1efb25dca0242b5c2233a8fcd94ac826c04ec808bee18490ccf8db6d9031990d",
+      "title": "Axios: 2026-02-09",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-02-09T00:00:00+00:00",
+      "description_html": "<p>1. February 09, 2026</p><p>Ina Fried</p><p>2. 1 big thing: AI&#x27;s $400 billion hit</p><p>Data: Financial Modeling Prep; Chart: Axios Visuals\nAI is here — and investors lost over $400 billion to the realization that entire industries are on the cusp of being replaced.\nWhy it matters: The software-industry selloff, sparked by Anthropic&#x27;s latest release, is ultimately just a baby step in a bigger transformation that may reshape how we all live and work.</p><p>It&#x27;s also the first tangible verdict on what happens when AI starts eating entire categories of work, well before the long-feared white-collar bloodbath even really begins.\nDriving the news: Anthropic recently released a suite of software-killing tools — prompting investors to reconsider software companies&#x27; value, with the sector down 25%.\nZoom in: AI isn&#x27;t just hitting software valuations, it&#x27;s changing how these companies operate from the inside out.\nOpenAI CEO Sam Altman said he felt &quot;useless&quot; and &quot;sad&quot; using his own AI to code.</p><p>Software engineers using the technology are also talking to each other less than ever, showing the &quot;death of a community,&quot; Peter Coy writes.\nThe big picture: As of now, investors are seriously looking at AI not just as a productivity boost for software firms, but as a substitute.\n&quot;AI is not just going to do something to labor ... it&#x27;s going to do something to profits,&quot; Shelby McFaddin, portfolio manager of a $2.6 billion fund, tells Axios.</p><p>One strategist likened it to BlackBerry: It survived, but its business model and valuation never recovered after being fully disrupted.\nYes, but: Some investors are still bullish on software stocks, especially now that they come at a discount.\nThe winners could be companies offering software toolkits, rather than single-use apps.</p><p>Software incumbents will also be hard to replace: &quot;With AI, code may become cheap, but context is expensive ... you can&#x27;t LLM your way past 10 years of customer data,&quot; Pitchbook noted in a report.\nWhat we&#x27;re watching: Stock prices are a bet, but sales are are the actual proof.\nGrowth has already slowed for software names — and is a metric to watch for other industries that could be disrupted by AI.\nCustomer retention will signal if people are switching to AI tools, David Fetherstonhaugh, EVP at VistaShares, tells Axios.</p><p>Watch for the market to price in AI&#x27;s broader labor hit across several industries in about a year-plus, McFaddin said.\nWhat&#x27;s next: Investors&#x27; fears about AI&#x27;s impact on software companies could spread to other industries the emerging tech stands to disrupt.</p><p>The bottom line: Markets just ran the math on software in an AI world — and didn&#x27;t like the answer.</p><p>3. 3. Exclusive: Senate candidate&#x27;s plan for kids&#x27; online safety</p><p>AI promises to make work more productive for lawyers, but there&#x27;s a problem: Their clients are using it, too.\nWhy it matters: The rise of AI is creating new headaches for attorneys — they&#x27;re worried about the fate of the billable hour, a reliable profit center for aeons, and are perturbed by clients getting bad legal advice from chatbots.\nZoom in: &quot;It&#x27;s like the WebMD effect on steroids,&quot; says Dave Jochnowitz, a partner at the law firm Outten &amp; Golden, referring to how medical websites can give people a misguided understanding of their condition.\n&quot;ChatGPT is telling them &#x27;You got a killer case,&#x27;&quot; Jochnowitz says.\nBut the models don&#x27;t understand the full context, the actual laws that apply or the full history of certain types of cases. They often give clients a false impression of what&#x27;s possible, lawyers tell Axios.</p><p>The disconnect &quot;makes people not believe what you&#x27;re saying,&quot; says S. Randall Hood, a personal injury lawyer and founder of McGowan, Hood, Felder &amp; Phillips in South Carolina.\nThe big picture: AI is shaking up the legal world, but it&#x27;s still early stages.</p><p>Read more.</p><p>4. 4. Training data</p><p>Moltbook was peak AI theater. (MIT Technology Review)\nData centers are slated to account for a whopping 50%-ish of U.S. power demand growth the remainder of this decade. (Axios)</p><p>A little-known Japanese firm, Nittobo, dominates production of a key glass fiber essential to advanced AI chips, creating a global supply bottleneck. (WSJ)</p><p>5. 5. + This</p><p>I had a blast getting to watch the team figure skating competition this weekend rinkside, as I captured photos for Axios. This, of &quot;Quad God&quot; Ilia Malinin, was one of my favorites.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-09.mp3",
+      "audio_bytes": 2090496,
+      "components": [
+        {
+          "title": "Axios AI Plus — February 09, 2026",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-09.txt",
+      "content_hash": "1efb25dca0242b5c2233a8fcd94ac826c04ec808bee18490ccf8db6d9031990d"
+    },
     {
       "id": "issue::2026-02-08::65f9906468eb717f50f492b4ab907580e88af2d04b7ad17a4011e9d00a4aa82d",
       "title": "Axios: 2026-02-08",
@@ -951,7 +970,7 @@
     }
   ],
   "last_issue": {
-    "published": "",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
+    "published": "February 09, 2026",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus#February 09, 2026"
   }
 }
