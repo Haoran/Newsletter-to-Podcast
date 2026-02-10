@@ -22,6 +22,40 @@
     </image>
 
     <item>
+      <title>Axios: 2026-02-10</title>
+      <link>https://www.axios.com/newsletters/axios-ai-plus</link>
+      <guid isPermaLink="false">issue::2026-02-10::5aac3d043f6744f527640b75e3dd23270e189d3ff09bc7d0117586fe8f731a07</guid>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-10.mp3" length="3172992" type="audio/mpeg" />
+      <podcast:transcript url="https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-10.txt" type="text/plain" />
+      <description><![CDATA[<p>1. Axios Local</p><p>Newsletters</p><p>Axios Local</p><p>ShowAxios ProAxios Live
+The Axios Show</p><p>2. Axios</p><p>Search</p><p>3. February 10, 2026</p><p>Madison Mills</p><p>4. 1 big thing: AI infighting hits a boiling point</p><p>AI CEOs are openly trash talking each other, sniping over advertising and their philosophical approaches to the future.
+Why it matters: The squabbling is intensifying as the cost of staying competitive in AI soars — and pressure is mounting for the technology to deliver real returns.
+Driving the news: The fighting ramped up around the Super Bowl.
+Anthropic pledged to keep its large language model, Claude, ad-free, alongside a commercial poking at OpenAI, which is testing ads in ChatGPT (more on that later).
+OpenAI CEO Sam Altman fired back with a lengthy post on X, calling the ad &quot;dishonest.&quot;</p><p>Altman was already fending off rumors about OpenAI&#x27;s relationship with Nvidia, after the Wall Street Journal reported the chipmaker was pulling back from a proposed $100 billion investment. Reuters&#x27; sources said OpenAI has been exploring alternatives to Nvidia&#x27;s chips.
+Between the lines: &quot;What a huge coincidence that after Nvidia hurt OpenAI&#x27;s feelings, OpenAI hurt Nvidia&#x27;s feelings back ... high-school level behavior,&quot; Gil Luria of D.A. Davidson told Axios.
+Altman also has beef with Elon Musk, the xAI founder behind the Grok chatbot and a co-founder of OpenAI.
+Musk is currently pursuing two separate lawsuits against Altman — for abandoning OpenAI&#x27;s original nonprofit business model and for monopolizing markets.</p><p>The two openly jab at each other online and in interviews.
+The big picture: AI CEOs can be roughly divided into two groups: the researchers and the entrepreneurs.
+The researchers tend to view AI as a fragile, long-term project that demands collaboration, caution and governance.</p><p>The entrepreneurs want to move fast and break things.
+Zoom in: Google DeepMind is seen as a research-first AI lab, earning early notoriety for AlphaFold, which transformed how scientists understand the building blocks encoded by DNA.</p><p>Altman and Musk come from startup and engineering worlds, emphasizing speed and scale rather than scientific consensus. (Musk argues AI deployment should slow down unless, of course, he&#x27;s the one in charge.)
+Yes, but: Free market enthusiasts say this kind of trash talking is healthy for the economy.</p><p>&quot;The reason we&#x27;ve done so well as a society for almost 250 years is competition,&quot; Luria said.
+What we&#x27;re watching: Ultimately, the outcome of the AI race might be less dependent on the CEO and more dependent on the AI itself.
+Both Altman and Google CEO Sundar Pichai have said that AI will eventually be able to do a better job leading companies than they do.</p><p>AI is already pretty good at trash talking humans — as Moltbook showed.
+The bottom line: The AI buildout is not just a capitalism contest among its CEOs.</p><p>It&#x27;s a clash of belief systems — with markets, technology and far more riding on the outcome.</p><p>5. 2. Former GitHub CEO launches AI coding startup</p><p>Former GitHub CEO Thomas Dohmke today announced he is leading a new startup for developers geared toward the reality where most coding is done by AI agents.
+Why it matters: Automated coding has been one of generative AI&#x27;s earliest success stories, but it&#x27;s also an increasingly crowded market with a flood of startups alongside big players like OpenAI, Anthropic, Google and Microsoft.
+Driving the news: The new company, Entire, has raised $60 million in a seed round that values it at $300 million.
+The round was led by Felicis, with Madrona, Microsoft&#x27;s M12 and Basis Set also taking part.
+Individual investors include Gergely Orosz, former Yahoo CEO Jerry Yang and Y Combinator&#x27;s Garry Tan.</p><p>Entire is also releasing its first product, Checkpoints, a developer tool that captures the context behind AI-written code, including the prompts, reasoning and decisions made by agents.
+What they&#x27;re saying: &quot;Entire is a new platform for developers in this era where agents write most of the code,&quot; Dohmke told Axios. &quot;We are not training models or building agents, we are integrating with them.&quot;</p><p>Dohmke, who is CEO of Entire, stepped down from Microsoft-owned GitHub in August, saying he wanted to pursue entrepreneurial endeavors.
+Between the lines: Dohmke said his new venture isn&#x27;t trying to compete directly with services like Claude Code, Curser or Codex.</p><p>&quot;Our platform will be open-source, independent, and scalable for every developer and agent to host their code and agent context,&quot; he said. &quot;If you build with Claude Code, Cursor, Codex, you name it — you will have a home with us.&quot;
+Dohmke says that while AI has changed the way software is coded, the tools that manage the process are still geared toward human-led operations.</p><p>&quot;Soon, developers won&#x27;t look at the code anymore, as agents will write way more than humans can review,&quot; Dohmke told Axios. &quot;... We have to rethink the entire system of software production from the ground up. We need to create an agent assembly line for software development.&quot;</p><p>6. 4. Training data</p><p>Another cofounder of Elon Musk’s xAI resigned. (The Information.)
+The so-called SaaS-pocalypse has come for all kinds of software companies, as AI upends the &quot;software as a service &quot; industry. (Axios)
+According to new research, AI doesn&#x27;t reduce work, but intensifies it. (Harvard Business Review)</p><p>AI medical tools are more prone to giving incorrect advice when the misinformation appears to come from authoritative sources, per a new study. (Reuters)</p><p>7. 5. + This</p><p>8. Sign up for Axios AI+</p><p>9. Sign up</p><p>Scoops on the AI revolution and transformative tech, from Ina Fried, Ashley Gold and Maria Curi.</p><p>10. Smarter, faster on what matters.</p>]]></description>
+    </item>
+
+    <item>
       <title>Axios: 2026-02-09</title>
       <link>https://www.axios.com/newsletters/axios-ai-plus</link>
       <guid isPermaLink="false">issue::2026-02-09::1efb25dca0242b5c2233a8fcd94ac826c04ec808bee18490ccf8db6d9031990d</guid>
