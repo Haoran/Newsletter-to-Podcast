@@ -50,9 +50,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus#January 22, 2026::c26e348fc03c0dfd0d6f609eb46793b96be607e0c1fe4a0e6c028d68120b8594": "2026-01-24T15:43:16.775473+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::65f9906468eb717f50f492b4ab907580e88af2d04b7ad17a4011e9d00a4aa82d": "2026-02-08T15:51:12.557243+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#February 09, 2026::1efb25dca0242b5c2233a8fcd94ac826c04ec808bee18490ccf8db6d9031990d": "2026-02-09T15:33:02.112384+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus#February 10, 2026::5aac3d043f6744f527640b75e3dd23270e189d3ff09bc7d0117586fe8f731a07": "2026-02-10T15:44:57.322145+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus#February 10, 2026::5aac3d043f6744f527640b75e3dd23270e189d3ff09bc7d0117586fe8f731a07": "2026-02-10T15:44:57.322145+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::235828f66e50a2c983fb57311225b8fb630d0e67b4acbf7c0666592742b4653b": "2026-02-12T15:27:37.223903+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-02-12::235828f66e50a2c983fb57311225b8fb630d0e67b4acbf7c0666592742b4653b",
+      "title": "Axios: 2026-02-12",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-02-12T15:27:30.724648+00:00",
+      "description_html": "<p>www.axios.com -------------</p><p>Performing security verification --------------------------------</p><p>This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-12.mp3",
+      "audio_bytes": 167424,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/02/2026-02-12.txt",
+      "content_hash": "235828f66e50a2c983fb57311225b8fb630d0e67b4acbf7c0666592742b4653b"
+    },
     {
       "id": "issue::2026-02-10::5aac3d043f6744f527640b75e3dd23270e189d3ff09bc7d0117586fe8f731a07",
       "title": "Axios: 2026-02-10",
@@ -989,7 +1008,7 @@
     }
   ],
   "last_issue": {
-    "published": "February 10, 2026",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus#February 10, 2026"
+    "published": "",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
   }
 }
