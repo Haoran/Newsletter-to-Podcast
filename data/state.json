@@ -56,9 +56,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus::148ef1efb0d1345c9f1efe3bf9240f87c086ec205f192e7f313322b3693581aa": "2026-02-18T15:28:44.719390+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus#February 19, 2026::adcd43ac1e320638ad6d1f4ea431def3c8458f41c970d97ecb39e30068105e24": "2026-02-21T15:50:01.467740+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::11f1d83330bf717c81d07c9d2f842f78a07e0b63a394d1350131ce3f1169042a": "2026-02-26T15:28:31.916045+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus::5025c4496654332d1ecdc71395b20bb7e1bb50f2164d0fc8c5a1fba8f734da79": "2026-03-01T15:47:26.805065+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus::5025c4496654332d1ecdc71395b20bb7e1bb50f2164d0fc8c5a1fba8f734da79": "2026-03-01T15:47:26.805065+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus#March 03, 2026::17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc": "2026-03-03T15:27:06.629636+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-03-03::17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc",
+      "title": "Axios: 2026-03-03",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-03-03T00:00:00+00:00",
+      "description_html": "<p>1. Axios Local</p><p>Newsletters</p><p>Axios Local</p><p>ShowAxios ProAxios Live\nThe Axios Show</p><p>2. Axios</p><p>Search</p><p>3. March 03, 2026</p><p>Madison Mills</p><p>4. As large language models grow</p><p>Why it matters: Even Google DeepMind CEO Demis Hassabis has warned that &quot;race conditions&quot; — pressure to outpace rivals or rival nations — can drive reckless decisions as the world nears superhuman AI.</p><p>5. the revised policy</p><p>&quot;We will delay AI development and deployment as needed to achieve this, until and unless we no longer believe we have a significant lead,&quot;</p><p>6. a supply chain risk</p><p>The company refused to allow its models to be used for autonomous weapons or domestic surveillance. The Defense Department responded by cutting use of Claude and labeling the firm</p><p>7. announced</p><p>Hours later, OpenAI</p><p>8. broad room</p><p>OpenAI says it shares many of Anthropic&#x27;s safety concerns. Critics note its agreement leaves</p><p>9. told Axios</p><p>Following widespread backlash against the threat of domestic mass surveillance, OpenAI and the Pentagon agreed to add more protections to their deal, sources familiar with the pact</p><p>10. History shows such pressure can push companies toward decisions they might otherwise avoid, as executives fear restraint means losing the lead.</p><p>History shows such pressure can push companies toward decisions they might otherwise avoid, as executives fear restraint means losing the lead.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/03/2026-03-03.mp3",
+      "audio_bytes": 1077120,
+      "components": [
+        {
+          "title": "Axios AI Plus — March 03, 2026",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/03/2026-03-03.txt",
+      "content_hash": "17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc"
+    },
     {
       "id": "issue::2026-03-01::5025c4496654332d1ecdc71395b20bb7e1bb50f2164d0fc8c5a1fba8f734da79",
       "title": "Axios: 2026-03-01",
@@ -1103,7 +1122,7 @@
     }
   ],
   "last_issue": {
-    "published": "",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
+    "published": "March 03, 2026",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus#March 03, 2026"
   }
 }
