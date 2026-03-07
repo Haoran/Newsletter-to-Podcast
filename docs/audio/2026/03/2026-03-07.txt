@@ -1,0 +1,9 @@
+First up, the Pentagon has made a significant move by labeling Anthropic as a supply chain risk. This decision is usually reserved for foreign adversaries and now puts a spotlight on the U.S. market. By penalizing a domestic leader for its safety standards, it opens the door for cheaper, unregulated models from competing countries.
+
+Next, President Trump has taken a firm stance against Anthropic. In a Truth Social post, he directed every federal agency to stop using the company's technology immediately. This designation effectively bars any business associated with the Department of Defense from using Anthropic's solutions, potentially impacting many major enterprise clients.
+
+Meanwhile, there's a shift happening in the tech world. Companies like Airbnb are opting for Chinese AI models due to their lower cost. This trend highlights a broader issue: the U.S. government's actions against Anthropic could stifle innovation and give Chinese labs, which operate under different ethical standards, a competitive edge.
+
+Finally, the U.S. Navy and Pentagon have banned the use of DeepSeek after discovering its use on work computers. However, labeling a company as a supply chain risk goes beyond just banning its products. It forces any business with government ties to cut off relations with firms deemed risky. Critics argue this could widen the competitive gap the U.S. is trying to close.
+
+In conclusion, McFaul expressed his concern on social media, stating that if the White House were serious about AI leadership, it wouldn't undermine a leading domestic lab like Anthropic.

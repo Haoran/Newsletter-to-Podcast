@@ -57,9 +57,28 @@
     "https://www.axios.com/newsletters/axios-ai-plus#February 19, 2026::adcd43ac1e320638ad6d1f4ea431def3c8458f41c970d97ecb39e30068105e24": "2026-02-21T15:50:01.467740+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::11f1d83330bf717c81d07c9d2f842f78a07e0b63a394d1350131ce3f1169042a": "2026-02-26T15:28:31.916045+00:00",
     "https://www.axios.com/newsletters/axios-ai-plus::5025c4496654332d1ecdc71395b20bb7e1bb50f2164d0fc8c5a1fba8f734da79": "2026-03-01T15:47:26.805065+00:00",
-    "https://www.axios.com/newsletters/axios-ai-plus#March 03, 2026::17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc": "2026-03-03T15:27:06.629636+00:00"
+    "https://www.axios.com/newsletters/axios-ai-plus#March 03, 2026::17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc": "2026-03-03T15:27:06.629636+00:00",
+    "https://www.axios.com/newsletters/axios-ai-plus::211443d409a19bb2b97d5a3034f30d8bb252581360d5783c51dce7470a5cfee9": "2026-03-07T16:21:54.236685+00:00"
   },
   "episodes": [
+    {
+      "id": "issue::2026-03-07::211443d409a19bb2b97d5a3034f30d8bb252581360d5783c51dce7470a5cfee9",
+      "title": "Axios: 2026-03-07",
+      "link": "https://www.axios.com/newsletters/axios-ai-plus",
+      "pub_date": "2026-03-07T15:46:26.985311+00:00",
+      "description_html": "<p>1. The Pentagon says</p><p>Why it matters: By penalizing a domestic leader for its safety standards, the U.S. is creating a market opening for cheaper, unregulated models from competing countries.</p><p>2. State of play</p><p>he was directing his department to label Anthropic a supply chain risk, a designation typically reserved for foreign adversaries.</p><p>3. Truth Social post</p><p>President Trump instructed every federal agency to stop using Anthropic&#x27;s technology &quot;IMMEDIATELY&quot; in a Truth Social post.</p><p>The designation effectively bars any company doing business with the Department of Defense from using Anthropic&#x27;s technology, potentially wiping out dozens of major enterprise customers.</p><p>4. What they&#x27;re saying</p><p>5. Between the lines</p><p>This allows enterprise users to avoid the high price tag that comes with relying on leading U.S. AI companies.</p><p>It&#x27;s not just startups: Airbnb CEO Brian Chesky has confirmed the company is using Chinese models because they are cheaper.</p><p>6. DeepSeek&#x27;s</p><p>The U.S. government&#x27;s treatment of Anthropic could cause a &quot;chilling effect to innovation&quot; leaving an opening for Chinese labs with different ethical standards, Jennifer Huddleston, senior fellow in technology policy at the Cato Institute, told Axios.\nThe spread of DeepSeek &quot;provides a channel for promoting Chinese propaganda in the West,&quot; according to a report from the Estonian Foreign Intelligence Service.</p><p>DeepSeek&#x27;s privacy policy also states that it stores user data on Chinese servers, governed under Chinese law and complying with government requests for data.</p><p>7. If the Pentagon limits access to a domestic lab while foreign rivals continue advancing, critics say that could widen the competitive gap Washington is trying to avoid.</p><p>8. The bottom line:</p><p>The U.S. Navy banned the use of DeepSeek, and so did the Pentagon after discovering employees were using the chatbot on work computers.</p><p>But a supply chain risk designation isn&#x27;t the same as just banning use of a company&#x27;s product: It weaponizes procurement, forcing any company with government ties to separate from the firms deemed supply chain risks.</p><p>9. wrote on X</p><p>&quot;If the White House were serious about AI leadership, it wouldn&#x27;t try to kneecap a top frontier lab,&quot; McFaul wrote on X.</p>",
+      "audio_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/03/2026-03-07.mp3",
+      "audio_bytes": 98304,
+      "components": [
+        {
+          "title": "Axios AI Plus — Latest",
+          "link": "https://www.axios.com/newsletters/axios-ai-plus",
+          "source": "newsletter_issue_text"
+        }
+      ],
+      "transcript_url": "https://haoran.github.io/Newsletter-to-Podcast/audio/2026/03/2026-03-07.txt",
+      "content_hash": "211443d409a19bb2b97d5a3034f30d8bb252581360d5783c51dce7470a5cfee9"
+    },
     {
       "id": "issue::2026-03-03::17f78ed3633ab10335ead95bdf61e2492c1c7df8e601785cd1c944d918c7e7fc",
       "title": "Axios: 2026-03-03",
@@ -1122,7 +1141,7 @@
     }
   ],
   "last_issue": {
-    "published": "March 03, 2026",
-    "guid": "https://www.axios.com/newsletters/axios-ai-plus#March 03, 2026"
+    "published": "",
+    "guid": "https://www.axios.com/newsletters/axios-ai-plus"
   }
 }
